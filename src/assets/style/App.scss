@@ -216,7 +216,7 @@ body {
       display: none;
 
       svg {
-        font-size: 45px;
+        font-size: 40px;
         color: $color-5;
       }
     }
@@ -1299,6 +1299,16 @@ body {
     }
   }
 
+  .advert {
+    width: 100%;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
   #search {
     margin-top: 0;
 
@@ -1460,7 +1470,14 @@ body {
 
       .advert {
         display: flex;
-        gap: 25px;
+        width: 100%;
+        object-fit: cover;
+
+        img {
+          width: 100%;
+          border-radius: 10px;
+          height: 330px;
+        }
       }
 
       .row {

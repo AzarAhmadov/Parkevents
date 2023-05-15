@@ -175,7 +175,7 @@ body {
   display: none;
 }
 #header nav .open-bar svg {
-  font-size: 45px;
+  font-size: 40px;
   color: #31d7a9;
 }
 
@@ -1043,6 +1043,14 @@ body {
   #movie-list .container .row .movies-list-content .movies-top a {
     font-size: 17px;
   }
+  .advert {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .advert img {
+    width: 100%;
+    border-radius: 10px;
+  }
   #search {
     margin-top: 0;
   }
@@ -1152,7 +1160,14 @@ body {
   }
   #detail .container .advert {
     display: flex;
-    gap: 25px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #detail .container .advert img {
+    width: 100%;
+    border-radius: 10px;
+    height: 330px;
   }
   #detail .container .row .col-lg-3 {
     margin-top: 50px;

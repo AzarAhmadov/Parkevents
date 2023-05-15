@@ -128,7 +128,7 @@ const Detail = () => {
                         <Col lg={3}>
                             <div className="advert">
                                 <img src="https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner01.jpg" alt="" />
-                                <img src="https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner01.jpg" alt="" />
+                                <img src="https://img.freepik.com/premium-vector/basketball-tournament-flyer-design-template_9245-575.jpg?w=2000" alt="" />
                             </div>
                         </Col>
                         <Col lg={9}>
@@ -141,7 +141,7 @@ const Detail = () => {
                                 className="mySwiper"
                                 breakpoints={{
                                     340: {
-                                        slidesPerView: 2,
+                                        slidesPerView: 1,
                                         spaceBetween: 15,
                                     },
                                     768: {
