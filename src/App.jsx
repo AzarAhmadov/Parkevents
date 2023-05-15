@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { SlArrowUp } from 'react-icons/sl';
 import { Pages } from './components/pages/Pages'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
