@@ -1,0 +1,75 @@
+import React, { useState } from 'react';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { BiSearchAlt } from 'react-icons/bi';
+import { Dropdown } from 'primereact/dropdown';
+import "primereact/resources/primereact.min.css";
+import { useNavigate } from 'react-router-dom';
+
+const SearchBottom = ({ searchClass }) => {
+
+    const [category, setCategory] = useState(null);
+
+    const category_data = [
+        { name: 'Kategoriya 1' },
+        { name: 'Kategoriya 2' },
+        { name: 'Kategoriya 3' },
+        { name: 'Kategoriya 4' },
+    ];
+
+    const [date, setDate] = useState(null)
+
+    const date_data = [
+        { name: '25/10/2023' },
+        { name: '14/10/2021' },
+        { name: '23/10/2023' },
+        { name: '22/10/2025' },
+    ]
+
+    const navigate = useNavigate();
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        navigate('/SearchCaregory/Bütün-tədbirlər');
+    };
+
+
+    return (
+        <div className={`search-bottom ${searchClass}`}>
+            <Form onSubmit={handleSubmit}>
+                <Row>
+                    <Col className='search-col search' xl={4}>
+                        <Form.Control type='text' placeholder='Axtar' />
+                        <BiSearchAlt className='search-icon' size={30} color='#fff' />
+                    </Col>
+                    <Col className='search-col' xl={3}>
+                        <Dropdown
+                            value={category}
+                            onChange={(e) => setCategory(e.value)}
+                            options={category_data}
+                            optionLabel="name"
+                            className='drop'
+                            placeholder="Kategoriya" />
+                    </Col>
+                    <Col className='search-col' xl={3}>
+                        <Dropdown
+                            value={date}
+                            onChange={(e) => setDate(e.value)}
+                            options={date_data}
+                            optionLabel="name"
+                            className='drop'
+                            placeholder="Tarix" />
+                    </Col>
+                    <Col className='d-flex align-items-center' xl={2}>
+                        <button type='submit' className='form-btn'>
+                            Axtar
+                        </button>
+                    </Col>
+                </Row>
+            </Form>
+        </div>
+    );
+};
+
+export default SearchBottom;
