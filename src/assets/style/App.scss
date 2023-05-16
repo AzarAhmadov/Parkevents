@@ -981,6 +981,201 @@ body {
   }
 }
 
+#login {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+
+  &::after {
+    width: 100%;
+    height: 100%;
+    background: url('http://pixner.net/boleto/demo/assets/images/account/account-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    z-index: 1;
+  }
+
+  .login-content {
+    width: 540px;
+    padding: 60px 45px;
+    margin: 0 auto;
+    background-color: rgba(68, 90, 153, 0.051);
+    box-shadow: 0px 0px 29.4px 0.6px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    position: relative;
+
+    h4 {
+      color: $color-1;
+      font-size: 34px;
+      text-align: center;
+      padding-bottom: 25px;
+
+      span {
+        color: $color-5;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        display: flex;
+        align-items: center;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 20px;
+
+        span {
+          margin-left: 5px;
+          color: red;
+          font-size: 20px;
+        }
+      }
+
+      input {
+        background: transparent;
+        border-bottom: 1px solid #23334f;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        color: #234d97;
+        padding: 20px 0;
+        box-shadow: none;
+        font-size: 18px;
+        margin-bottom: 10px;
+
+        &::placeholder {
+          color: #4a6798;
+          font-size: 18px;
+        }
+      }
+
+      .check {
+        padding-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+          display: flex;
+          align-items: center;
+          color: #234d97;
+
+          input {
+            margin-top: 10px;
+            margin-right: 10px;
+          }
+
+          label {
+            font-size: 18px;
+          }
+
+          a {
+            color: rgba(255, 255, 255, 0.7);
+          }
+        }
+      }
+
+      .login-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        a {
+          background: $gradient;
+          color: $color-1;
+          font-size: 20px;
+          padding: 12px 35px;
+          border-radius: 50px;
+        }
+      }
+
+      .form-register {
+        text-align: center;
+        margin-top: 25px;
+
+        p {
+          color: #738fc1;
+          font-size: 19px;
+
+          a {
+            margin-left: 5px;
+            color: $color-5;
+          }
+        }
+      }
+
+      .form-bottom {
+        text-align: center;
+        margin-top: 35px;
+
+        .sosial {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+
+          li {
+            margin-right: 20px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
+            svg {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              border: 1px solid rgba(255, 255, 255, 0.119);
+              padding: 11px;
+              fill: $color-1;
+
+              &:hover {
+                background: $gradient;
+              }
+            }
+          }
+        }
+
+        span {
+          color: $color-1;
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          padding: 0 100px;
+          z-index: 100;
+
+          &::after {
+            width: 190px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.219);
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+          }
+
+          &::before {
+            width: 190px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.219);
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 #footer {
   padding-top: 100px;
   padding-bottom: 30px;
@@ -1514,6 +1709,27 @@ body {
           .swiper-button-prev {
             width: 40px;
             height: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  #login {
+    .login-content {
+      width: 100%;
+      padding: 40px 15px;
+
+      form {
+        .form-bottom {
+          span {
+            &::after {
+              width: 120px;
+            }
+
+            &::before {
+              width: 120px;
+            }
           }
         }
       }

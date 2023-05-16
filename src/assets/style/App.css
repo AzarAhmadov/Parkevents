@@ -834,6 +834,177 @@ body {
   font-weight: 300;
 }
 
+#login {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+#login::after {
+  width: 100%;
+  height: 100%;
+  background: url("http://pixner.net/boleto/demo/assets/images/account/account-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  z-index: 1;
+}
+#login .login-content {
+  width: 540px;
+  padding: 60px 45px;
+  margin: 0 auto;
+  background-color: rgba(68, 90, 153, 0.051);
+  box-shadow: 0px 0px 29.4px 0.6px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  position: relative;
+}
+#login .login-content h4 {
+  color: #fff;
+  font-size: 34px;
+  text-align: center;
+  padding-bottom: 25px;
+}
+#login .login-content h4 span {
+  color: #31d7a9;
+}
+#login .login-content form {
+  display: flex;
+  flex-direction: column;
+}
+#login .login-content form label {
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+#login .login-content form label span {
+  margin-left: 5px;
+  color: red;
+  font-size: 20px;
+}
+#login .login-content form input {
+  background: transparent;
+  border-bottom: 1px solid #23334f;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  color: #234d97;
+  padding: 20px 0;
+  box-shadow: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#login .login-content form input::-moz-placeholder {
+  color: #4a6798;
+  font-size: 18px;
+}
+#login .login-content form input::placeholder {
+  color: #4a6798;
+  font-size: 18px;
+}
+#login .login-content form .check {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#login .login-content form .check div {
+  display: flex;
+  align-items: center;
+  color: #234d97;
+}
+#login .login-content form .check div input {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+#login .login-content form .check div label {
+  font-size: 18px;
+}
+#login .login-content form .check div a {
+  color: rgba(255, 255, 255, 0.7);
+}
+#login .login-content form .login-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#login .login-content form .login-btn a {
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+  color: #fff;
+  font-size: 20px;
+  padding: 12px 35px;
+  border-radius: 50px;
+}
+#login .login-content form .form-register {
+  text-align: center;
+  margin-top: 25px;
+}
+#login .login-content form .form-register p {
+  color: #738fc1;
+  font-size: 19px;
+}
+#login .login-content form .form-register p a {
+  margin-left: 5px;
+  color: #31d7a9;
+}
+#login .login-content form .form-bottom {
+  text-align: center;
+  margin-top: 35px;
+}
+#login .login-content form .form-bottom .sosial {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#login .login-content form .form-bottom .sosial li {
+  margin-right: 20px;
+}
+#login .login-content form .form-bottom .sosial li:last-child {
+  margin-right: 0;
+}
+#login .login-content form .form-bottom .sosial li svg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.119);
+  padding: 11px;
+  fill: #fff;
+}
+#login .login-content form .form-bottom .sosial li svg:hover {
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+}
+#login .login-content form .form-bottom span {
+  color: #fff;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0 100px;
+  z-index: 100;
+}
+#login .login-content form .form-bottom span::after {
+  width: 190px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.219);
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+#login .login-content form .form-bottom span::before {
+  width: 190px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.219);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
 #footer {
   padding-top: 100px;
   padding-bottom: 30px;
@@ -1192,5 +1363,15 @@ body {
   #detail .dec-container .swiper-modal .mySwiper .swiper-button-prev {
     width: 40px;
     height: 40px;
+  }
+  #login .login-content {
+    width: 100%;
+    padding: 40px 15px;
+  }
+  #login .login-content form .form-bottom span::after {
+    width: 120px;
+  }
+  #login .login-content form .form-bottom span::before {
+    width: 120px;
   }
 }/*# sourceMappingURL=App.css.map */

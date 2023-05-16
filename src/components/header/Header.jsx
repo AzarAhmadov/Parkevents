@@ -106,7 +106,7 @@ const Header = () => {
                                     </ul>
                                 </li>
                                 <li className='user'>
-                                    <Link>
+                                    <Link to='/Login'>
                                         <FaRegUserCircle />
                                     </Link>
                                 </li>
