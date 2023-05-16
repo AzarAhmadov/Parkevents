@@ -1,10 +1,11 @@
+import videoSlide1 from '../../assets/video/video-slide.mp4'
 export const movieList = {
     MoviesHero: [
         {
             id: 14,
             movieImg: "https://wallpapercave.com/wp/wp1945919.jpg",
             movieName: "Galaxy",
-            banner: "https://a-static.besthdwallpaper.com/marvel-studios-guardians-of-the-galaxy-volume-3-movie-poster-wallpaper-3000x2000-107820_42.jpg",
+            banner: "https://wallpapers.com/images/featured/eyu0znclsfx37s76.jpg",
             price: '400 ₼-dan',
             date: <div>26<br />Okt</div>,
         },
@@ -12,7 +13,7 @@ export const movieList = {
             id: 15,
             movieImg: "https://cdn.wallpapersafari.com/53/79/ajwtby.jpg",
             movieName: "Brave",
-            banner: "https://cdn.wallpapersafari.com/53/79/ajwtby.jpg",
+            bannerVideo: videoSlide1,
             price: '400 ₼-dan',
             date: <div>14<br />Sen</div>,
         },

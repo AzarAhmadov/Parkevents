@@ -37,6 +37,9 @@ const Hero = () => {
             <SwiperSlide key={idx}>
               <div className="hero-img" onClick={() => handleMovieClick(el)}>
                 <img src={el.movieImg} alt="" />
+                <span className='movieName'>
+                  {el.movieName}
+                </span>
               </div>
             </SwiperSlide>
           ))

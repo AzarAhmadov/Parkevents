@@ -238,6 +238,16 @@ body.active {
   background: #000;
   height: 730px;
   border-radius: 15px;
+  position: relative;
+}
+#hero .hero-img .movieName {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 40px;
+  background: #31d7a9;
+  padding: 10px 20px;
 }
 #hero .hero-img img {
   border-radius: 15px;
@@ -372,6 +382,7 @@ body.active {
 }
 .search-bottom .price {
   padding-right: 15px;
+  padding-left: 8px;
 }
 .search-bottom .price span {
   color: #fff;
@@ -391,7 +402,7 @@ body.active {
 .search-bottom .price .noUi-horizontal {
   height: 7px;
   border: none;
-  margin-top: 2px;
+  margin-top: 5px;
 }
 .search-bottom .price .noUi-horizontal .noUi-handle {
   background: #31d7a9;
@@ -406,11 +417,6 @@ body.active {
 }
 .search-bottom .price .noUi-horizontal .noUi-handle::after {
   height: 0;
-}
-
-.noUi-base {
-  background: Gainsboro;
-  border-radius: 10px;
 }
 
 #category {
@@ -600,6 +606,12 @@ body.active {
   height: 420px;
   z-index: 1;
 }
+#detail .detail-banner .banner-video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 420px;
+}
 #detail .detail-banner::after {
   width: 100%;
   height: 100%;
@@ -743,6 +755,12 @@ body.active {
 #detail .dec-container {
   padding-top: 70px;
 }
+#detail .dec-container .advert {
+  gap: 20px !important;
+}
+#detail .dec-container .advert img {
+  height: 370px !important;
+}
 #detail .dec-container .swiper-button-next {
   background: #31d7a9;
   color: #fff;
@@ -816,7 +834,7 @@ body.active {
 #detail .dec-container .swiper-modal .mySwiper .swiper-button-prev::after {
   font-size: 25px;
 }
-#detail .dec-container .swiper-modal .mySwiper img {
+#detail .dec-container .swiper-modal .mySwiper .dec-img {
   max-width: 700px;
   margin: 0;
   height: 500px;
@@ -828,13 +846,13 @@ body.active {
   transform: translate(-50%, -50%);
 }
 #detail .dec-container .dec-title {
-  font-size: 50px;
+  font-size: 40px;
   padding-bottom: 40px;
   color: #fff;
 }
 #detail .dec-container .dec-img {
   width: 100%;
-  height: 100%;
+  height: 170px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
@@ -1205,6 +1223,10 @@ body.active {
   fill: #31d7a9;
 }
 
+.noUi-connects {
+  width: 100% !important;
+}
+
 @media only screen and (max-width: 1400px) {
   .container {
     padding: 0;
@@ -1218,10 +1240,20 @@ body.active {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .search-bottom .price {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   .search-bottom .price span {
     border-top: 1px solid rgba(255, 255, 255, 0.119);
     padding-top: 10px;
     margin-top: 5px;
+  }
+  .noUi-base {
+    width: 95.5% !important;
+  }
+  #search .container .search-content {
+    padding: 30px 20px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1264,8 +1296,8 @@ body.active {
   .advert img {
     height: 100%;
     width: 400px;
-    -o-object-fit: contain;
-       object-fit: contain;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   #category .container .category-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -1276,6 +1308,13 @@ body.active {
   }
   #detail .dec-container {
     padding-top: 10px;
+  }
+  #detail .dec-container .advert img {
+    width: 48%;
+    margin: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
   }
   #detail .detail-bottom {
     margin-bottom: 130px;
@@ -1308,6 +1347,9 @@ body.active {
   }
   #hero .hero-img {
     height: 400px;
+  }
+  #hero .hero-img .movieName {
+    font-size: 20px;
   }
   #movie-list .container .row .col-lg-3 {
     order: 1;
@@ -1432,6 +1474,10 @@ body.active {
   #hero .hero-img {
     height: 350px;
   }
+  #hero .hero-img .movieName {
+    font-size: 18px;
+    padding: 7px 10px;
+  }
   #hero .swiper-button-next {
     width: 45px;
     height: 45px;
@@ -1515,20 +1561,31 @@ body.active {
     align-items: center;
     gap: 0px;
   }
+  #detail .dec-container .dec-img {
+    height: 200px;
+  }
   #detail .dec-container .swiper-modal .close {
     right: 20px;
-    top: 130px;
+    top: 190px;
   }
-  #detail .dec-container .swiper-modal .mySwiper img {
-    height: 300px;
+  #detail .dec-container .swiper-modal .mySwiper .dec-img {
+    height: 250px;
   }
   #detail .dec-container .swiper-modal .mySwiper .swiper-button-next {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    right: 5px;
+  }
+  #detail .dec-container .swiper-modal .mySwiper .swiper-button-next::after {
+    font-size: 17px;
   }
   #detail .dec-container .swiper-modal .mySwiper .swiper-button-prev {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+  }
+  #detail .dec-container .swiper-modal .mySwiper .swiper-button-prev::after {
+    font-size: 17px;
   }
   #login .login-content {
     width: 90%;

@@ -50,7 +50,7 @@ const SearchBottom = ({ searchClass }) => {
             connect: true,
             range: {
                 'min': 1,
-                'max': 450
+                'max': 400
             },
             format: {
                 to(value) {

@@ -15,6 +15,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation } from "swiper";
 import { movieList } from '../data/Data';
+import VideSlide1 from '../../assets/video/video-slide.mp4'
 
 const getMovieById = (id) => {
     const categories = Object.values(movieList);
@@ -56,11 +57,27 @@ const Detail = () => {
         scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, []);
 
+
+    const mediaRender = () => {
+        if (movie && movie.bannerVideo) {
+            return (
+                <video muted className='banner-video' controls={false} autoPlay>
+                    <source src={movie.bannerVideo} type="video/mp4" />
+                </video>
+            );
+        } else if (movie && movie.banner) {
+            return <img src={movie.banner} alt="" />;
+        } else {
+            return null;
+        }
+    }
+
+
     return (
         <main>
             <section id='detail'>
                 <div ref={scrollRef} className="detail-banner">
-                    <img src={movie.banner} alt="" />
+                    {mediaRender()}
                 </div>
                 <div className="detail-bottom">
                     <Container>
@@ -132,7 +149,7 @@ const Detail = () => {
                             </div>
                         </Col>
                         <Col lg={9}>
-                            <h4 className='dec-title'> Şəkillər </h4>
+                            <h4 className='dec-title'> Tədbir haqqında  </h4>
                             <Swiper
                                 navigation={true}
                                 modules={[Navigation]}
@@ -158,13 +175,12 @@ const Detail = () => {
                                     <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details01.jpg" alt="" onClick={() => handleSlideClick(0)} />
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details02.jpg" alt="" onClick={() => handleSlideClick(1)} />
+                                    <video className='dec-img' controls onClick={() => handleSlideClick(1)} >
+                                        <source src={VideSlide1} type="video/ogg" />
+                                    </video>
                                 </SwiperSlide>
                                 <SwiperSlide>
                                     <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details02.jpg" alt="" onClick={() => handleSlideClick(2)} />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details02.jpg" alt="" onClick={() => handleSlideClick(3)} />
                                 </SwiperSlide>
                             </Swiper>
                             {modalOpen && (
@@ -177,6 +193,11 @@ const Detail = () => {
                                     >
                                         <SwiperSlide>
                                             <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details01.jpg" alt="" />
+                                        </SwiperSlide>
+                                        <SwiperSlide>
+                                            <video controls className='dec-img'>
+                                                <source src={VideSlide1} type="video/ogg" />
+                                            </video>
                                         </SwiperSlide>
                                         <SwiperSlide>
                                             <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details02.jpg" alt="" />
