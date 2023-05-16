@@ -932,7 +932,7 @@ body.active {
 #login .login-content {
   max-width: 540px;
   width: 100%;
-  padding: 60px 45px;
+  padding: 40px 45px;
   margin: 0 auto;
   background-color: rgba(68, 90, 153, 0.051);
   box-shadow: 0px 0px 29.4px 0.6px rgba(0, 0, 0, 0.5);
@@ -1589,7 +1589,7 @@ body.active {
   }
   #login .login-content {
     width: 90%;
-    padding: 40px 12px;
+    padding: 20px;
   }
   #login .login-content form .form-bottom span::after {
     width: 120px;
@@ -1612,5 +1612,13 @@ body.active {
   }
   #login .login-content form .form-register p.reset a {
     margin: 0;
+  }
+}
+@media only screen and (max-width: 375px) {
+  #login .login-content {
+    width: 90%;
+    padding: 20px 12px;
+    max-height: 630px;
+    overflow: auto;
   }
 }/*# sourceMappingURL=App.css.map */
