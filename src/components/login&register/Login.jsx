@@ -26,7 +26,7 @@ const Login = () => {
                             <label htmlFor='check'>Yadda saxla</label>
                         </div>
                         <div>
-                            <Link>
+                            <Link to='/Reset'>
                                 Parolu unutdum
                             </Link>
                         </div>

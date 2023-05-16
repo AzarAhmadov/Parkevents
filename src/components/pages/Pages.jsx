@@ -7,6 +7,7 @@ import Detail from '../detail/Detail';
 import SearchCategory from '../searchCategory/SearchCategory';
 import Login from '../login&register/Login';
 import Register from '../login&register/Register';
+import Reset from '../login&register/Reset';
 
 export const Pages = () => {
     return (
@@ -36,6 +37,7 @@ export const Pages = () => {
                     } />
                     <Route path='/Login' element={<Login />} />
                     <Route path='/Register' element={<Register />} />
+                    <Route path='/Reset' element={<Reset />} />
                 </Routes>
 
             </BrowserRouter>
