@@ -32,7 +32,7 @@ const Login = () => {
                         </div>
                     </div>
                     <div className="login-btn">
-                        <Link> Giriş </Link>
+                        <Link to='/'> Giriş </Link>
                     </div>
 
                     <div className="form-register">

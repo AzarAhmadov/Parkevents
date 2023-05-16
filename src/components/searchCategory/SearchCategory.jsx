@@ -22,6 +22,7 @@ const SearchCategory = () => {
     const handleShowMore = () => {
         setItemsToShow(itemsToShow + 5);
     };
+    
 
     return (
         <section id='category'>

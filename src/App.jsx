@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { SlArrowUp } from 'react-icons/sl';
 import { Pages } from './components/pages/Pages'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BounceLoader from "react-spinners/BounceLoader";
 
 const App = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
@@ -25,9 +26,32 @@ const App = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500)
+  }, [])
+
   return (
     <>
-      <Pages />
+
+      {
+        loading ?
+          
+          <div className="animate">
+            <BounceLoader
+            loading={loading}
+            size={50}
+            color={'#31d7a9'}
+          />
+          </div>
+          :
+          <Pages />
+      }
       <button className={`${showScrollButton ? 'scroll-button active' : 'scroll-button'}`} onClick={scrollToTop}>
         <SlArrowUp />
       </button>

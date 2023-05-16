@@ -16,7 +16,7 @@ const Reset = () => {
                         <Link> Parlu sıfırla </Link>
                     </div>
                     <div className="form-register">
-                        <p>
+                        <p className='reset'>
                             <IoIosArrowBack size={22} color='#fff' />
                             <Link to='/Login'>Geri</Link>
                         </p>
