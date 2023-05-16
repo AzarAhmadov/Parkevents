@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import noUiSlider from 'nouislider';
+import 'nouislider/dist/nouislider.css';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -34,12 +36,47 @@ const SearchBottom = ({ searchClass }) => {
         navigate('/SearchCaregory/Bütün-tədbirlər');
     };
 
+    const sliderRef = useRef(null);
+    const valuesRef = useRef(null);
+
+    useEffect(() => {
+        const slider = sliderRef.current;
+        const values = valuesRef.current;
+
+        noUiSlider.create(slider, {
+            start: [1, 450],
+            behaviour: 'smooth-steps',
+            step: 15,
+            connect: true,
+            range: {
+                'min': 1,
+                'max': 450
+            },
+            format: {
+                to(value) {
+                    return `₼ ${parseInt(value)}`;
+                },
+                from(value) {
+                    return value.replace('₼', '');
+                }
+            }
+        });
+
+        slider.noUiSlider.on('update', function (values) {
+            valuesRef.current.textContent = `${values[0]} - ${values[1]}`;
+        });
+
+        return () => {
+            slider.noUiSlider.destroy();
+        };
+    }, []);
+
 
     return (
         <div className={`search-bottom ${searchClass}`}>
             <Form onSubmit={handleSubmit}>
                 <Row>
-                    <Col className='search-col search' xl={4}>
+                    <Col className='search-col search' xl={3}>
                         <Form.Control type='text' placeholder='Axtar' />
                         <BiSearchAlt className='search-icon' size={30} color='#fff' />
                     </Col>
@@ -61,10 +98,12 @@ const SearchBottom = ({ searchClass }) => {
                             className='drop'
                             placeholder="Tarix" />
                     </Col>
-                    <Col className='d-flex align-items-center' xl={2}>
-                        <button type='submit' className='form-btn'>
-                            Axtar
-                        </button>
+                    <Col xl={3}>
+                        <div className="price">
+                            <span> Qiymət aralığı </span>
+                            <p ref={valuesRef}></p>
+                            <div ref={sliderRef}></div>
+                        </div>
                     </Col>
                 </Row>
             </Form>

@@ -44,6 +44,8 @@ const Header = () => {
         document.body.classList.remove('active')
     }
 
+    document.body.classList.remove('active')
+
     const mobilRef = useRef()
 
     return (

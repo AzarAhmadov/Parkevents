@@ -242,12 +242,11 @@ body {
 .header-scrool {
   background: $color-3;
   position: sticky;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
   z-index: 100;
-  transition: 500ms ease-in-out;
-  padding: 20px 0 !important;
+  transition: 500ms all;
 }
 
 #hero {
@@ -433,6 +432,55 @@ body {
     width: 100%;
     color: $color-1;
   }
+
+  .price {
+    padding-right: 15px;
+
+    span{
+      color: $color-1;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    p {
+      color: $color-1;
+      text-align: center;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .noUi-horizontal {
+      height: 7px;
+      border: none;
+      margin-top: 2px;
+
+      .noUi-handle {
+        background: $color-5;
+        border: 1px solid $color-3;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &::before {
+          height: 0;
+        }
+
+        &::after {
+          height: 0;
+        }
+      }
+    }
+  }
+}
+
+.noUi-base {
+  background: Gainsboro;
+  border-radius: 10px;
 }
 
 #category {
@@ -1002,7 +1050,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
-  padding: 20px;
+  padding: 20px 0px;
 
   &::after {
     width: 100%;
@@ -1018,13 +1066,17 @@ body {
   }
 
   .login-content {
-    width: 540px;
+    max-width: 540px;
+    width: 100%;
     padding: 60px 45px;
     margin: 0 auto;
     background-color: rgba(68, 90, 153, 0.051);
     box-shadow: 0px 0px 29.4px 0.6px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
-    position: relative;
 
     h4 {
       color: $color-1;
@@ -1378,6 +1430,18 @@ body {
       }
     }
   }
+}
+
+@media only screen and (max-width:1200px) {
+.search-bottom{
+  .price{
+    span{
+      border-top: 1px solid rgba(255, 255, 255, 0.119);
+      padding-top: 10px;
+      margin-top: 5px;
+    }
+  }
+}
 }
 
 @media only screen and (max-width:992px) {
@@ -1847,8 +1911,9 @@ body {
   }
 
   #login {
+
     .login-content {
-      width: 100%;
+      width: 90%;
       padding: 40px 12px;
 
       form {

@@ -199,12 +199,11 @@ body.active {
 .header-scrool {
   background: #0a1e5e;
   position: sticky;
-  top: 0;
+  top: 0px;
   left: 0;
   width: 100%;
   z-index: 100;
-  transition: 500ms ease-in-out;
-  padding: 20px 0 !important;
+  transition: 500ms all;
 }
 
 #hero {
@@ -370,6 +369,48 @@ body.active {
   border-radius: 10px;
   width: 100%;
   color: #fff;
+}
+.search-bottom .price {
+  padding-right: 15px;
+}
+.search-bottom .price span {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.search-bottom .price p {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-bottom .price .noUi-horizontal {
+  height: 7px;
+  border: none;
+  margin-top: 2px;
+}
+.search-bottom .price .noUi-horizontal .noUi-handle {
+  background: #31d7a9;
+  border: 1px solid #0a1e5e;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.search-bottom .price .noUi-horizontal .noUi-handle::before {
+  height: 0;
+}
+.search-bottom .price .noUi-horizontal .noUi-handle::after {
+  height: 0;
+}
+
+.noUi-base {
+  background: Gainsboro;
+  border-radius: 10px;
 }
 
 #category {
@@ -856,7 +897,7 @@ body.active {
   height: 100vh;
   display: grid;
   place-items: center;
-  padding: 20px;
+  padding: 20px 0px;
 }
 #login::after {
   width: 100%;
@@ -871,13 +912,17 @@ body.active {
   z-index: 1;
 }
 #login .login-content {
-  width: 540px;
+  max-width: 540px;
+  width: 100%;
   padding: 60px 45px;
   margin: 0 auto;
   background-color: rgba(68, 90, 153, 0.051);
   box-shadow: 0px 0px 29.4px 0.6px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 10;
-  position: relative;
 }
 #login .login-content h4 {
   color: #fff;
@@ -1170,6 +1215,13 @@ body.active {
   }
   #header .container nav ul li {
     margin-left: 20px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .search-bottom .price span {
+    border-top: 1px solid rgba(255, 255, 255, 0.119);
+    padding-top: 10px;
+    margin-top: 5px;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -1479,7 +1531,7 @@ body.active {
     height: 40px;
   }
   #login .login-content {
-    width: 100%;
+    width: 90%;
     padding: 40px 12px;
   }
   #login .login-content form .form-bottom span::after {
