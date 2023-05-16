@@ -1,7 +1,7 @@
 import React from 'react'
 import Hero from './Hero'
 import Search from './Search'
-import MovieList from './movieList'
+import MovieList from './MovieList'
 
 const Home = () => {
     return (
