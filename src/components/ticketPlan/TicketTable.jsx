@@ -30,7 +30,7 @@ const TicketTable = () => {
                                         <span className='bottom-title'>{el.price}</span>
                                     </div>
                                     <div>
-                                        <button onClick={() => setActive(!active)}> Bilet əldə edin </button>
+                                        <button className='hover' onClick={() => setActive(!active)}> Bilet əldə edin </button>
                                     </div>
                                 </div>
                             ))}
@@ -46,7 +46,7 @@ const TicketTable = () => {
                 <div className='plans-content'>
                     <p> Oturacaq seçin </p>
                     <img src='https://pixner.net/boleto/demo/assets/images/movie/seat-plan.png' alt='' />
-                    <Link>
+                    <Link className='hover'>
                         Oturacaq planı <MdOutlineKeyboardArrowRight size={30} />
                     </Link>
                     <div onClick={() => setActive(!active)} className='close'>

@@ -15,17 +15,17 @@ const Login = () => {
                     </label>
                     <input type="text" id='email' placeholder='Email daxil edin' />
 
-                    <label className='mt-2' htmlFor="password">
+                    <label className='mt-2' htmlFor="passwordRegister">
                         Parol<span>*</span>
                     </label>
-                    <input type="password" id='password' placeholder='Parol daxil edin' />
+                    <input autoComplete="on" type="password" id='passwordRegister' placeholder='Parol daxil edin' />
 
-                    <label className='mt-2' htmlFor="password">
+                    <label className='mt-2' htmlFor="passwordRepeat">
                         Parol doğrulayın<span>*</span>
                     </label>
-                    <input type="password" id='password' placeholder='Parol daxil edin' />
+                    <input autoComplete="on" type="password" id='passwordRepeat' placeholder='Parol daxil edin' />
                     <div className="login-btn">
-                        <Link> Qeydiyyat </Link>
+                        <Link className='hover'> Qeydiyyat </Link>
                     </div>
 
                     <div className="form-register">

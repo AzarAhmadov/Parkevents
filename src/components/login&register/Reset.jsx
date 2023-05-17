@@ -13,7 +13,7 @@ const Reset = () => {
                     </label>
                     <input type="text" id='email' placeholder='Email daxil edin' />
                     <div className="login-btn">
-                        <Link> Parlu sıfırla </Link>
+                        <Link className='hover'> Parlu sıfırla </Link>
                     </div>
                     <div className="form-register">
                         <p className='reset'>

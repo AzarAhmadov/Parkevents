@@ -121,11 +121,22 @@ body {
   z-index: 1000;
 }
 
+.hover {
+  transition: 400ms all;
+
+  &:hover {
+    box-shadow: rgba(221, 17, 184, 0.761) 0px 0px 16px;
+    transform: scale(1.1);
+  }
+}
+
 #header {
-  padding: 22px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.119);
   position: sticky;
   z-index: 1000;
+  height: 90px;
+  display: flex;
+  align-items: center;
 
   nav {
     ul {
@@ -136,6 +147,10 @@ body {
       li {
         margin-left: 30px;
         position: relative;
+
+        &.active {
+          background: red;
+        }
 
         &:hover {
           ul {
@@ -221,13 +236,23 @@ body {
           color: $color-1;
           font-size: 20px;
           position: relative;
+
+          &.active {
+            position: relative;
+          }
         }
 
         &.menu-item {
           a {
+            padding: 30px 0;
+
+            &.active {
+              border-bottom: 2px solid $color-5;
+            }
+
             &::after {
               position: absolute;
-              bottom: -34.3px;
+              bottom: -2px;
               left: 0;
               content: "";
               background: $color-5;
@@ -535,11 +560,7 @@ body {
   .category-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-
-    div {
-      border-radius: 5px;
-    }
+    gap: 35px;
   }
 
   .title {
@@ -718,13 +739,13 @@ body {
     top: -100px;
     left: 0;
     width: 100%;
-    height: 420px;
+    height: 500px;
     z-index: 1;
 
     .banner-video {
       width: 100%;
       object-fit: cover;
-      height: 420px;
+      height: 495px;
     }
 
     &::after {
@@ -745,7 +766,7 @@ body {
   }
 
   .detail-bottom {
-    padding-top: 140px;
+    padding-top: 180px;
     position: relative;
     z-index: 10;
 
@@ -1101,7 +1122,7 @@ body {
   .login-content {
     max-width: 540px;
     width: 100%;
-    padding: 40px 45px;
+    padding: 30px 45px;
     margin: 0 auto;
     background-color: rgba(68, 90, 153, 0.051);
     box-shadow: 0px 0px 29.4px 0.6px rgba(0, 0, 0, 0.5);
@@ -1241,7 +1262,7 @@ body {
               fill: $color-1;
 
               &:hover {
-                background: $gradient;
+                background: $color-5;
               }
             }
           }
@@ -1289,7 +1310,7 @@ body {
   height: 100%;
   background: $color-3;
   z-index: 1000;
-  transition: 400ms all;
+  transition: 600ms ease;
 
   &.active {
     left: 0px;
@@ -1318,8 +1339,25 @@ body {
       }
 
       a {
-        font-size: 19px;
+        font-size: 20px;
         color: $color-1;
+
+        &.active {
+          color: $color-5;
+          position: relative;
+          padding-left: 30px;
+          transition: 400ms all;
+
+          &::after {
+            width: 20px;
+            height: 2px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            content: "";
+            background: $color-5;
+          }
+        }
       }
     }
   }
@@ -1567,11 +1605,12 @@ body {
 }
 
 #footer {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 30px;
   position: relative;
   position: relative;
   z-index: 1;
+  margin-top: -20px;
 
   &::after {
     background: url(http://pixner.net/boleto/demo/assets/images/footer/footer-shape.png);
@@ -2005,6 +2044,11 @@ body {
   }
 
   #footer {
+    margin-top: 30px;
+    padding-top: 60px;
+    &::after{
+      background-position: center;
+    }
     .container {
       padding: 0 30px;
 
@@ -2049,7 +2093,7 @@ body {
 
   #hero {
     .hero-img {
-      height: 350px;
+      height: 250px;
 
       .movieName {
         font-size: 18px;
@@ -2102,6 +2146,7 @@ body {
 
   #detail {
     padding-bottom: 0;
+
     .detail-bottom {
       margin-bottom: 150px;
 

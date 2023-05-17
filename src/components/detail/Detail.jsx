@@ -89,7 +89,7 @@ const Detail = () => {
                                     <img src={movie.movieImg} alt="" />
                                 </div>
                             </Col>
-                            <Col ld={9}>
+                            <Col lg={9}>
                                 <div className="detail-txt">
                                     <p className='movie-title'>{movie.movieName}</p>
                                     <span className="category">
@@ -107,7 +107,7 @@ const Detail = () => {
                                     </div>
                                     <div className="ticket">
                                         <div className='d-flex'>
-                                            <Link to='/ticket-plan' className='buy'>
+                                            <Link to='/ticket-plan' className='buy hover'>
                                                 Bilet əldə edin
                                             </Link>
 
@@ -243,7 +243,7 @@ const Detail = () => {
                     </Row>
                     <div className='mt-5'>
                         <MoviesTop title='Digər tədbirlər' link='/SearchCaregory/Bütün-tədbirlər' />
-                        <MovieListSingle movies={movieList.Movies} slidesPerView='3' />
+                        <MovieListSingle movies={movieList.Movies} slidesPerView='4' />
                     </div>
                 </Container>
             </section>

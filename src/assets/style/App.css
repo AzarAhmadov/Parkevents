@@ -103,11 +103,21 @@ body.active {
   z-index: 1000;
 }
 
+.hover {
+  transition: 400ms all;
+}
+.hover:hover {
+  box-shadow: rgba(221, 17, 184, 0.761) 0px 0px 16px;
+  transform: scale(1.1);
+}
+
 #header {
-  padding: 22px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.119);
   position: sticky;
   z-index: 1000;
+  height: 90px;
+  display: flex;
+  align-items: center;
 }
 #header nav ul {
   display: flex;
@@ -117,6 +127,9 @@ body.active {
 #header nav ul li {
   margin-left: 30px;
   position: relative;
+}
+#header nav ul li.active {
+  background: red;
 }
 #header nav ul li:hover ul {
   visibility: visible;
@@ -190,9 +203,18 @@ body.active {
   font-size: 20px;
   position: relative;
 }
+#header nav ul li a.active {
+  position: relative;
+}
+#header nav ul li.menu-item a {
+  padding: 30px 0;
+}
+#header nav ul li.menu-item a.active {
+  border-bottom: 2px solid #31d7a9;
+}
 #header nav ul li.menu-item a::after {
   position: absolute;
-  bottom: -34.3px;
+  bottom: -2px;
   left: 0;
   content: "";
   background: #31d7a9;
@@ -460,10 +482,7 @@ body.active {
 #category .category-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-}
-#category .category-grid div {
-  border-radius: 5px;
+  gap: 35px;
 }
 #category .title {
   font-size: 35px;
@@ -621,14 +640,14 @@ body.active {
   top: -100px;
   left: 0;
   width: 100%;
-  height: 420px;
+  height: 500px;
   z-index: 1;
 }
 #detail .detail-banner .banner-video {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  height: 420px;
+  height: 495px;
 }
 #detail .detail-banner::after {
   width: 100%;
@@ -646,7 +665,7 @@ body.active {
      object-fit: cover;
 }
 #detail .detail-bottom {
-  padding-top: 140px;
+  padding-top: 180px;
   position: relative;
   z-index: 10;
 }
@@ -948,7 +967,7 @@ body.active {
 #login .login-content {
   max-width: 540px;
   width: 100%;
-  padding: 40px 45px;
+  padding: 30px 45px;
   margin: 0 auto;
   background-color: rgba(68, 90, 153, 0.051);
   box-shadow: 0px 0px 29.4px 0.6px rgba(0, 0, 0, 0.5);
@@ -1075,7 +1094,7 @@ body.active {
   fill: #fff;
 }
 #login .login-content form .form-bottom .sosial li svg:hover {
-  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+  background: #31d7a9;
 }
 #login .login-content form .form-bottom span {
   color: #fff;
@@ -1113,7 +1132,7 @@ body.active {
   height: 100%;
   background: #0a1e5e;
   z-index: 1000;
-  transition: 400ms all;
+  transition: 600ms ease;
 }
 .mobil-menu.active {
   left: 0px;
@@ -1138,8 +1157,23 @@ body.active {
   border-bottom: none;
 }
 .mobil-menu ul li a {
-  font-size: 19px;
+  font-size: 20px;
   color: #fff;
+}
+.mobil-menu ul li a.active {
+  color: #31d7a9;
+  position: relative;
+  padding-left: 30px;
+  transition: 400ms all;
+}
+.mobil-menu ul li a.active::after {
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  content: "";
+  background: #31d7a9;
 }
 .mobil-menu .login {
   position: absolute;
@@ -1350,11 +1384,12 @@ body.active {
 }
 
 #footer {
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 30px;
   position: relative;
   position: relative;
   z-index: 1;
+  margin-top: -20px;
 }
 #footer::after {
   background: url(http://pixner.net/boleto/demo/assets/images/footer/footer-shape.png);
@@ -1642,6 +1677,13 @@ body.active {
     font-size: 12px;
     padding: 7px;
   }
+  #footer {
+    margin-top: 30px;
+    padding-top: 60px;
+  }
+  #footer::after {
+    background-position: center;
+  }
   #footer .container {
     padding: 0 30px;
   }
@@ -1669,7 +1711,7 @@ body.active {
     font-size: 19px;
   }
   #hero .hero-img {
-    height: 350px;
+    height: 250px;
   }
   #hero .hero-img .movieName {
     font-size: 18px;

@@ -67,6 +67,14 @@ export const movieList = {
             price: '20 ₼-dan',
             date: <div>21<br />Sen</div>,
             banner: "https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg"
+        },
+        {
+            id: 30,
+            movieImg: "https://pixner.net/boleto/demo/assets/images/movie/movie03.jpg",
+            movieName: "Venus",
+            price: '20 ₼-dan',
+            date: <div>21<br />Sen</div>,
+            banner: "https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg"
         }
     ],
 

@@ -15,10 +15,11 @@ const Login = () => {
                     </label>
                     <input type="text" id='email' placeholder='Email daxil edin' />
 
-                    <label className='mt-2' htmlFor="password">
+                    <label className='mt-2' htmlFor="passwordLogin">
                         Parol<span>*</span>
                     </label>
-                    <input type="password" id='password' placeholder='Parol daxil edin' />
+
+                    <input type="password" id='passwordLogin' autoComplete="on" placeholder='Parol daxil edin' />
 
                     <div className="check">
                         <div>
@@ -32,7 +33,7 @@ const Login = () => {
                         </div>
                     </div>
                     <div className="login-btn">
-                        <Link to='/'> Giriş </Link>
+                        <Link className='hover' to='/'> Giriş </Link>
                     </div>
 
                     <div className="form-register">

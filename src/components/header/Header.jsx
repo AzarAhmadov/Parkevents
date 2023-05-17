@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from 'react'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FaRegUserCircle } from 'react-icons/fa';
 import { RiMenu4Fill } from 'react-icons/ri';
 import { BiUserPlus } from 'react-icons/bi';
@@ -29,7 +29,7 @@ const Header = () => {
     };
 
     const navigate = useNavigate();
-
+    
     const handleLinkName = (categoryName) => {
         navigate(`/SearchCaregory/${categoryName}`);
     };
@@ -50,7 +50,7 @@ const Header = () => {
 
     return (
         <>
-        
+
             <header className={active ? 'header-scrool' : ''} id='header'>
                 <Container>
                     <Row className='d-flex align-items-center'>
@@ -63,68 +63,66 @@ const Header = () => {
                             <nav>
                                 <ul>
                                     <li onClick={() => handleLinkName('Bütün-tədbirlər')} className='menu-item'>
-                                        <Link>
+                                        <NavLink to='/SearchCaregory/Bütün-tədbirlər'>
                                             Bütün tədbirlər
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Konsert')} className='menu-item'>
-                                        <Link to='/SearchCaregory'>
+                                        <NavLink to='/SearchCaregory/Konsert'>
                                             Konsert
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Futbol')} className='menu-item'>
-                                        <Link to='/SearchCaregory'>
+                                        <NavLink to='/SearchCaregory/Futbol'>
                                             Futbol
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Teatr')} className='menu-item'>
-                                        <Link to='/SearchCaregory'>
+                                        <NavLink to='/SearchCaregory/Teatr'>
                                             Teatr
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Muzeylər')} className='menu-item'>
-                                        <Link to='/SearchCaregory'>
+                                        <NavLink to='/SearchCaregory/Muzeylər'>
                                             Muzeylər
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Tədbirlər')} className='menu-item'>
-                                        <Link to='/SearchCaregory'>
+                                        <NavLink to='/SearchCaregory/Tədbirlər'>
                                             Tədbirlər
-                                        </Link>
+                                        </NavLink>
                                     </li>
                                     <li>
                                         <Link>
                                             Digər
                                         </Link>
-
                                         <ul>
                                             <li onClick={() => handleLinkName('Əlave link')}>
-                                                <Link to='/SearchCaregory'>
+                                                <Link>
                                                     Əlave link
                                                 </Link>
                                             </li>
                                             <li onClick={() => handleLinkName('Əlave link')}>
-                                                <Link to='/SearchCaregory'>
+                                                <Link>
                                                     Əlave link
                                                 </Link>
                                             </li>
                                             <li onClick={() => handleLinkName('Əlave link')}>
-                                                <Link to='/SearchCaregory'>
+                                                <Link>
                                                     Əlave link
                                                 </Link>
                                             </li>
                                             <li onClick={() => handleLinkName('Əlave link')}>
-                                                <Link to='/SearchCaregory'>
+                                                <Link>
                                                     Əlave link
                                                 </Link>
                                             </li>
-
                                             <div className="arrow"></div>
                                         </ul>
                                     </li>
-                                    <li className='user'>
+                                    <li className='user hover'>
                                         <Link to='/Login'>
-                                            <FaRegUserCircle />
+                                            <FaRegUserCircle  />
                                         </Link>
                                     </li>
                                 </ul>
@@ -139,33 +137,33 @@ const Header = () => {
 
             <section ref={mobilRef} className='mobil-menu'>
                 <ul className='navigation'>
-                    <li className='nav-item'>
-                        <Link onClick={close} to='/SearchCaregory/Bütün-tədbirlər'> Bütün tədbirlər </Link>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Bütün-tədbirlər' >Bütün tədbirlər</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link onClick={close} to='/SearchCaregory/Konsert'> Konsert </Link>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Konsert' >Konsert</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link onClick={close} to='/SearchCaregory/Futbol'> Futbol </Link>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Futbol'>Futbol</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link onClick={close} to='/SearchCaregory/Teatr'> Teatr </Link>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link onClick={close} to='/SearchCaregory/Muzeylər'> Muzeylər </Link>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
                     </li>
-                    <li className='nav-item'>
-                        <Link onClick={close} to='/SearchCaregory/Tədbirlər'> Tədbirlər </Link>
-                    </li>    
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
+                    </li>
                 </ul>
 
                 <div className="login">
                     <ul>
                         <li>
-                            <Link to='/Login'> <FaRegUserCircle /> Giriş </Link>
+                            <Link to='/Login'><FaRegUserCircle /> Giriş</Link>
                         </li>
                         <li>
-                            <Link to='/Register'> <BiUserPlus /> Qeydiyyat </Link>
+                            <Link to='/Register'><BiUserPlus /> Qeydiyyat</Link>
                         </li>
                     </ul>
                 </div>
@@ -174,7 +172,6 @@ const Header = () => {
                     <IoMdClose />
                 </div>
             </section>
-
         </>
     )
 }
