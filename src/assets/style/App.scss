@@ -1423,6 +1423,18 @@ body {
     width: 100%;
     position: absolute;
     top: 0;
+    z-index: 1;
+
+    &::after {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      background-image: linear-gradient(to left, rgba(0, 0, 0, 0.454), rgba(16, 53, 201, 0.26));
+      z-index: 1;
+    }
 
     img {
       height: 100%;
@@ -1435,6 +1447,7 @@ body {
       top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
+      z-index: 10;
 
       p {
         color: $color-1;
@@ -1563,12 +1576,21 @@ body {
     background-color: #01173f;
     border-bottom: 1px solid #11326f;
 
+    &:last-child {
+      border-bottom: none;
+    }
+
     div {
       border-right: 1px solid #11326f;
       padding: 20px;
       width: 100%;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+
+      &.full {
+        flex-basis: 70%;
+      }
 
       button {
         width: 100%;
@@ -1580,15 +1602,13 @@ body {
         font-weight: 500;
       }
 
-      justify-content: center;
-
       &:last-child {
         border-right: none;
       }
 
       .ticket-place-name {
         color: $color-1;
-        font-size: 20px;
+        font-size: 18px;
       }
 
       .bottom-title {
@@ -1723,6 +1743,25 @@ body {
     .container {
       .search-content {
         padding: 30px 20px;
+      }
+    }
+  }
+
+  #ticket-table {
+    .container {
+      padding: 0 20px;
+      max-width: 100%;
+
+      .ticket-place {
+        div {
+          &.full {
+            flex-basis: 50%;
+
+            &:nth-child(4) {
+              white-space: nowrap;
+            }
+          }
+        }
       }
     }
   }
@@ -2046,9 +2085,11 @@ body {
   #footer {
     margin-top: 30px;
     padding-top: 60px;
-    &::after{
+
+    &::after {
       background-position: center;
     }
+
     .container {
       padding: 0 30px;
 

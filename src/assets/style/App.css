@@ -1228,6 +1228,17 @@ body.active {
   width: 100%;
   position: absolute;
   top: 0;
+  z-index: 1;
+}
+#plan .plan-banner::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.454), rgba(16, 53, 201, 0.26));
+  z-index: 1;
 }
 #plan .plan-banner img {
   height: 100%;
@@ -1240,6 +1251,7 @@ body.active {
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 #plan .plan-banner .ticket-name p {
   color: #fff;
@@ -1350,6 +1362,9 @@ body.active {
   background-color: #01173f;
   border-bottom: 1px solid #11326f;
 }
+#ticket-table .ticket-place:last-child {
+  border-bottom: none;
+}
 #ticket-table .ticket-place div {
   border-right: 1px solid #11326f;
   padding: 20px;
@@ -1357,6 +1372,9 @@ body.active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#ticket-table .ticket-place div.full {
+  flex-basis: 70%;
 }
 #ticket-table .ticket-place div button {
   width: 100%;
@@ -1372,7 +1390,7 @@ body.active {
 }
 #ticket-table .ticket-place div .ticket-place-name {
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
 }
 #ticket-table .ticket-place div .bottom-title {
   font-size: 18px;
@@ -1471,6 +1489,16 @@ body.active {
   }
   #search .container .search-content {
     padding: 30px 20px;
+  }
+  #ticket-table .container {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+  #ticket-table .container .ticket-place div.full {
+    flex-basis: 50%;
+  }
+  #ticket-table .container .ticket-place div.full:nth-child(4) {
+    white-space: nowrap;
   }
 }
 @media only screen and (max-width: 992px) {

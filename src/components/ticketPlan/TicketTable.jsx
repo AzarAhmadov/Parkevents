@@ -21,15 +21,15 @@ const TicketTable = () => {
                                     <div>
                                         <p className='ticket-place-name'>{el.title}</p>
                                     </div>
-                                    <div>
+                                    <div className='full'>
                                         <span className='title'>{el.seans}</span>
                                         <p className='bottom-title'>{el.date}</p>
                                     </div>
-                                    <div>
+                                    <div className='full'>
                                         <p className='title'>{el.priceTitle}</p>
                                         <span className='bottom-title'>{el.price}</span>
                                     </div>
-                                    <div>
+                                    <div className='full'>
                                         <button className='hover' onClick={() => setActive(!active)}> Bilet əldə edin </button>
                                     </div>
                                 </div>

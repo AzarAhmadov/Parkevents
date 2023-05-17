@@ -20,7 +20,7 @@ const SearchCategory = () => {
     const [itemsToShow, setItemsToShow] = useState(8);
 
     const handleShowMore = () => {
-        setItemsToShow(itemsToShow + 5);
+        setItemsToShow(itemsToShow + 8);
     };
 
     return (

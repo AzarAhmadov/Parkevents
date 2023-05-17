@@ -171,28 +171,28 @@ export const popularSearch = [
 
 export const ticketPlaneTableCrud = [
     {
-        title:"Baku Crystal Hall",
+        title:"Heydər Əliyev Sarayı",
         seans:'Seanslar',
         date:"10:00",
         priceTitle:"Qiymət",
         price:"10 - 450₼"
     },
     {
-        title:"Şəki Xan Sarayı",
+        title:"Bakı Musiqi Akademiyası nəzdində Opera Studiyasının Konsert salonu",
         seans:'Seanslar',
         date:"5:00",
         priceTitle:"Qiymət",
         price:"10 - 350₼"
     },
     {
-        title:"Şəkixanovlar evi",
+        title:"28 Mall",
         seans:'Seanslar',
         date:"7:00",
         priceTitle:"Qiymət",
         price:"10 - 250₼"
     },
     {
-        title:"Şəkixanovlar evi",
+        title:"Hayal Kahvesi",
         seans:'Seanslar',
         date:"7:00",
         priceTitle:"Qiymət",
