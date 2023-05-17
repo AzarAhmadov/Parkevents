@@ -18,7 +18,7 @@ const MovieListSingle = ({ movies, slidesPerView }) => {
     return (
         <section className='movies-slider'>
             <Swiper
-                className='mySwiper'
+                className='movieSwiper'
                 slidesPerView={slidesPerView}
                 spaceBetween={30}
                 pagination={{

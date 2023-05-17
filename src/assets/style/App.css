@@ -263,6 +263,7 @@ body.active {
   font-size: 40px;
   background: #31d7a9;
   padding: 10px 20px;
+  border-top-left-radius: 5px;
 }
 #hero .hero-img img {
   border-radius: 15px;
@@ -511,7 +512,8 @@ body.active {
   font-size: 16px;
   margin-top: 7px;
 }
-#movie-list .movies-list-content .mySwiper {
+
+.movieSwiper {
   padding-bottom: 60px;
   margin-bottom: 20px;
 }
@@ -1307,6 +1309,7 @@ body.active {
   font-size: 18px;
   display: flex;
   align-items: center;
+  font-weight: 500;
 }
 #ticket-table .ticket-place {
   display: flex;
@@ -1328,6 +1331,7 @@ body.active {
   padding: 11px;
   text-align: center;
   border-radius: 50px;
+  font-weight: 500;
 }
 #ticket-table .ticket-place div:last-child {
   border-right: none;
@@ -1703,6 +1707,9 @@ body.active {
   }
   .search-category {
     padding: 28px 0;
+  }
+  #detail {
+    padding-bottom: 0;
   }
   #detail .detail-bottom {
     margin-bottom: 150px;

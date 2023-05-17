@@ -312,6 +312,7 @@ body {
       font-size: 40px;
       background: $color-5;
       padding: 10px 20px;
+      border-top-left-radius: 5px;
     }
 
     img {
@@ -595,13 +596,11 @@ body {
       }
     }
   }
+}
 
-  .movies-list-content {
-    .mySwiper {
-      padding-bottom: 60px;
-      margin-bottom: 20px;
-    }
-  }
+.movieSwiper {
+  padding-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .movies-top {
@@ -1516,6 +1515,7 @@ body {
         font-size: 18px;
         display: flex;
         align-items: center;
+        font-weight: 500;
       }
     }
   }
@@ -1539,6 +1539,7 @@ body {
         padding: 11px;
         text-align: center;
         border-radius: 50px;
+        font-weight: 500;
       }
 
       justify-content: center;
@@ -1920,6 +1921,7 @@ body {
 @media only screen and (max-width:578px) {
 
   #header {
+
     .col-2,
     .col-10 {
       padding: 0;
@@ -2099,6 +2101,7 @@ body {
   }
 
   #detail {
+    padding-bottom: 0;
     .detail-bottom {
       margin-bottom: 150px;
 
