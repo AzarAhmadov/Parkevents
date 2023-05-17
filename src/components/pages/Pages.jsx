@@ -40,6 +40,7 @@ export const Pages = () => {
                         <>
                             <Header />
                             <TicketPlan />
+                            <Footer/>
                         </>
                     } />
                     <Route path='/Login' element={<Login />} />

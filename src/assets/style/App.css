@@ -24,6 +24,21 @@ a {
   text-decoration: none;
 }
 
+*::-webkit-scrollbar-track {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 3px;
+  background-color: #F5F5F5;
+}
+
 html,
 body {
   font-family: "Poppins", sans-serif;
@@ -1166,10 +1181,14 @@ body.active {
   width: 100% !important;
 }
 
+#plan {
+  height: 355px;
+}
 #plan .plan-banner {
-  height: 400px;
-  position: absolute;
+  height: 450px;
   width: 100%;
+  position: absolute;
+  top: 0;
 }
 #plan .plan-banner img {
   height: 100%;
@@ -1179,13 +1198,148 @@ body.active {
 }
 #plan .plan-banner .ticket-name {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 #plan .plan-banner .ticket-name p {
   color: #fff;
-  font-size: 50px;
+  font-size: 55px;
+  font-weight: 600;
+}
+
+#ticket-filter {
+  background: #0a1e5e;
+  width: 100%;
+  padding: 30px 0;
+}
+#ticket-filter .container {
+  padding: 0 20px;
+  max-width: 1050px;
+}
+#ticket-filter .container .filter-flex {
+  display: flex;
+  align-items: center;
+}
+#ticket-filter .container .filter-flex .f-icon {
+  color: #fff;
+  font-size: 40px;
+  margin-right: 10px;
+  border: 2px solid rgba(49, 215, 168, 0.137254902);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-shrink: 0;
+  padding: 7px;
+}
+#ticket-filter .container .filter-flex .drop {
+  border: 1px solid rgba(255, 255, 255, 0.119);
+  width: 100%;
+  border-radius: 50px;
+  padding-left: 5px;
+}
+#ticket-filter .container .filter-flex .drop span {
+  color: #fff;
+}
+
+#ticket-table {
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+#ticket-table .getPlans {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: rgba(10, 30, 94, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  transition: 400ms all;
+  z-index: 1000;
+  padding: 10px;
+}
+#ticket-table .getPlans.active {
+  opacity: 1;
+  visibility: visible;
+}
+#ticket-table .getPlans .plans-content {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  width: 100%;
+  height: 380px;
+  border-radius: 10px;
+  position: relative;
+  justify-content: center;
+}
+#ticket-table .getPlans .plans-content .close {
+  position: absolute;
+  top: -55px;
+  right: 0;
+  cursor: pointer;
+}
+#ticket-table .getPlans .plans-content .close svg {
+  font-size: 40px;
+  color: #fff;
+}
+#ticket-table .getPlans .plans-content p {
+  color: #31d7a9;
+  font-size: 35px;
+}
+#ticket-table .getPlans .plans-content img {
+  margin: 40px 0;
+}
+#ticket-table .getPlans .plans-content a {
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+  padding: 14px 20px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+#ticket-table .ticket-place {
+  display: flex;
+  background-color: #01173f;
+  border-bottom: 1px solid #11326f;
+}
+#ticket-table .ticket-place div {
+  border-right: 1px solid #11326f;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#ticket-table .ticket-place div button {
+  width: 100%;
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+  color: #fff;
+  padding: 11px;
+  text-align: center;
+  border-radius: 50px;
+}
+#ticket-table .ticket-place div:last-child {
+  border-right: none;
+}
+#ticket-table .ticket-place div .ticket-place-name {
+  color: #fff;
+  font-size: 20px;
+}
+#ticket-table .ticket-place div .bottom-title {
+  font-size: 18px;
+  color: #fff;
+}
+#ticket-table .ticket-place div .title {
+  color: rgba(255, 255, 255, 0.5568627451);
+  font-size: 22px;
 }
 
 #footer {
@@ -1353,10 +1507,37 @@ body.active {
     justify-content: flex-start;
     width: 100%;
   }
+  #ticket-filter {
+    margin-top: 9px;
+  }
+  #ticket-filter .container .row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #ticket-table {
+    margin-top: 20px;
+  }
+  .col-lg-9 {
+    margin-bottom: 40px;
+  }
+  .col-lg-9 .ticket-place {
+    flex-direction: column;
+    border: 1px solid #11326f;
+    margin-bottom: 10px;
+  }
+  .col-lg-9 .ticket-place:last-child {
+    margin-bottom: 0;
+  }
+  .col-lg-9 .ticket-place div {
+    border: none !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   .container {
     padding: 0px 15px;
+  }
+  #ticket-table {
+    padding-bottom: 60px;
   }
   #hero .hero-img {
     height: 400px;
@@ -1397,6 +1578,12 @@ body.active {
   #header .col-2,
   #header .col-10 {
     padding: 0;
+  }
+  #ticket-table {
+    padding-bottom: 0px;
+  }
+  #ticket-table .ticket-place div {
+    padding: 15px 10px;
   }
   .movies-top h4 {
     font-size: 26px;

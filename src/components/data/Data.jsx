@@ -1,4 +1,5 @@
 import videoSlide1 from '../../assets/video/video-slide.mp4'
+
 export const movieList = {
     MoviesHero: [
         {
@@ -157,6 +158,58 @@ export const popularSearch = [
     {
         title: "NBA Games 2020",
         category: "Sports"
+    },
+]
+
+export const ticketPlaneTableCrud = [
+    {
+        title:"Baku Crystal Hall",
+        seans:'Seanslar',
+        date:"10:00",
+        priceTitle:"Qiymət",
+        price:"10 - 450₼"
+    },
+    {
+        title:"Şəki Xan Sarayı",
+        seans:'Seanslar',
+        date:"5:00",
+        priceTitle:"Qiymət",
+        price:"10 - 350₼"
+    },
+    {
+        title:"Şəkixanovlar evi",
+        seans:'Seanslar',
+        date:"7:00",
+        priceTitle:"Qiymət",
+        price:"10 - 250₼"
+    },
+    {
+        title:"Şəkixanovlar evi",
+        seans:'Seanslar',
+        date:"7:00",
+        priceTitle:"Qiymət",
+        price:"10 - 250₼"
+    },
+    {
+        title:"Şəkixanovlar evi",
+        seans:'Seanslar',
+        date:"7:00",
+        priceTitle:"Qiymət",
+        price:"10 - 250₼"
+    },
+    {
+        title:"Şəkixanovlar evi",
+        seans:'Seanslar',
+        date:"7:00",
+        priceTitle:"Qiymət",
+        price:"10 - 250₼"
+    },
+    {
+        title:"Şəkixanovlar evi",
+        seans:'Seanslar',
+        date:"7:00",
+        priceTitle:"Qiymət",
+        price:"10 - 250₼"
     },
 ]
 

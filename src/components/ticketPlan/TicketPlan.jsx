@@ -1,14 +1,20 @@
 import React from 'react'
+import TicketFilter from './TicketFilter'
+import TicketTable from './TicketTable'
 
 export const TicketPlan = () => {
     return (
-        <section id='plan'>
-            <div className="plan-banner">
-                <img src="https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg" alt="" />
-                <div className="ticket-name">
-                    <p> Venus </p>
+        <main>
+            <section id='plan'>
+                <div className="plan-banner">
+                    <img src="https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg" alt="" />
+                    <div className="ticket-name">
+                        <p> Venus </p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <TicketFilter />
+            <TicketTable/>
+        </main>
     )
 }
