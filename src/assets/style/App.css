@@ -1550,7 +1550,7 @@ body.active {
     width: 100%;
   }
   #ticket-filter {
-    margin-top: 9px;
+    margin-top: 0px;
   }
   #ticket-filter .container .row {
     flex-direction: column;
@@ -1711,7 +1711,7 @@ body.active {
     font-size: 19px;
   }
   #hero .hero-img {
-    height: 250px;
+    height: 270px;
   }
   #hero .hero-img .movieName {
     font-size: 18px;
