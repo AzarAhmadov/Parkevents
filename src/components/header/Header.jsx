@@ -156,7 +156,7 @@ const Header = () => {
                     </li>
                     <li className='nav-item'>
                         <Link onClick={close} to='/SearchCaregory/Tədbirlər'> Tədbirlər </Link>
-                    </li>
+                    </li>    
                 </ul>
 
                 <div className="login">

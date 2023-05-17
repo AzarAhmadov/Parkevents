@@ -1114,13 +1114,13 @@ body.active {
   transition: 400ms all;
 }
 .mobil-menu.active {
-  left: 0;
+  left: 0px;
 }
 .mobil-menu ul {
   display: flex;
   flex-direction: column;
   padding: 30px 20px;
-  overflow: scroll;
+  overflow-y: auto;
 }
 .mobil-menu ul.navigation {
   height: 90vh;
@@ -1129,8 +1129,11 @@ body.active {
   padding-bottom: 20px;
 }
 .mobil-menu ul li.nav-item {
-  padding: 15px 0;
+  padding: 17px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+}
+.mobil-menu ul li.nav-item:last-child {
+  border-bottom: none;
 }
 .mobil-menu ul li a {
   font-size: 19px;
@@ -1147,7 +1150,7 @@ body.active {
 .mobil-menu .login ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 15px;
   place-items: center;
 }
 .mobil-menu .login ul li {
@@ -1227,11 +1230,11 @@ body.active {
   margin-right: 10px;
   border: 2px solid rgba(49, 215, 168, 0.137254902);
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   display: flex;
   flex-shrink: 0;
-  padding: 7px;
+  padding: 10px;
 }
 #ticket-filter .container .filter-flex .drop {
   border: 1px solid rgba(255, 255, 255, 0.119);
@@ -1261,7 +1264,7 @@ body.active {
   visibility: hidden;
   transition: 400ms all;
   z-index: 1000;
-  padding: 10px;
+  padding: 20px;
 }
 #ticket-table .getPlans.active {
   opacity: 1;
@@ -1517,19 +1520,24 @@ body.active {
   #ticket-table {
     margin-top: 20px;
   }
-  .col-lg-9 {
+  #ticket-table .col-lg-9 {
     margin-bottom: 40px;
   }
-  .col-lg-9 .ticket-place {
+  #ticket-table .col-lg-9 .ticket-place {
     flex-direction: column;
     border: 1px solid #11326f;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
-  .col-lg-9 .ticket-place:last-child {
+  #ticket-table .col-lg-9 .ticket-place:last-child {
     margin-bottom: 0;
   }
-  .col-lg-9 .ticket-place div {
-    border: none !important;
+  #ticket-table .col-lg-9 .ticket-place div {
+    border-bottom: 1px solid #11326f;
+    border-right: none;
+    padding: 20px;
+  }
+  #ticket-table .col-lg-9 .ticket-place div:last-child {
+    border-bottom: none;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -1578,12 +1586,6 @@ body.active {
   #header .col-2,
   #header .col-10 {
     padding: 0;
-  }
-  #ticket-table {
-    padding-bottom: 0px;
-  }
-  #ticket-table .ticket-place div {
-    padding: 15px 10px;
   }
   .movies-top h4 {
     font-size: 26px;

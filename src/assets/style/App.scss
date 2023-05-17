@@ -1293,14 +1293,14 @@ body {
   transition: 400ms all;
 
   &.active {
-    left: 0;
+    left: 0px;
   }
 
   ul {
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
-    overflow: scroll;
+    overflow-y: auto;
 
     &.navigation {
       height: 90vh;
@@ -1310,8 +1310,12 @@ body {
       padding-bottom: 20px;
 
       &.nav-item {
-        padding: 15px 0;
+        padding: 17px 0;
         border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+
+        &:last-child {
+          border-bottom: none;
+        }
       }
 
       a {
@@ -1323,7 +1327,7 @@ body {
 
   .login {
     position: absolute;
-    bottom: 00px;
+    bottom: 0px;
     width: 100%;
     overflow: hidden;
     border-top: 1px solid rgba(255, 255, 255, 0.119);
@@ -1332,7 +1336,7 @@ body {
     ul {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 15px;
       place-items: center;
 
       li {
@@ -1423,11 +1427,11 @@ body {
         margin-right: 10px;
         border: 2px solid #31d7a823;
         border-radius: 50%;
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         display: flex;
         flex-shrink: 0;
-        padding: 7px;
+        padding: 10px;
 
       }
 
@@ -1464,7 +1468,7 @@ body {
     visibility: hidden;
     transition: 400ms all;
     z-index: 1000;
-    padding: 10px;
+    padding: 20px;
 
     &.active {
       opacity: 1;
@@ -1820,25 +1824,32 @@ body {
 
   #ticket-table {
     margin-top: 20px;
-  }
 
-  .col-lg-9 {
-    margin-bottom: 40px;
+    .col-lg-9 {
+      margin-bottom: 40px;
 
-    .ticket-place {
-      flex-direction: column;
-      border: 1px solid #11326f;
-      margin-bottom: 10px;
+      .ticket-place {
+        flex-direction: column;
+        border: 1px solid #11326f;
+        margin-bottom: 20px;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+        &:last-child {
+          margin-bottom: 0;
+        }
 
-      div {
-        border: none !important;
+        div {
+          border-bottom: 1px solid #11326f;
+          border-right: none;
+          padding: 20px;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
       }
     }
   }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -1909,20 +1920,9 @@ body {
 @media only screen and (max-width:578px) {
 
   #header {
-
     .col-2,
     .col-10 {
       padding: 0;
-    }
-  }
-
-  #ticket-table {
-    padding-bottom: 0px;
-
-    .ticket-place {
-      div {
-        padding: 15px 10px;
-      }
     }
   }
 
