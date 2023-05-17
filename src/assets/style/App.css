@@ -763,11 +763,9 @@ body.active {
 #detail .dec-container {
   padding-top: 70px;
 }
-#detail .dec-container .advert {
-  gap: 20px !important;
-}
 #detail .dec-container .advert img {
-  height: 370px !important;
+  margin-bottom: 20px;
+  height: 290px;
 }
 #detail .dec-container .swiper-button-next {
   background: #31d7a9;
@@ -1365,7 +1363,7 @@ body.active {
   #movie-list .container .row .col-lg-3 .trend {
     padding: 45px 0;
   }
-  #movie-list .container .row .movies-list-content .movies-top h4 {
+  .movies-top h4 {
     font-size: 35px;
   }
   .advert {
@@ -1407,14 +1405,14 @@ body.active {
   #header .col-10 {
     padding: 0;
   }
-  #movie-list {
-    padding: 50px 0;
-  }
-  #movie-list .container .row .movies-list-content .movies-top h4 {
+  .movies-top h4 {
     font-size: 26px;
   }
-  #movie-list .container .row .movies-list-content .movies-top a {
+  .movies-top a {
     font-size: 17px;
+  }
+  #movie-list {
+    padding: 50px 0;
   }
   .advert {
     width: 100%;
@@ -1525,7 +1523,7 @@ body.active {
     padding: 28px 0;
   }
   #detail .detail-bottom {
-    margin-bottom: 170px;
+    margin-bottom: 150px;
   }
   #detail .detail-bottom .detail-txt {
     top: -20px;
@@ -1552,7 +1550,7 @@ body.active {
     padding: 0 15px;
   }
   #detail .container .dec-title {
-    font-size: 35px;
+    font-size: 30px;
   }
   #detail .container .advert {
     display: flex;
@@ -1563,7 +1561,8 @@ body.active {
   #detail .container .advert img {
     width: 100%;
     border-radius: 10px;
-    height: 330px;
+    margin-bottom: 20px;
+    height: 350px;
   }
   #detail .container .row .col-lg-3 {
     margin-top: 50px;

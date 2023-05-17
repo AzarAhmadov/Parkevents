@@ -889,10 +889,9 @@ body {
     padding-top: 70px;
 
     .advert {
-      gap: 20px !important;
-
       img {
-        height: 370px !important;
+        margin-bottom: 20px;
+        height: 290px;
       }
     }
 
@@ -1649,15 +1648,13 @@ body {
             padding: 45px 0;
           }
         }
-
-        .movies-list-content {
-          .movies-top {
-            h4 {
-              font-size: 35px;
-            }
-          }
-        }
       }
+    }
+  }
+
+  .movies-top {
+    h4 {
+      font-size: 35px;
     }
   }
 
@@ -1713,24 +1710,18 @@ body {
     }
   }
 
+  .movies-top {
+    h4 {
+      font-size: 26px;
+    }
+
+    a {
+      font-size: 17px;
+    }
+  }
+
   #movie-list {
     padding: 50px 0;
-
-    .container {
-      .row {
-        .movies-list-content {
-          .movies-top {
-            h4 {
-              font-size: 26px;
-            }
-
-            a {
-              font-size: 17px;
-            }
-          }
-        }
-      }
-    }
   }
 
   .advert {
@@ -1893,7 +1884,7 @@ body {
 
   #detail {
     .detail-bottom {
-      margin-bottom: 170px;
+      margin-bottom: 150px;
 
       .detail-txt {
         top: -20px;
@@ -1927,7 +1918,7 @@ body {
       padding: 0 15px;
 
       .dec-title {
-        font-size: 35px;
+        font-size: 30px;
       }
 
       .advert {
@@ -1938,7 +1929,8 @@ body {
         img {
           width: 100%;
           border-radius: 10px;
-          height: 330px;
+          margin-bottom: 20px;
+          height: 350px;
         }
       }
 
