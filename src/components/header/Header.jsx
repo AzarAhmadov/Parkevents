@@ -50,7 +50,6 @@ const Header = () => {
 
     return (
         <>
-
             <header className={active ? 'header-scrool' : ''} id='header'>
                 <Container>
                     <Row className='d-flex align-items-center'>
@@ -140,6 +139,38 @@ const Header = () => {
                     <li onClick={close} className='nav-item'>
                         <NavLink to='/SearchCaregory/Bütün-tədbirlər' >Bütün tədbirlər</NavLink>
                     </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Konsert' >Konsert</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Futbol'>Futbol</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
+                    </li>
+
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Konsert' >Konsert</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Futbol'>Futbol</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
+                    </li>
+
                     <li onClick={close} className='nav-item'>
                         <NavLink to='/SearchCaregory/Konsert' >Konsert</NavLink>
                     </li>

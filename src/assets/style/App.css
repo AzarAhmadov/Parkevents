@@ -1144,7 +1144,8 @@ body.active {
   overflow-y: auto;
 }
 .mobil-menu ul.navigation {
-  height: 90vh;
+  height: 100vh;
+  padding-bottom: 135px;
 }
 .mobil-menu ul li {
   padding-bottom: 20px;
@@ -1157,7 +1158,7 @@ body.active {
   border-bottom: none;
 }
 .mobil-menu ul li a {
-  font-size: 20px;
+  font-size: 21px;
   color: #fff;
 }
 .mobil-menu ul li a.active {
@@ -1201,10 +1202,11 @@ body.active {
   display: flex;
   align-items: center;
   font-size: 18px;
+  padding: 5px 0;
 }
 .mobil-menu .login ul li a svg {
-  margin-right: 5px;
-  font-size: 23px;
+  margin-right: 10px;
+  font-size: 25px;
 }
 .mobil-menu .close {
   position: absolute;
@@ -1399,6 +1401,11 @@ body.active {
 #ticket-table .ticket-place div .title {
   color: rgba(255, 255, 255, 0.5568627451);
   font-size: 22px;
+}
+#ticket-table ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 #footer {

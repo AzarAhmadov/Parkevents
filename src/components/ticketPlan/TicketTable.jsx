@@ -37,7 +37,14 @@ const TicketTable = () => {
                         </>
                     </Col>
                     <Col lg={3}>
-                        <Advert advert='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSlhasvP6lmp-kecvklmarlhWpOsVQOIY95g&usqp=CAU' />
+                        <ul className='advert-list'>
+                            <li>
+                                <Advert advert='https://cdn.dribbble.com/users/1708816/screenshots/15637256/media/f9826f0af8a49462f048262a8502035b.gif' />
+                            </li>
+                            <li>
+                                <Advert advert='https://assets.materialup.com/uploads/e864bbcb-3ce1-4642-875f-b6ca8d33a293/preview.gif' />
+                            </li>
+                        </ul>
                     </Col>
                 </Row>
             </Container>

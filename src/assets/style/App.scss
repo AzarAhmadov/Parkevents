@@ -1323,7 +1323,8 @@ body {
     overflow-y: auto;
 
     &.navigation {
-      height: 90vh;
+      height: 100vh;
+      padding-bottom: 135px;
     }
 
     li {
@@ -1339,7 +1340,7 @@ body {
       }
 
       a {
-        font-size: 20px;
+        font-size: 21px;
         color: $color-1;
 
         &.active {
@@ -1388,10 +1389,11 @@ body {
           display: flex;
           align-items: center;
           font-size: 18px;
+          padding: 5px 0;
 
           svg {
-            margin-right: 5px;
-            font-size: 23px;
+            margin-right: 10px;
+            font-size: 25px;
           }
         }
 
@@ -1621,6 +1623,12 @@ body {
         font-size: 22px;
       }
     }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
   }
 }
 
