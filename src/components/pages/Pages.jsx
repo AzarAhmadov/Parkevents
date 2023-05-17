@@ -8,6 +8,7 @@ import SearchCategory from '../searchCategory/SearchCategory';
 import Login from '../login&register/Login';
 import Register from '../login&register/Register';
 import Reset from '../login&register/Reset';
+import { TicketPlan } from '../ticketPlan/TicketPlan';
 
 export const Pages = () => {
     return (
@@ -31,7 +32,14 @@ export const Pages = () => {
                     <Route path='/SearchCaregory/:id' element={
                         <>
                             <Header />
-                            <SearchCategory />s
+                            <SearchCategory />
+                            <Footer />
+                        </>
+                    } />
+                    <Route path='/ticket-plan' element={
+                        <>
+                            <Header />
+                            <TicketPlan />
                             <Footer />
                         </>
                     } />

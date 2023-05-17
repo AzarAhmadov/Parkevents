@@ -586,56 +586,60 @@ body {
   }
 
   .movies-list-content {
-    .movies-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: relative;
-      margin-bottom: 30px;
-
-      &::after {
-        position: absolute;
-        bottom: 0;
-        content: "";
-        width: 100%;
-        height: 2px;
-        background: rgba(255, 255, 255, 0.119);
-      }
-
-      h4 {
-        color: $color-1;
-        font-size: 47px;
-        position: relative;
-        padding-bottom: 10px;
-
-        &::after {
-          position: absolute;
-          bottom: 0;
-          content: "";
-          width: 100px;
-          height: 2px;
-          background: $color-5;
-          left: 0;
-          z-index: 1;
-        }
-      }
-
-      a {
-        color: $color-5;
-        font-size: 20px;
-      }
-    }
-
     .mySwiper {
       padding-bottom: 50px;
-
-      .swiper-pagination-bullet {
-        width: 15px;
-        background: $color-5;
-        height: 15px;
-      }
     }
   }
+}
+
+.movies-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.119);
+  }
+
+  h4 {
+    color: $color-1;
+    font-size: 47px;
+    position: relative;
+    padding-bottom: 10px;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      content: "";
+      width: 100px;
+      height: 2px;
+      background: $color-5;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  a {
+    color: $color-5;
+    font-size: 20px;
+  }
+}
+
+.swiperAnother {
+  padding-bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  background: $color-5;
+  height: 15px;
 }
 
 .content {
@@ -656,7 +660,9 @@ body {
   }
 
   &:hover {
-    .movies-name,.price {
+
+    .movies-name,
+    .price {
       color: $color-5;
       padding-top: 35px;
     }
@@ -1761,6 +1767,13 @@ body {
       height: 260px;
     }
 
+    &:hover {
+      img {
+        transform: scale(1);
+        height: fit-content;
+      }
+    }
+
     .movies-name {
       padding: 15px 10px;
 
@@ -1986,7 +1999,7 @@ body {
   #login {
     .login-content {
       width: 90%;
-      padding:20px;
+      padding: 20px;
 
       form {
         .form-bottom {

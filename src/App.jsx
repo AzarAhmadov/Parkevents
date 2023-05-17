@@ -27,29 +27,29 @@ const App = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const [loading, setLoading] = useState(false)
+  // const [loading, setLoading] = useState(false)
 
-  useEffect(() => {
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-    }, 1500)
-  }, [])
+  // useEffect(() => {
+  //   setLoading(true)
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //   }, 1500)
+  // }, [])
 
   return (
     <>
 
       {
-        loading ?
+        // loading ?
           
-          <div className="animate">
-            <BounceLoader
-            loading={loading}
-            size={50}
-            color={'#31d7a9'}
-          />
-          </div>
-          :
+        //   <div className="animate">
+        //     <BounceLoader
+        //     loading={loading}
+        //     size={50}
+        //     color={'#31d7a9'}
+        //   />
+        //   </div>
+        //   :
           <Pages />
       }
       <button className={`${showScrollButton ? 'scroll-button active' : 'scroll-button'}`} onClick={scrollToTop}>

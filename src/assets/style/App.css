@@ -500,14 +500,18 @@ body.active {
   font-size: 16px;
   margin-top: 7px;
 }
-#movie-list .movies-list-content .movies-top {
+#movie-list .movies-list-content .mySwiper {
+  padding-bottom: 50px;
+}
+
+.movies-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   margin-bottom: 30px;
 }
-#movie-list .movies-list-content .movies-top::after {
+.movies-top::after {
   position: absolute;
   bottom: 0;
   content: "";
@@ -515,13 +519,13 @@ body.active {
   height: 2px;
   background: rgba(255, 255, 255, 0.119);
 }
-#movie-list .movies-list-content .movies-top h4 {
+.movies-top h4 {
   color: #fff;
   font-size: 47px;
   position: relative;
   padding-bottom: 10px;
 }
-#movie-list .movies-list-content .movies-top h4::after {
+.movies-top h4::after {
   position: absolute;
   bottom: 0;
   content: "";
@@ -531,14 +535,16 @@ body.active {
   left: 0;
   z-index: 1;
 }
-#movie-list .movies-list-content .movies-top a {
+.movies-top a {
   color: #31d7a9;
   font-size: 20px;
 }
-#movie-list .movies-list-content .mySwiper {
+
+.swiperAnother {
   padding-bottom: 50px;
 }
-#movie-list .movies-list-content .mySwiper .swiper-pagination-bullet {
+
+.swiper-pagination-bullet {
   width: 15px;
   background: #31d7a9;
   height: 15px;
@@ -561,7 +567,8 @@ body.active {
   text-align: center;
   color: #fff;
 }
-.content:hover .movies-name, .content:hover .price {
+.content:hover .movies-name,
+.content:hover .price {
   color: #31d7a9;
   padding-top: 35px;
 }
@@ -1429,6 +1436,11 @@ body.active {
   }
   .content img {
     height: 260px;
+  }
+  .content:hover img {
+    transform: scale(1);
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .content .movies-name {
     padding: 15px 10px;

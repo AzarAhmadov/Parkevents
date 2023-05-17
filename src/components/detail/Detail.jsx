@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper";
 import { movieList } from '../data/Data';
 import VideSlide1 from '../../assets/video/video-slide.mp4'
+import Another from '../home/Another';
 
 const getMovieById = (id) => {
     const categories = Object.values(movieList);
@@ -72,7 +73,6 @@ const Detail = () => {
         }
     }
 
-
     return (
         <main>
             <section id='detail'>
@@ -105,7 +105,7 @@ const Detail = () => {
                                     </div>
                                     <div className="ticket">
                                         <div className='d-flex'>
-                                            <Link className='buy'>
+                                            <Link to='/ticket-plan' className='buy'>
                                                 Bilet əldə edin
                                             </Link>
 
@@ -241,6 +241,7 @@ const Detail = () => {
                             </div>
                         </Col>
                     </Row>
+                    <Another title='Digər tədbirlər' link='/SearchCaregory/Bütün-tədbirlər' />
                 </Container>
             </section>
         </main>

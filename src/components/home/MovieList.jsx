@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
+import MoviesTop from './MoviesTop';
 
 const MovieList = () => {
 
@@ -47,14 +48,9 @@ const MovieList = () => {
                     </Col>
                     <Col lg={9}>
                         <div className="movies-list-content">
-                            <div className="movies-top">
-                                <h4>
-                                    Konsert
-                                </h4>
-                                <Link to='/SearchCaregory/Bütün-tədbirlər'>
-                                    Hamısına bax
-                                </Link>
-                            </div>
+
+                            <MoviesTop title='Fimlər' link='/SearchCaregory/Bütün-tədbirlər'/>
+                            
                             <div className="movies-slider">
                                 <Swiper
                                     slidesPerView={3}
@@ -104,14 +100,8 @@ const MovieList = () => {
                                 </Swiper>
                             </div>
 
-                            <div className="movies-top mt-5">
-                                <h4>
-                                    Teatr
-                                </h4>
-                                <Link to='/SearchCaregory/Bütün-tədbirlər'>
-                                    Hamısına bax
-                                </Link>
-                            </div>
+                            <MoviesTop title='Teatr' link='/SearchCaregory/Bütün-tədbirlər'/>
+
                             <div className="movies-slider">
                                 <Swiper
                                     slidesPerView={3}
@@ -160,14 +150,8 @@ const MovieList = () => {
                                 </Swiper>
                             </div>
 
-                            <div className="movies-top mt-5">
-                                <h4>
-                                    İdman oyunları
-                                </h4>
-                                <Link to='/SearchCaregory/Bütün-tədbirlər'>
-                                    Hamısına bax
-                                </Link>
-                            </div>
+                            <MoviesTop title='İdman oyunları' link='/SearchCaregory/Bütün-tədbirlər'/>
+
                             <div className="movies-slider">
                                 <Swiper
                                     slidesPerView={3}

@@ -17,7 +17,7 @@ const SearchCategory = () => {
     const { id } = useParams();
     const formattedId = id.replace(/-/g, ' ');
 
-    const [itemsToShow, setItemsToShow] = useState(7);
+    const [itemsToShow, setItemsToShow] = useState(8);
 
     const handleShowMore = () => {
         setItemsToShow(itemsToShow + 5);
