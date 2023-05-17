@@ -11,8 +11,8 @@ const MovieListSingle = ({ movies, slidesPerView }) => {
         navigate(`/detail/${movie.id}`);
     };
 
-    const scrool = ()=>{
-        window.scrollTo(0,0)
+    const scrool = () => {
+        window.scrollTo(0, 0)
     }
 
     return (
@@ -27,6 +27,10 @@ const MovieListSingle = ({ movies, slidesPerView }) => {
                 }}
                 modules={[Pagination]}
                 breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                    },
                     340: {
                         slidesPerView: 2,
                         spaceBetween: 15,

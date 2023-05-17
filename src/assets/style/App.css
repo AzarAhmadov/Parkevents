@@ -1144,7 +1144,7 @@ body.active {
   overflow-y: auto;
 }
 .mobil-menu ul.navigation {
-  height: calc(100vh - 100px);
+  height: 87%;
 }
 .mobil-menu ul li {
   padding-bottom: 20px;
