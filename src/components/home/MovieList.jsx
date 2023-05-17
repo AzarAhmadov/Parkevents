@@ -1,29 +1,22 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom';
 import { popularSearch } from '../data/Data'
 import { movieList } from '../data/Data'
 import { Col, Container, Row } from 'react-bootstrap'
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
 import MoviesTop from './MoviesTop';
+import Advert from './Advert';
+import MovieListSingle from './MovieListSingle';
 
 const MovieList = () => {
-
-    const navigate = useNavigate();
-    const handleMovieClick = (movie) => {
-        navigate(`/detail/${movie.id}`);
-    };
 
     return (
         <section id='movie-list'>
             <Container>
                 <Row>
                     <Col lg={3}>
-                        <div className="advert">
-                            <img src="https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner01.jpg" alt="" />
-                        </div>
+
+                        <Advert advert='https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner01.jpg'/>
 
                         <div className="trend">
                             <h4> Trend axtarışlar </h4>
@@ -41,9 +34,7 @@ const MovieList = () => {
                             </div>
                         </div>
 
-                        <div className="advert">
-                            <img src="https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner02.jpg" alt="" />
-                        </div>
+                        <Advert advert='https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner02.jpg'/>
 
                     </Col>
                     <Col lg={9}>
@@ -51,154 +42,15 @@ const MovieList = () => {
 
                             <MoviesTop title='Fimlər' link='/SearchCaregory/Bütün-tədbirlər'/>
                             
-                            <div className="movies-slider">
-                                <Swiper
-                                    slidesPerView={3}
-                                    spaceBetween={30}
-                                    pagination={{
-                                        clickable: true,
-                                        dynamicBullets: true,
-                                    }}
-                                    modules={[Pagination]}
-                                    className="mySwiper"
-
-                                    breakpoints={{
-                                        340: {
-                                            slidesPerView: 2,
-                                            spaceBetween: 15,
-                                        },
-                                        768: {
-                                            slidesPerView: 2,
-                                            spaceBetween: 40,
-                                        },
-                                        1024: {
-                                            slidesPerView: 3,
-                                            spaceBetween: 20,
-                                        },
-                                    }}
-                                >
-                                    {
-                                        movieList.Movies.map((el, idx) => (
-                                            <SwiperSlide key={idx}>
-                                                <div className="content" onClick={() => handleMovieClick(el)}>
-                                                    <img src={el.movieImg} />
-                                                    <div className="movies-name">
-                                                        <span>
-                                                            {el.movieName}
-                                                        </span>
-                                                        <div className="price">
-                                                            {el.price}
-                                                        </div>
-                                                    </div>
-                                                    <div className="date">
-                                                        {el.date}
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                        ))
-                                    }
-                                </Swiper>
-                            </div>
+                            <MovieListSingle movies={movieList.Movies} slidesPerView={3} />
 
                             <MoviesTop title='Teatr' link='/SearchCaregory/Bütün-tədbirlər'/>
 
-                            <div className="movies-slider">
-                                <Swiper
-                                    slidesPerView={3}
-                                    spaceBetween={30}
-                                    pagination={{
-                                        clickable: true,
-                                        dynamicBullets: true,
-                                    }}
-                                    modules={[Pagination]}
-                                    className="mySwiper"
-                                    breakpoints={{
-                                        340: {
-                                            slidesPerView: 2,
-                                            spaceBetween: 15,
-                                        },
-                                        768: {
-                                            slidesPerView: 2,
-                                            spaceBetween: 40,
-                                        },
-                                        1024: {
-                                            slidesPerView: 3,
-                                            spaceBetween: 20,
-                                        },
-                                    }}
-                                >
-                                    {
-                                        movieList.Events.map((el, idx) => (
-                                            <SwiperSlide key={idx}>
-                                                <div className="content" onClick={() => handleMovieClick(el)}>
-                                                    <img src={el.movieImg} />
-                                                    <div className="movies-name">
-                                                        <span>
-                                                            {el.movieName}
-                                                        </span>
-                                                        <div className="price">
-                                                            {el.price}
-                                                        </div>
-                                                    </div>
-                                                    <div className="date">
-                                                        {el.date}
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                        ))
-                                    }
-                                </Swiper>
-                            </div>
+                            <MovieListSingle movies={movieList.Events} slidesPerView={3} />
 
                             <MoviesTop title='İdman oyunları' link='/SearchCaregory/Bütün-tədbirlər'/>
 
-                            <div className="movies-slider">
-                                <Swiper
-                                    slidesPerView={3}
-                                    spaceBetween={30}
-                                    pagination={{
-                                        clickable: true,
-                                        dynamicBullets: true,
-                                    }}
-                                    modules={[Pagination]}
-                                    className="mySwiper"
-                                    breakpoints={{
-                                        340: {
-                                            slidesPerView: 2,
-                                            spaceBetween: 15,
-                                        },
-                                        768: {
-                                            slidesPerView: 2,
-                                            spaceBetween: 40,
-                                        },
-                                        1024: {
-                                            slidesPerView: 3,
-                                            spaceBetween: 20,
-                                        },
-                                    }}
-                                >
-                                    {
-                                        movieList.Sports.map((el, idx) => (
-                                            <SwiperSlide key={idx}>
-                                                <div className="content" onClick={() => handleMovieClick(el)}>
-                                                    <img src={el.movieImg} />
-                                                    <div className="movies-name">
-                                                        <span>
-                                                            {el.movieName}
-                                                        </span>
-                                                        <div className="price">
-                                                            {el.price}
-                                                        </div>
-                                                    </div>
-                                                    <div className="date">
-                                                        {el.date}
-                                                    </div>
-                                                </div>
-                                            </SwiperSlide>
-                                        ))
-                                    }
-                                </Swiper>
-                            </div>
+                            <MovieListSingle movies={movieList.Sports} slidesPerView={3} />
 
                         </div>
                     </Col>

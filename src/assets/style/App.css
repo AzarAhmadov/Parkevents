@@ -460,10 +460,6 @@ body.active {
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
-  margin-bottom: 45px;
-}
-.advert img:last-child {
-  margin-bottom: 0;
 }
 
 #movie-list {
@@ -501,7 +497,8 @@ body.active {
   margin-top: 7px;
 }
 #movie-list .movies-list-content .mySwiper {
-  padding-bottom: 50px;
+  padding-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .movies-top {
@@ -538,10 +535,6 @@ body.active {
 .movies-top a {
   color: #31d7a9;
   font-size: 20px;
-}
-
-.swiperAnother {
-  padding-bottom: 50px;
 }
 
 .swiper-pagination-bullet {
@@ -1095,66 +1088,6 @@ body.active {
   left: 0;
 }
 
-#footer {
-  padding-top: 100px;
-  padding-bottom: 30px;
-  position: relative;
-  position: relative;
-  z-index: 1;
-}
-#footer::after {
-  background: url(http://pixner.net/boleto/demo/assets/images/footer/footer-shape.png);
-  width: 100%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#footer .row-2 {
-  margin-top: 25px;
-  padding-top: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.119);
-}
-#footer .copyright {
-  color: rgba(255, 255, 255, 0.7254901961);
-}
-#footer .sosial {
-  display: flex;
-}
-#footer .sosial li {
-  margin-left: 20px;
-}
-#footer .sosial li:first-child {
-  margin-left: 0;
-}
-#footer .sosial li a {
-  width: 50px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.119);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-}
-#footer .sosial li a:hover {
-  background: #31d7a9;
-}
-#footer .sosial li a svg {
-  color: #fff;
-}
-#footer ul li {
-  margin-left: 25px;
-}
-#footer ul li:first-child {
-  margin-left: 0;
-}
-#footer ul li a {
-  font-size: 20px;
-  color: #fff;
-}
-
 .mobil-menu {
   position: fixed;
   top: 0;
@@ -1233,6 +1166,88 @@ body.active {
   width: 100% !important;
 }
 
+#plan .plan-banner {
+  height: 400px;
+  position: absolute;
+  width: 100%;
+}
+#plan .plan-banner img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+#plan .plan-banner .ticket-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#plan .plan-banner .ticket-name p {
+  color: #fff;
+  font-size: 50px;
+}
+
+#footer {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  position: relative;
+  position: relative;
+  z-index: 1;
+}
+#footer::after {
+  background: url(http://pixner.net/boleto/demo/assets/images/footer/footer-shape.png);
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#footer .row-2 {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.119);
+}
+#footer .copyright {
+  color: rgba(255, 255, 255, 0.7254901961);
+}
+#footer .sosial {
+  display: flex;
+}
+#footer .sosial li {
+  margin-left: 20px;
+}
+#footer .sosial li:first-child {
+  margin-left: 0;
+}
+#footer .sosial li a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.119);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+#footer .sosial li a:hover {
+  background: #31d7a9;
+}
+#footer .sosial li a svg {
+  color: #fff;
+}
+#footer ul li {
+  margin-left: 25px;
+}
+#footer ul li:first-child {
+  margin-left: 0;
+}
+#footer ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+
 @media only screen and (max-width: 1400px) {
   .container {
     padding: 0;
@@ -1308,19 +1323,11 @@ body.active {
   #category .container .category-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  #detail .advert {
-    display: flex;
-    gap: 25px;
+  .advert {
+    margin: 10px 0;
   }
   #detail .dec-container {
     padding-top: 10px;
-  }
-  #detail .dec-container .advert img {
-    width: 48%;
-    margin: 0;
-    -o-object-fit: cover;
-       object-fit: cover;
-    height: 300px;
   }
   #detail .detail-bottom {
     margin-bottom: 130px;
@@ -1365,20 +1372,6 @@ body.active {
   }
   .movies-top h4 {
     font-size: 35px;
-  }
-  .advert {
-    display: flex;
-    justify-content: center;
-    margin-top: 35px;
-  }
-  .advert:last-child {
-    margin-top: 0;
-  }
-  .advert img {
-    height: 100%;
-    width: 300px;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   #category {
     padding-bottom: 40px;

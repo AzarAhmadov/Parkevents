@@ -16,7 +16,9 @@ import "swiper/css/pagination";
 import { Navigation } from "swiper";
 import { movieList } from '../data/Data';
 import VideSlide1 from '../../assets/video/video-slide.mp4'
-import Another from '../home/Another';
+import Advert from '../home/Advert';
+import MovieListSingle from '../home/MovieListSingle';
+import MoviesTop from '../home/MoviesTop';
 
 const getMovieById = (id) => {
     const categories = Object.values(movieList);
@@ -143,10 +145,8 @@ const Detail = () => {
                 <Container className='dec-container'>
                     <Row>
                         <Col lg={3}>
-                            <div className="advert">
-                                <img src="https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner01.jpg" alt="" />
-                                <img src="https://img.freepik.com/premium-vector/basketball-tournament-flyer-design-template_9245-575.jpg?w=2000" alt="" />
-                            </div>
+                            <Advert advert='https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner01.jpg' />
+                            <Advert advert='https://img.freepik.com/premium-vector/basketball-tournament-flyer-design-template_9245-575.jpg?w=2000' />
                         </Col>
                         <Col lg={9}>
                             <h4 className='dec-title'> Tədbir haqqında  </h4>
@@ -241,7 +241,10 @@ const Detail = () => {
                             </div>
                         </Col>
                     </Row>
-                    <Another title='Digər tədbirlər' link='/SearchCaregory/Bütün-tədbirlər' />
+                    <div className='mt-5'>
+                        <MoviesTop title='Digər tədbirlər' link='/SearchCaregory/Bütün-tədbirlər' />
+                        <MovieListSingle movies={movieList.Movies} slidesPerView='4' />
+                    </div>
                 </Container>
             </section>
         </main>

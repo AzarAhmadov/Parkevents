@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const MoviesTop = ({ link, title }) => {
     return (
-        <div className="movies-top mt-5">
+        <div className="movies-top">
             <h4>
                 {title}
             </h4>
