@@ -87,7 +87,7 @@ const Header = () => {
                                             Muzeylər
                                         </Link>
                                     </li>
-                                    <li onClick={() => handleLinkName('Muzeylər')} className='menu-item'>
+                                    <li onClick={() => handleLinkName('Tədbirlər')} className='menu-item'>
                                         <Link to='/SearchCaregory'>
                                             Tədbirlər
                                         </Link>
@@ -118,6 +118,8 @@ const Header = () => {
                                                     Əlave link
                                                 </Link>
                                             </li>
+
+                                            <div className="arrow"></div>
                                         </ul>
                                     </li>
                                     <li className='user'>

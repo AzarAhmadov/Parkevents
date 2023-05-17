@@ -641,6 +641,7 @@ body {
 .content {
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 
   .date {
     position: absolute;
@@ -655,7 +656,7 @@ body {
   }
 
   &:hover {
-    .movies-name {
+    .movies-name,.price {
       color: $color-5;
       padding-top: 35px;
     }
