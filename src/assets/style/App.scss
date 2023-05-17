@@ -1323,7 +1323,7 @@ body {
     overflow-y: auto;
 
     &.navigation {
-      height: 100vh;
+      min-height: 100vh;
       padding-bottom: 135px;
     }
 
