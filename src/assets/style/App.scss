@@ -1498,7 +1498,18 @@ body {
       }
     }
   }
+}
 
+$animation-duration:1s;
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 #ticket-table {
@@ -1553,6 +1564,7 @@ body {
       p {
         color: $color-5;
         font-size: 35px;
+        animation: scaleAnimation $animation-duration infinite alternate;
       }
 
       img {
