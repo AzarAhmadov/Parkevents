@@ -25,11 +25,10 @@ const TicketFilter = () => {
     const [selectedPlace, setSelectedPlace] = useState(null);
 
     const places = [
-        { name: 'Məkan 1' },
-        { name: 'Məkan 2' },
-        { name: 'Məkan 3' },
-        { name: 'Məkan 4' },
-        { name: 'Məkan 4' },
+        { name: 'Heydər Əliyev Sarayı' },
+        { name: 'Akademik Milli Dram Teatrı' },
+        { name: 'Hayal Kahvesi' },
+        { name: 'Şəkixanovlar evi' },
     ];
 
     const [selectedLang, setSelectedLang] = useState(null);

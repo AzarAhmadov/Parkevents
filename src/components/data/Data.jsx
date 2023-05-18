@@ -1,4 +1,5 @@
 import videoSlide1 from '../../assets/video/video-slide.mp4'
+import { MdOutlineChair } from 'react-icons/md';
 
 export const movieList = {
     MoviesHero: [
@@ -171,60 +172,133 @@ export const popularSearch = [
 
 export const ticketPlaneTableCrud = [
     {
-        placeName:"Məkan",
-        title:"Heydər Əliyev Sarayı",
-        seans:'Seanslar',
-        date:"10:00",
-        priceTitle:"Qiymət",
-        price:"10 - 450₼"
+        placeName: "Məkan",
+        title: "Heydər Əliyev Sarayı",
+        seans: 'Seanslar',
+        date: "10:00",
+        priceTitle: "Qiymət",
+        price: "10 - 450₼"
     },
     {
-        placeName:"Məkan",
-        title:"Akademik Milli Dram Teatrı",
-        seans:'Seanslar',
-        date:"5:00",
-        priceTitle:"Qiymət",
-        price:"10 - 350₼"
+        placeName: "Məkan",
+        title: "Akademik Milli Dram Teatrı",
+        seans: 'Seanslar',
+        date: "5:00",
+        priceTitle: "Qiymət",
+        price: "10 - 350₼"
     },
     {
-        placeName:"Məkan",
-        title:"28 Mall",
-        seans:'Seanslar',
-        date:"7:00",
-        priceTitle:"Qiymət",
-        price:"10 - 250₼"
+        placeName: "Məkan",
+        title: "28 Mall",
+        seans: 'Seanslar',
+        date: "7:00",
+        priceTitle: "Qiymət",
+        price: "10 - 250₼"
     },
     {
-        placeName:"Məkan",
-        title:"Hayal Kahvesi",
-        seans:'Seanslar',
-        date:"7:00",
-        priceTitle:"Qiymət",
-        price:"10 - 250₼"
+        placeName: "Məkan",
+        title: "Hayal Kahvesi",
+        seans: 'Seanslar',
+        date: "7:00",
+        priceTitle: "Qiymət",
+        price: "10 - 250₼"
     },
     {
-        placeName:"Məkan",
-        title:"Şəkixanovlar evi",
-        seans:'Seanslar',
-        date:"7:00",
-        priceTitle:"Qiymət",
-        price:"10 - 250₼"
+        placeName: "Məkan",
+        title: "Şəkixanovlar evi",
+        seans: 'Seanslar',
+        date: "7:00",
+        priceTitle: "Qiymət",
+        price: "10 - 250₼"
     },
     {
-        placeName:"Məkan",
-        title:"Şəkixanovlar evi",
-        seans:'Seanslar',
-        date:"7:00",
-        priceTitle:"Qiymət",
-        price:"10 - 250₼"
+        placeName: "Məkan",
+        title: "Şəkixanovlar evi",
+        seans: 'Seanslar',
+        date: "7:00",
+        priceTitle: "Qiymət",
+        price: "10 - 250₼"
     },
     {
-        placeName:"Məkan",
-        title:"Şəkixanovlar evi",
-        seans:'Seanslar',
-        date:"7:00",
-        priceTitle:"Qiymət",
-        price:"10 - 250₼"
+        placeName: "Məkan",
+        title: "Şəkixanovlar evi",
+        seans: 'Seanslar',
+        date: "7:00",
+        priceTitle: "Qiymət",
+        price: "10 - 250₼"
     },
 ]
+
+export const ticketSetsPlan = [
+    {
+        line: "Sıra 1",
+        armchair: [
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 15 },
+        ],
+    },
+    {
+        line: "Sıra 2",
+        armchair: [
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 15 },
+        ],
+    },
+    {
+        line: "Sıra 3",
+        armchair: [
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 15 },
+        ],
+    },
+    {
+        line: "Sıra 4",
+        armchair: [
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 15 },
+        ],
+    },
+    {
+        line: "Sıra 5",
+        armchair: [
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 20 },
+            { component: <MdOutlineChair />, price: 10 },
+            { component: <MdOutlineChair />, price: 15 },
+            { component: <MdOutlineChair />, price: 15 },
+        ],
+    },
+];
 

@@ -19,7 +19,7 @@ const TicketTable = () => {
                             {ticketPlaneTableCrud.map((el, idx) => (
                                 <div className='ticket-place' key={idx}>
                                     <div>
-                                    <span className='title'>{el.placeName}</span>
+                                        <span className='title'>{el.placeName}</span>
                                         <p className='ticket-place-name'>{el.title}</p>
                                     </div>
                                     <div className='full'>
