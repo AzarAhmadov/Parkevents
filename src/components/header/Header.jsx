@@ -190,26 +190,6 @@ const Header = () => {
                     <li onClick={close} className='nav-item'>
                         <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
                     </li>
-
-                    <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
-                    </li>
-                    <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
-                    </li>
-                    <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
-                    </li>
-
-                    <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
-                    </li>
-                    <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
-                    </li>
-                    <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
-                    </li>
                 </ul>
                 <div onClick={close} className="close">
                     <IoMdClose />
