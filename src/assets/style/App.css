@@ -121,26 +121,31 @@ body.active {
 }
 #header nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
 }
 #header nav ul li {
-  margin-left: 30px;
   position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
-#header nav ul li.active {
-  background: red;
+#header nav ul li.other {
+  display: flex;
+  align-items: center;
+  height: 90px;
 }
 #header nav ul li:hover ul {
+  top: 80px;
   visibility: visible;
   opacity: 1;
-  top: 50px;
 }
 #header nav ul li ul {
   transition: 300ms all;
   position: absolute;
   right: 0px;
-  top: 30px;
+  top: 70px;
   display: flex;
   flex-direction: column;
   z-index: 10;
@@ -150,6 +155,9 @@ body.active {
   padding: 20px;
   visibility: hidden;
   opacity: 0;
+}
+#header nav ul li ul.login-drop {
+  top: 70px;
 }
 #header nav ul li ul .arrow {
   position: absolute;
@@ -189,14 +197,23 @@ body.active {
   font-weight: 600;
   width: 50px;
   height: 50px;
-  display: grid;
-  place-items: center;
   border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  margin-left: 0;
+  flex-shrink: 0;
+  position: relative;
 }
-#header nav ul li.user svg {
+#header nav ul li.user a {
+  position: relative;
+}
+#header nav ul li.user a svg {
   font-size: 30px;
   fill: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(32%, -50%);
 }
 #header nav ul li a {
   color: #fff;
@@ -1377,13 +1394,16 @@ body.active {
 }
 #ticket-table .ticket-place div {
   border-right: 1px solid #11326f;
-  padding: 20px;
   width: 100%;
+  padding: 20px 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 #ticket-table .ticket-place div.full {
+  padding: 0 15px;
   flex-basis: 70%;
 }
 #ticket-table .ticket-place div button {
@@ -1408,7 +1428,8 @@ body.active {
 }
 #ticket-table .ticket-place div .title {
   color: rgba(255, 255, 255, 0.5568627451);
-  font-size: 22px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 #ticket-table ul {
   display: flex;
@@ -1480,13 +1501,6 @@ body.active {
 @media only screen and (max-width: 1400px) {
   .container {
     padding: 0;
-  }
-  #header .container {
-    max-width: 100%;
-    padding: 0 30px;
-  }
-  #header .container nav ul li {
-    margin-left: 20px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1604,6 +1618,7 @@ body.active {
   }
   #ticket-table .col-lg-9 {
     margin-bottom: 40px;
+    padding: 0 20px;
   }
   #ticket-table .col-lg-9 .ticket-place {
     flex-direction: column;
@@ -1616,7 +1631,7 @@ body.active {
   #ticket-table .col-lg-9 .ticket-place div {
     border-bottom: 1px solid #11326f;
     border-right: none;
-    padding: 20px;
+    padding: 10px;
   }
   #ticket-table .col-lg-9 .ticket-place div:last-child {
     border-bottom: none;
@@ -1665,6 +1680,10 @@ body.active {
   }
 }
 @media only screen and (max-width: 578px) {
+  #header {
+    padding: 0 10px;
+    height: 75px;
+  }
   #header .col-2,
   #header .col-10 {
     padding: 0;

@@ -141,22 +141,27 @@ body {
   nav {
     ul {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
+      padding-left: 20px;
 
       li {
-        margin-left: 30px;
         position: relative;
+        text-align: center;
+        display: flex;
+        align-items: center;
 
-        &.active {
-          background: red;
+        &.other {
+          display: flex;
+          align-items: center;
+          height: 90px;
         }
 
         &:hover {
           ul {
+            top: 80px;
             visibility: visible;
             opacity: 1;
-            top: 50px;
           }
         }
 
@@ -164,7 +169,7 @@ body {
           transition: 300ms all;
           position: absolute;
           right: 0px;
-          top: 30px;
+          top: 70px;
           display: flex;
           flex-direction: column;
           z-index: 10;
@@ -173,6 +178,10 @@ body {
           padding: 20px;
           visibility: hidden;
           opacity: 0;
+
+          &.login-drop {
+            top: 70px;
+          }
 
           .arrow {
             position: absolute;
@@ -221,15 +230,26 @@ body {
           font-weight: 600;
           width: 50px;
           height: 50px;
-          display: grid;
-          place-items: center;
           border-radius: 50%;
           cursor: pointer;
+          display: flex;
+          margin-left: 0;
+          flex-shrink: 0;
+          position: relative;
 
-          svg {
-            font-size: 30px;
-            fill: $color-1;
+          a {
+            position: relative;
+
+            svg {
+              font-size: 30px;
+              fill: $color-1;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(32%, -50%);
+            }
           }
+
         }
 
         a {
@@ -1595,13 +1615,16 @@ $animation-duration:1s;
 
     div {
       border-right: 1px solid #11326f;
-      padding: 20px;
       width: 100%;
+      padding: 20px 10px;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
+      text-align: center;
 
       &.full {
+        padding: 0 15px;
         flex-basis: 70%;
       }
 
@@ -1631,7 +1654,8 @@ $animation-duration:1s;
 
       .title {
         color: #ffffff8e;
-        font-size: 22px;
+        font-size: 20px;
+        margin-bottom: 5px;
       }
     }
   }
@@ -1722,21 +1746,6 @@ $animation-duration:1s;
 @media only screen and (max-width:1400px) {
   .container {
     padding: 0;
-  }
-
-  #header {
-    .container {
-      max-width: 100%;
-      padding: 0 30px;
-
-      nav {
-        ul {
-          li {
-            margin-left: 20px;
-          }
-        }
-      }
-    }
   }
 }
 
@@ -1925,7 +1934,7 @@ $animation-duration:1s;
 
     .col-lg-9 {
       margin-bottom: 40px;
-
+      padding: 0 20px;
       .ticket-place {
         flex-direction: column;
         border: 1px solid #11326f;
@@ -1938,7 +1947,7 @@ $animation-duration:1s;
         div {
           border-bottom: 1px solid #11326f;
           border-right: none;
-          padding: 20px;
+          padding: 10px;
 
           &:last-child {
             border-bottom: none;
@@ -2018,6 +2027,8 @@ $animation-duration:1s;
 @media only screen and (max-width:578px) {
 
   #header {
+    padding: 0 10px;
+    height: 75px;
 
     .col-2,
     .col-10 {

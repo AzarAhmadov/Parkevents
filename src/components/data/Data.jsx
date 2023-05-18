@@ -171,6 +171,7 @@ export const popularSearch = [
 
 export const ticketPlaneTableCrud = [
     {
+        placeName:"Məkan",
         title:"Heydər Əliyev Sarayı",
         seans:'Seanslar',
         date:"10:00",
@@ -178,13 +179,15 @@ export const ticketPlaneTableCrud = [
         price:"10 - 450₼"
     },
     {
-        title:"Bakı Musiqi Akademiyası nəzdində Opera Studiyasının Konsert salonu",
+        placeName:"Məkan",
+        title:"Akademik Milli Dram Teatrı",
         seans:'Seanslar',
         date:"5:00",
         priceTitle:"Qiymət",
         price:"10 - 350₼"
     },
     {
+        placeName:"Məkan",
         title:"28 Mall",
         seans:'Seanslar',
         date:"7:00",
@@ -192,6 +195,7 @@ export const ticketPlaneTableCrud = [
         price:"10 - 250₼"
     },
     {
+        placeName:"Məkan",
         title:"Hayal Kahvesi",
         seans:'Seanslar',
         date:"7:00",
@@ -199,6 +203,7 @@ export const ticketPlaneTableCrud = [
         price:"10 - 250₼"
     },
     {
+        placeName:"Məkan",
         title:"Şəkixanovlar evi",
         seans:'Seanslar',
         date:"7:00",
@@ -206,6 +211,7 @@ export const ticketPlaneTableCrud = [
         price:"10 - 250₼"
     },
     {
+        placeName:"Məkan",
         title:"Şəkixanovlar evi",
         seans:'Seanslar',
         date:"7:00",
@@ -213,6 +219,7 @@ export const ticketPlaneTableCrud = [
         price:"10 - 250₼"
     },
     {
+        placeName:"Məkan",
         title:"Şəkixanovlar evi",
         seans:'Seanslar',
         date:"7:00",

@@ -29,7 +29,7 @@ const Header = () => {
     };
 
     const navigate = useNavigate();
-    
+
     const handleLinkName = (categoryName) => {
         navigate(`/SearchCaregory/${categoryName}`);
     };
@@ -91,7 +91,7 @@ const Header = () => {
                                             Tədbirlər
                                         </NavLink>
                                     </li>
-                                    <li>
+                                    <li className='other'>
                                         <Link>
                                             Digər
                                         </Link>
@@ -121,8 +121,31 @@ const Header = () => {
                                     </li>
                                     <li className='user hover'>
                                         <Link to='/Login'>
-                                            <FaRegUserCircle  />
+                                            <FaRegUserCircle />
                                         </Link>
+                                        <ul className='login-drop'>
+                                            <li>
+                                                <Link>
+                                                    Əlave link
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link>
+                                                    Əlave link
+                                                </Link>
+                                            </li>
+                                            <li onClick={() => handleLinkName('Əlave link')}>
+                                                <Link>
+                                                    Əlave link
+                                                </Link>
+                                            </li>
+                                            <li onClick={() => handleLinkName('Əlave link')}>
+                                                <Link>
+                                                    Əlave link
+                                                </Link>
+                                            </li>
+                                            <div className="arrow"></div>
+                                        </ul>
                                     </li>
                                 </ul>
                                 <div onClick={openBar} className="open-bar">
