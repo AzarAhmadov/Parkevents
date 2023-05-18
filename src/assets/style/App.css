@@ -1572,14 +1572,12 @@ body.active {
   .container {
     padding: 0;
   }
-  #header .container .col-2 {
-    width: 50%;
-  }
-  #header .container .col-10 {
-    width: 50%;
-  }
   #header .container nav {
-    width: 100%;
+    position: absolute;
+    right: 20px;
+    top: 21px;
+    width: -moz-max-content;
+    width: max-content;
     display: flex;
     justify-content: flex-end;
   }

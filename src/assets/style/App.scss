@@ -1850,16 +1850,11 @@ $animation-duration:1s;
   #header {
     .container {
 
-      .col-2 {
-        width: 50%;
-      }
-
-      .col-10 {
-        width: 50%;
-      }
-
       nav {
-        width: 100%;
+        position: absolute;
+        right: 20px;
+        top: 21px;
+        width: max-content;
         display: flex;
         justify-content: flex-end;
 
@@ -2096,7 +2091,7 @@ $animation-duration:1s;
 
         ul {
           &.login-drop {
-            right: -4px ;
+            right: -4px;
           }
 
           li {
