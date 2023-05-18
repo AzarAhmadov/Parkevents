@@ -1452,10 +1452,10 @@ body.active {
   white-space: nowrap;
 }
 .ticket-sets .sets-list ul .gap:first-child {
-  padding-left: 30px;
+  padding-left: 25px;
 }
 .ticket-sets .sets-list ul .gap:last-child {
-  padding-right: 30px;
+  padding-right: 25px;
 }
 .ticket-sets .sets-list ul .gap span {
   color: #fff;
@@ -1500,10 +1500,10 @@ body.active {
 .ticket-sets .next {
   background: #050068;
   border-radius: 10px;
-  max-width: 980px;
+  max-width: 970px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .ticket-sets .next .row .col {
   padding: 30px 0;
@@ -2035,9 +2035,16 @@ body.active {
   .ticket-sets .set-title::before {
     width: 300px;
   }
+  .ticket-sets .sets-list .gap span {
+    width: 70px !important;
+    font-size: 17px !important;
+  }
+  .ticket-sets .sets-list ul li ul svg {
+    font-size: 40px;
+  }
   .ticket-sets button:hover .price {
-    top: -20px !important;
-    font-size: 16px;
+    top: -23px !important;
+    font-size: 14px !important;
   }
   .ticket-sets .s-img {
     padding: 50px 0;
