@@ -4,8 +4,10 @@ import Col from 'react-bootstrap/Col';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { FaRegUserCircle } from 'react-icons/fa';
 import { RiMenu4Fill } from 'react-icons/ri';
-import { BiUserPlus } from 'react-icons/bi';
 import { IoMdClose } from 'react-icons/io';
+import { BiLogInCircle } from 'react-icons/bi';
+import { HiOutlineTicket } from 'react-icons/hi';
+
 import Container from 'react-bootstrap/esm/Container';
 
 const Header = () => {
@@ -120,29 +122,30 @@ const Header = () => {
                                         </ul>
                                     </li>
                                     <li className='user hover'>
-                                        <Link to='/Login'>
+                                        <Link to=''>
                                             <FaRegUserCircle />
                                         </Link>
                                         <ul className='login-drop'>
                                             <li>
                                                 <Link>
-                                                    Əlave link
+                                                    Profil
                                                 </Link>
                                             </li>
                                             <li>
                                                 <Link>
-                                                    Əlave link
+                                                    Cüzdan
                                                 </Link>
                                             </li>
-                                            <li onClick={() => handleLinkName('Əlave link')}>
+                                            <li>
                                                 <Link>
-                                                    Əlave link
+                                                    Tənzimləmələr
                                                 </Link>
                                             </li>
-                                            <li onClick={() => handleLinkName('Əlave link')}>
+                                            <li className='out'>
                                                 <Link>
-                                                    Əlave link
+                                                    Çıxış
                                                 </Link>
+                                                <BiLogInCircle />
                                             </li>
                                             <div className="arrow"></div>
                                         </ul>
@@ -177,21 +180,43 @@ const Header = () => {
                     <li onClick={close} className='nav-item'>
                         <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
                     </li>
+
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
+                    </li>
+
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
+                    </li>
+
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
+                    </li>
+                    <li onClick={close} className='nav-item'>
+                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
+                    </li>
                 </ul>
-
-                <div className="login">
-                    <ul>
-                        <li>
-                            <Link to='/Login'><FaRegUserCircle /> Giriş</Link>
-                        </li>
-                        <li>
-                            <Link to='/Register'><BiUserPlus /> Qeydiyyat</Link>
-                        </li>
-                    </ul>
-                </div>
-
                 <div onClick={close} className="close">
                     <IoMdClose />
+                </div>
+                <div className="ticket">
+                    <p>Park <span>events</span></p>
+                    <HiOutlineTicket />
                 </div>
             </section>
         </>
