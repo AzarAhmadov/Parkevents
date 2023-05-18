@@ -68,9 +68,30 @@ body {
   padding: 0 100px;
 }
 
+.lang {
+  margin-left: 15px;
+  gap: 3px;
+
+  li {
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    padding: 2px 6px;
+    color: $color-1;
+    cursor: pointer;
+    border-radius: 7px;
+
+    &.active {
+      background: $color-5;
+    }
+  }
+}
+
 .logo {
   font-size: 27px;
-  color: $color-1 !important;
+  color: $color-1;
+
+  &:hover {
+    color: $color-1;
+  }
 
   span {
     color: $color-5;
@@ -129,6 +150,7 @@ body {
     transform: scale(1.1);
   }
 }
+
 
 #header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.119);
@@ -1378,7 +1400,7 @@ body {
     }
 
     li {
-      padding:20px;
+      padding: 20px;
 
       &.nav-item {
         border-bottom: 1px solid rgba(255, 255, 255, 0.119);
@@ -1435,7 +1457,7 @@ body {
 
     p {
       color: $color-1;
-      font-size: 30px;
+      font-size: 27px;
       display: flex;
 
       span {
@@ -1459,7 +1481,7 @@ body {
   height: 355px;
 
   .plan-banner {
-   height: 450px;
+    height: 450px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -1812,6 +1834,12 @@ $animation-duration:1s;
       }
     }
   }
+
+  #header {
+    .container {
+      max-width: 95%;
+    }
+  }
 }
 
 @media only screen and (max-width:992px) {
@@ -2056,7 +2084,45 @@ $animation-duration:1s;
 @media only screen and (max-width:578px) {
 
   #header {
-    padding: 0 10px;
+    padding: 0px;
+
+    .container {
+      max-width: 100%;
+
+      nav {
+        .open-bar {
+          margin-left: 5px;
+        }
+
+        ul {
+          &.login-drop {
+            right: -4px ;
+          }
+
+          li {
+            &.user {
+              width: 45px;
+              height: 45px;
+
+              a {
+                svg {
+                  transform: translate(25.2%, -50%);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+        font-size: 22px;
+      }
+
+      .lang {
+        margin-left: 10px;
+        font-size: 16px;
+      }
+    }
 
     .col-2,
     .col-10 {

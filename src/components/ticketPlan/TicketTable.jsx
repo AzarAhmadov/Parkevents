@@ -54,7 +54,7 @@ const TicketTable = () => {
                 <div className='plans-content'>
                     <p> Oturacaq seçin </p>
                     <img src='https://pixner.net/boleto/demo/assets/images/movie/seat-plan.png' alt='' />
-                    <Link className='hover'>
+                    <Link to='/ticket-set' className='hover'>
                         Oturacaq planı <MdOutlineKeyboardArrowRight size={30} />
                     </Link>
                     <div onClick={() => setActive(!active)} className='close'>

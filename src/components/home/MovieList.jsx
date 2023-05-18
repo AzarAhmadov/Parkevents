@@ -40,15 +40,15 @@ const MovieList = () => {
                     <Col lg={9}>
                         <div className="movies-list-content">
 
-                            <MoviesTop title='Fimlər' link='/SearchCaregory/Bütün-tədbirlər'/>
+                            <MoviesTop title='Fimlər' linkName='Hamısına bax' link='/SearchCaregory/Bütün-tədbirlər'/>
                             
                             <MovieListSingle movies={movieList.Movies} slidesPerView={3} />
 
-                            <MoviesTop title='Teatr' link='/SearchCaregory/Bütün-tədbirlər'/>
+                            <MoviesTop title='Teatr' linkName='Hamısına bax' link='/SearchCaregory/Bütün-tədbirlər'/>
 
                             <MovieListSingle movies={movieList.Events} slidesPerView={3} />
 
-                            <MoviesTop title='İdman oyunları' link='/SearchCaregory/Bütün-tədbirlər'/>
+                            <MoviesTop title='İdman oyunları' linkName='Hamısına bax' link='/SearchCaregory/Bütün-tədbirlər'/>
 
                             <MovieListSingle movies={movieList.Sports} slidesPerView={3} />
 

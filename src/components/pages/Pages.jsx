@@ -9,6 +9,7 @@ import Login from '../login&register/Login';
 import Register from '../login&register/Register';
 import Reset from '../login&register/Reset';
 import { TicketPlan } from '../ticketPlan/TicketPlan';
+import TicketSet from '../ticketPlan/TicketSet';
 
 export const Pages = () => {
     return (
@@ -40,7 +41,13 @@ export const Pages = () => {
                         <>
                             <Header />
                             <TicketPlan />
-                            <Footer/>
+                            <Footer />
+                        </>
+                    } />
+                    <Route path='/ticket-set' element={
+                        <>
+                            <Header />
+                            <TicketSet />
                         </>
                     } />
                     <Route path='/Login' element={<Login />} />

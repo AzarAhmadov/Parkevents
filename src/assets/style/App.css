@@ -54,9 +54,27 @@ body.active {
   padding: 0 100px;
 }
 
+.lang {
+  margin-left: 15px;
+  gap: 3px;
+}
+.lang li {
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  padding: 2px 6px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.lang li.active {
+  background: #31d7a9;
+}
+
 .logo {
   font-size: 27px;
-  color: #fff !important;
+  color: #fff;
+}
+.logo:hover {
+  color: #fff;
 }
 .logo span {
   color: #31d7a9;
@@ -1239,7 +1257,7 @@ body.active {
 }
 .mobil-menu .ticket p {
   color: #fff;
-  font-size: 30px;
+  font-size: 27px;
   display: flex;
 }
 .mobil-menu .ticket p span {
@@ -1546,6 +1564,9 @@ body.active {
   #ticket-table .container .ticket-place div.full:nth-child(4) {
     white-space: nowrap;
   }
+  #header .container {
+    max-width: 95%;
+  }
 }
 @media only screen and (max-width: 992px) {
   .container {
@@ -1706,7 +1727,30 @@ body.active {
 }
 @media only screen and (max-width: 578px) {
   #header {
-    padding: 0 10px;
+    padding: 0px;
+  }
+  #header .container {
+    max-width: 100%;
+  }
+  #header .container nav .open-bar {
+    margin-left: 5px;
+  }
+  #header .container nav ul.login-drop {
+    right: -4px;
+  }
+  #header .container nav ul li.user {
+    width: 45px;
+    height: 45px;
+  }
+  #header .container nav ul li.user a svg {
+    transform: translate(25.2%, -50%);
+  }
+  #header .container .logo {
+    font-size: 22px;
+  }
+  #header .container .lang {
+    margin-left: 10px;
+    font-size: 16px;
   }
   #header .col-2,
   #header .col-10 {

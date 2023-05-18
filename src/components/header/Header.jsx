@@ -50,17 +50,37 @@ const Header = () => {
 
     const mobilRef = useRef()
 
+    const [activeLang, setActiveLang] = useState(0);
+
+    const handleLanguageClick = (index) => {
+        setActiveLang(index);
+    };
+
+
     return (
         <>
             <header className={active ? 'header-scrool' : ''} id='header'>
                 <Container>
                     <Row className='d-flex align-items-center'>
-                        <Col xs={2}>
-                            <Link className='logo' to='/' onClick={scrollToTop}>
-                                Park<span>events</span>
-                            </Link>
+                        <Col xs={3}>
+                            <div className="header-left d-flex align-items-center">
+                                <Link className='logo' to='/' onClick={scrollToTop}>
+                                    Park<span>events</span>
+                                </Link>
+                                <ul className="d-flex lang">
+                                    <li className={activeLang === 0 ? 'active' : ''} onClick={() => handleLanguageClick(0)}>
+                                        Az
+                                    </li>
+                                    <li className={activeLang === 1 ? 'active' : ''} onClick={() => handleLanguageClick(1)}>
+                                        En
+                                    </li>
+                                    <li className={activeLang === 2 ? 'active' : ''} onClick={() => handleLanguageClick(2)}>
+                                        Ru
+                                    </li>
+                                </ul>
+                            </div>
                         </Col>
-                        <Col xs={10}>
+                        <Col xs={9}>
                             <nav>
                                 <ul>
                                     <li onClick={() => handleLinkName('Bütün-tədbirlər')} className='menu-item'>
@@ -158,7 +178,7 @@ const Header = () => {
                         </Col>
                     </Row>
                 </Container>
-            </header>
+            </header >
 
             <section ref={mobilRef} className='mobil-menu'>
                 <ul className='navigation'>

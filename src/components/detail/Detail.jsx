@@ -242,7 +242,7 @@ const Detail = () => {
                         </Col>
                     </Row>
                     <div className='mt-5'>
-                        <MoviesTop title='Digər tədbirlər' link='/SearchCaregory/Bütün-tədbirlər' />
+                        <MoviesTop title='Bənzər tədbirlər' link='' />
                         <MovieListSingle movies={movieList.Movies} slidesPerView='4' />
                     </div>
                 </Container>
