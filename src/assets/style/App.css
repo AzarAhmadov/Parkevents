@@ -1552,10 +1552,10 @@ body.active {
     padding: 0;
   }
   #header .container .col-2 {
-    width: 10%;
+    width: 50%;
   }
   #header .container .col-10 {
-    width: 90%;
+    width: 50%;
   }
   #header .container nav {
     width: 100%;

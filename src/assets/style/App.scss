@@ -1459,7 +1459,7 @@ body {
   height: 355px;
 
   .plan-banner {
-    height: 450px;
+   height: 450px;
     width: 100%;
     position: absolute;
     top: 0;
@@ -1823,11 +1823,11 @@ $animation-duration:1s;
     .container {
 
       .col-2 {
-        width: 10%;
+        width: 50%;
       }
 
       .col-10 {
-        width: 90%;
+        width: 50%;
       }
 
       nav {
