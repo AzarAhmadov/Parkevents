@@ -1,17 +1,52 @@
+import { useEffect, useState, useRef } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { ticketSetsPlan } from '../data/Data'
 import TicketBanner from './TicketBanner';
 import TicketSetCount from './TicketSetCount';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
-import { useEffect } from 'react';
+import { useSelector } from 'react-redux'
+import { Toast } from 'primereact/toast';
 
 const TicketSet = () => {
+
     useEffect(() => {
-        { window.scrollTo(0, 0) }
-    }, [])
+        window.scrollTo(0, 0);
+    }, []);
+
+    const selectedCount = useSelector((state) => state.count.selectedCount);
+    const [selectedIds, setSelectedIds] = useState([]);
+
+    const handleButtonClick = (armchairId) => {
+        if (selectedIds.includes(armchairId)) {
+            setSelectedIds(selectedIds.filter((id) => id !== armchairId));
+        } else {
+            if (selectedIds.length < selectedCount?.name) {
+                setSelectedIds([...selectedIds, armchairId]);
+            }
+        }
+    };
+
+    useEffect(() => {
+        setSelectedIds([]);
+    }, [selectedCount]);
+
+    const totalAmount = selectedIds.reduce((total, id) => {
+        const armchair = ticketSetsPlan
+            .flatMap((el) => el.armchair)
+            .find((armchair) => armchair.id === id);
+        return total + (armchair?.price || 0);
+    }, 0);
+
+    const toast = useRef(null);
+
+    const showInfo = () => {
+        toast.current.show({ severity: 'info', summary: 'Diqqət', detail: 'Öncə oturacaq sayı seçin', life: 1500 });
+    }
+
     return (
         <>
+            <Toast ref={toast} />
             <TicketBanner title='Venus' dec='10:00, Heydər əliyev mərkəzi' src='https://pixner.net/boleto/demo/assets/images/banner/banner04.jpg' />
             <div className="ticket-dec">
                 <Container>
@@ -34,22 +69,33 @@ const TicketSet = () => {
                         <ul className="ticket-sets">
                             {ticketSetsPlan.map((el, idx) => (
                                 <li key={idx}>
-                                    <div className='gap'>
+                                    <div className="gap">
                                         <span>{el.line}</span>
                                     </div>
                                     <ul className="armchair-list">
-                                        {el.armchair.map((armchair, armchairIdx) => (
-                                            <li key={`${idx}-${armchairIdx}`}>
-                                                <button id={`armchair-${idx}-${armchairIdx}`}>
-                                                    {armchair.component}
-                                                    <div className="price">
-                                                        Qiymət: {armchair.price} ₼
-                                                    </div>
-                                                </button>
-                                            </li>
-                                        ))}
+                                        {el.armchair.map((armchair, armchairIdx) => {
+                                            const isSelected = selectedIds.includes(armchair.id);
+                                            return (
+                                                <li onClick={!selectedCount ? showInfo : undefined} key={`${idx}-${armchairIdx}`}>
+                                                    <button
+                                                        id={`armchair-${idx}-${armchairIdx}`}
+                                                        className={`armchair-button ${isSelected ? 'active' : ''}`}
+                                                        disabled={!selectedCount}
+                                                        onClick={() => {
+                                                            if (!armchair.disabled) {
+                                                                handleButtonClick(armchair.id);
+                                                            }
+                                                        }}
+                                                    >
+                                                        {armchair.component}
+                                                        <div className="price">Qiymət: {armchair.price} ₼</div>
+                                                    </button>
+                                                </li>
+
+                                            );
+                                        })}
                                     </ul>
-                                    <div className='gap'>
+                                    <div className="gap">
                                         <span>{el.line}</span>
                                     </div>
                                 </li>
@@ -57,16 +103,37 @@ const TicketSet = () => {
                         </ul>
 
                     </div>
-
                     <div className="next">
                         <Row>
                             <Col>
-                                <p>  Seçdiyiniz yerlər</p>
-                                <span> D9, D10 </span>
+                                <p>Seçdiyiniz yerlər</p>
+                                {selectedIds.length > 0 ? (
+                                    <div className='grid'>
+                                        {selectedIds.map((selectedId) => {
+                                            const ticket = ticketSetsPlan.find((ticketSet) =>
+                                                ticketSet.armchair.some((armchair) => armchair.id === selectedId)
+                                            );
+
+                                            if (ticket) {
+                                                const selectedArmchair = ticket.armchair.find((armchair) => armchair.id === selectedId);
+                                                return (
+                                                    <span key={selectedId}>
+                                                        sıra {selectedArmchair.order}, yer {selectedArmchair.line} {selectedArmchair.order}
+                                                    </span>
+                                                );
+                                            }
+
+                                            return null;
+                                        })}
+                                    </div>
+                                ) : (
+                                    <span className='none'>Yer seçilməyib</span>
+                                )}
                             </Col>
+
                             <Col>
                                 <p> Ümumi məbləğ </p>
-                                <span>150₼</span>
+                                <span className='total'>{totalAmount}₼</span>
                             </Col>
                             <Col>
                                 <Link className='hover t-btn' to='/ticket-pay'>
@@ -80,5 +147,4 @@ const TicketSet = () => {
         </>
     )
 }
-
 export default TicketSet

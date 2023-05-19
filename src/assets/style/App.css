@@ -1490,6 +1490,13 @@ body.active {
   background: transparent;
   position: relative;
 }
+.ticket-sets .sets-list ul button.active {
+  background: #31d7a9;
+  border-radius: 5px;
+}
+.ticket-sets .sets-list ul button.active svg {
+  padding: 3px;
+}
 .ticket-sets .sets-list ul button:hover .price {
   top: -50px;
   visibility: visible;
@@ -1519,7 +1526,7 @@ body.active {
 .ticket-sets .next {
   background: #050068;
   border-radius: 10px;
-  max-width: 970px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
@@ -1540,10 +1547,28 @@ body.active {
   font-size: 24px;
   margin-bottom: 5px;
 }
-.ticket-sets .next .row .col span {
+.ticket-sets .next .row .col .grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 6px 15px;
+  margin-top: 5px;
+}
+.ticket-sets .next .row .col .grid span {
+  width: 130px;
   color: #31d7a9;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 500;
+}
+.ticket-sets .next .row .col .none {
+  color: #31d7a9;
+  font-size: 23px;
+  font-weight: 500;
+}
+.ticket-sets .next .row .col .total {
+  font-size: 35px;
+  color: #31d7a9;
 }
 
 #plan {

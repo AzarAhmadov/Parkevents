@@ -3,17 +3,18 @@ import { Dropdown } from 'primereact/dropdown';
 import { MdKeyboardDoubleArrowLeft } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import Time from './Time';
+import { useSelector, useDispatch } from 'react-redux';
+import { setSelectedCount } from '../../app/features/CountSeat/CountSeat';
 
 const TicketSetCount = () => {
 
-    const [selectedCount, setSelectedCount] = useState(null);
-    const CountSet = [
-        { name: 1 },
-        { name: 2 },
-        { name: 3 },
-        { name: 4 },
-        { name: 5 },
-    ];
+    const selectedCount = useSelector((state) => state.count.selectedCount);
+    const countSet = useSelector((state) => state.count.countSet);
+    const dispatch = useDispatch();
+
+    const handleCountChange = (e) => {
+        dispatch(setSelectedCount(e.target.value));
+    };
 
     return (
         <div className="ticket-item">
@@ -26,11 +27,11 @@ const TicketSetCount = () => {
                 <li>
                     <Dropdown
                         value={selectedCount}
-                        onChange={(e) => setSelectedCount(e.value)}
-                        options={CountSet}
+                        onChange={handleCountChange}
+                        options={countSet}
                         optionLabel="name"
                         placeholder="Oturacaq sayı seçin"
-                        className='drop'
+                        className="drop"
                     />
                 </li>
                 <li>

@@ -3,9 +3,11 @@ import TicketFilter from './TicketFilter'
 import TicketTable from './TicketTable'
 
 export const TicketPlan = () => {
+    
     useEffect(() => {
         { window.scrollTo(0, 0) }
     }, [])
+
     return (
         <main>
             <section id='plan'>

@@ -1728,6 +1728,15 @@ body {
         background: transparent;
         position: relative;
 
+        &.active {
+          background: $color-5;
+          border-radius: 5px;
+
+          svg {
+            padding: 3px;
+          }
+        }
+
         &:hover {
           .price {
             top: -50px;
@@ -1764,7 +1773,7 @@ body {
   .next {
     background: #050068;
     border-radius: 10px;
-    max-width: 970px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
@@ -1788,10 +1797,31 @@ body {
           margin-bottom: 5px;
         }
 
-        span {
+        .grid {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          width: 100%;
+          gap: 6px 15px;
+          margin-top: 5px;
+
+          span {
+            width: 130px;
+            color: $color-5;
+            font-size: 22px;
+            font-weight: 500;
+          }
+        }
+
+        .none {
           color: $color-5;
-          font-size: 30px;
+          font-size: 23px;
           font-weight: 500;
+        }
+
+        .total {
+          font-size: 35px;
+          color: $color-5;
         }
       }
     }
@@ -3005,10 +3035,11 @@ $animation-duration:1s;
       .detail-txt {
         top: -20px;
 
-        ul{
-          li{
+        ul {
+          li {
             font-size: 18px;
-            &:last-child{
+
+            &:last-child {
               margin-right: 0;
             }
           }
