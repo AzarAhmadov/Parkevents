@@ -2413,6 +2413,12 @@ body.active {
   #detail .detail-bottom .detail-txt {
     top: -20px;
   }
+  #detail .detail-bottom .detail-txt ul li {
+    font-size: 18px;
+  }
+  #detail .detail-bottom .detail-txt ul li:last-child {
+    margin-right: 0;
+  }
   #detail .detail-bottom .detail-txt .movie-title {
     line-height: 45px;
     font-size: 32px;

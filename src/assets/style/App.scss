@@ -3005,6 +3005,15 @@ $animation-duration:1s;
       .detail-txt {
         top: -20px;
 
+        ul{
+          li{
+            font-size: 18px;
+            &:last-child{
+              margin-right: 0;
+            }
+          }
+        }
+
         .movie-title {
           line-height: 45px;
           font-size: 32px;
