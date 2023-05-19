@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TicketFilter from './TicketFilter'
 import TicketTable from './TicketTable'
 
 export const TicketPlan = () => {
+    useEffect(() => {
+        { window.scrollTo(0, 0) }
+    }, [])
     return (
         <main>
             <section id='plan'>
@@ -14,7 +17,7 @@ export const TicketPlan = () => {
                 </div>
             </section>
             <TicketFilter />
-            <TicketTable/>
+            <TicketTable />
         </main>
     )
 }

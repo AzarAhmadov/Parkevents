@@ -4,9 +4,12 @@ import { ticketSetsPlan } from '../data/Data'
 import TicketBanner from './TicketBanner';
 import TicketSetCount from './TicketSetCount';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
+import { useEffect } from 'react';
 
 const TicketSet = () => {
-
+    useEffect(() => {
+        { window.scrollTo(0, 0) }
+    }, [])
     return (
         <>
             <TicketBanner title='Venus' dec='10:00, Heydər əliyev mərkəzi' src='https://pixner.net/boleto/demo/assets/images/banner/banner04.jpg' />

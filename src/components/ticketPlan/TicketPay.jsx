@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Form from 'react-bootstrap/Form';
 import { Container, Col, Row } from 'react-bootstrap';
 import { TabView, TabPanel } from 'primereact/tabview';
@@ -6,6 +6,9 @@ import { MdKeyboardDoubleArrowLeft } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const TicketPay = () => {
+    useEffect(() => {
+        { window.scrollTo(0, 0) }
+    }, [])
     return (
         <>
             <section id='ticket-pay'>
