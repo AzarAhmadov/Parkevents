@@ -957,12 +957,13 @@ body.active {
 #detail .dec-container .tabs-area {
   padding-top: 40px;
 }
-#detail .dec-container .tabs-area .p-tabview .p-tabview-nav {
+
+.p-tabview .p-tabview-nav {
   border-top: 1px solid #0a1e5e;
   border-bottom: 1px solid #0a1e5e;
   background: transparent;
 }
-#detail .dec-container .tabs-area .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+.p-tabview .p-tabview-nav .p-tabview-ink-bar {
   z-index: 1;
   display: block;
   position: absolute;
@@ -971,7 +972,7 @@ body.active {
   background-color: #31d7a9;
   transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
 }
-#detail .dec-container .tabs-area .p-tabview .p-tabview-nav .p-tabview-ink-bar {
+.p-tabview .p-tabview-nav .p-tabview-ink-bar {
   z-index: 1;
   display: block;
   position: absolute;
@@ -980,28 +981,31 @@ body.active {
   background-color: #31d7a9;
   transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
 }
-#detail .dec-container .tabs-area .p-tabview .p-tabview-nav li .p-tabview-nav-link {
-  background: transparent;
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background: transparent !important;
   border-bottom: none;
   color: #fff;
   font-size: 20px;
 }
-#detail .dec-container .tabs-area .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+.p-tabview .p-tabview-nav li .p-tabview-nav-link .p-tabview-title {
+  color: #fff;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
   outline: none;
   outline-offset: 0;
   box-shadow: none;
 }
-#detail .dec-container .tabs-area .p-tabview .p-tabview-panels {
+.p-tabview .p-tabview-panels {
   margin-top: 25px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.119);
 }
-#detail .dec-container .tabs-area .p-tabview .p-tabview-panels h5 {
+.p-tabview .p-tabview-panels h5 {
   color: #fff;
   font-size: 33px;
   margin-bottom: 10px;
 }
-#detail .dec-container .tabs-area .p-tabview .p-tabview-panels p {
+.p-tabview .p-tabview-panels p {
   color: #fff;
   font-size: 19px;
   font-weight: 300;
@@ -1726,6 +1730,128 @@ body.active {
   gap: 25px;
 }
 
+#ticket-pay h3 {
+  text-align: center;
+  background: #0a1e5e;
+  font-size: 45px;
+  padding: 25px 0;
+  color: #fff;
+  margin-bottom: 30px;
+}
+#ticket-pay .container {
+  position: relative;
+}
+#ticket-pay .container .back {
+  position: absolute;
+  top: -95px;
+}
+#ticket-pay .information {
+  background: #0a1e5e;
+  padding: 30px 20px;
+  color: #fff;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+#ticket-pay .information label {
+  font-size: 18px;
+}
+#ticket-pay .information.payMethod label {
+  color: #fff;
+  font-size: 20px;
+}
+#ticket-pay .information.payMethod .form-btn {
+  border-top: 1px solid rgba(255, 255, 255, 0.119);
+  padding-top: 5px;
+  margin-top: 20px;
+}
+#ticket-pay .information.payMethod input {
+  border: 1px solid rgba(255, 255, 255, 0.219);
+  border-radius: 10px;
+  padding: 15px 10px;
+}
+#ticket-pay .information .p-tabview-nav,
+#ticket-pay .information .p-tabview-panels {
+  background: transparent;
+}
+#ticket-pay .information h4 {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.119);
+}
+#ticket-pay .information input {
+  margin-top: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border-radius: 0px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  color: #9aace5;
+  padding-left: 0;
+  padding-bottom: 10px;
+}
+#ticket-pay .information input::-moz-placeholder {
+  padding-left: 0;
+  color: #9aace5;
+  font-size: 16px;
+}
+#ticket-pay .information input::placeholder {
+  padding-left: 0;
+  color: #9aace5;
+  font-size: 16px;
+}
+#ticket-pay .pay-dec {
+  background: #0a1e5e;
+  padding: 20px;
+  position: sticky;
+  top: 10px;
+}
+#ticket-pay .pay-dec h4 {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+  padding-bottom: 20px;
+}
+#ticket-pay .pay-dec ul div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  align-items: flex-start;
+}
+#ticket-pay .pay-dec ul div span {
+  color: #fff;
+  font-size: 23px;
+}
+#ticket-pay .pay-dec ul div span.dif {
+  color: #9aace5;
+  font-size: 19px;
+}
+#ticket-pay .pay-dec ul .price {
+  border-top: 1px solid rgba(255, 255, 255, 0.119);
+  margin-top: 30px;
+  display: flex;
+}
+#ticket-pay .pay-dec ul .price p {
+  font-size: 20px;
+  color: #fff;
+}
+
+#pay {
+  background: #0a1e5e;
+  text-align: center;
+  padding: 30px 0;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+#pay span {
+  color: #31d7a9;
+}
+
 #footer {
   padding-top: 90px;
   padding-bottom: 30px;
@@ -1826,6 +1952,9 @@ body.active {
   }
 }
 @media only screen and (max-width: 992px) {
+  #ticket-pay {
+    margin-bottom: 30px;
+  }
   .ticket-sets .container {
     padding: 20px;
   }
@@ -1974,16 +2103,16 @@ body.active {
   .next .row .col:last-child {
     border-bottom: none !important;
   }
-  .ticket-dec .container .ticket-item ul {
+  .ticket-dec .ticket-item ul {
     flex-direction: column;
     gap: 30px;
   }
-  .ticket-dec .container .ticket-item ul li:nth-child(2) {
+  .ticket-dec .ticket-item ul li:nth-child(2) {
     text-align: center;
     display: flex;
     justify-content: center;
   }
-  .ticket-dec .container .ticket-item ul li:nth-child(3) {
+  .ticket-dec .ticket-item ul li:nth-child(3) {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -2018,6 +2147,36 @@ body.active {
   }
 }
 @media only screen and (max-width: 578px) {
+  #ticket-pay {
+    margin-bottom: 30px;
+  }
+  #ticket-pay .container .back {
+    position: absolute;
+    top: -82px;
+  }
+  #ticket-pay h3 {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  #ticket-pay .information h4 {
+    text-align: center;
+  }
+  #ticket-pay .pay-dec h4 {
+    font-size: 21px;
+  }
+  #ticket-pay .pay-dec ul div span {
+    font-size: 19px;
+  }
+  #ticket-pay .pay-dec ul div span.dif {
+    font-size: 18px;
+  }
+  #ticket-pay .pay-dec ul .price p {
+    font-size: 18px;
+  }
+  #pay {
+    padding: 20px 0;
+    font-size: 24px;
+  }
   .banner-title {
     width: 95%;
   }

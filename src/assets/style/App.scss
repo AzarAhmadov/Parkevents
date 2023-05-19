@@ -1108,67 +1108,71 @@ body {
 
     .tabs-area {
       padding-top: 40px;
+    }
+  }
+}
 
-      .p-tabview {
-        .p-tabview-nav {
-          border-top: 1px solid $color-3;
-          border-bottom: 1px solid $color-3;
-          background: transparent;
+.p-tabview {
+  .p-tabview-nav {
+    border-top: 1px solid $color-3;
+    border-bottom: 1px solid $color-3;
+    background: transparent;
 
-          .p-tabview-ink-bar {
-            z-index: 1;
-            display: block;
-            position: absolute;
-            bottom: 0;
-            height: 2px;
-            background-color: $color-5;
-            transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
-          }
+    .p-tabview-ink-bar {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      height: 2px;
+      background-color: $color-5;
+      transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
+    }
 
-          .p-tabview-ink-bar {
-            z-index: 1;
-            display: block;
-            position: absolute;
-            top: 0;
-            height: 2px;
-            background-color: $color-5;
-            transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
-          }
+    .p-tabview-ink-bar {
+      z-index: 1;
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 2px;
+      background-color: $color-5;
+      transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
+    }
 
-          li {
-            .p-tabview-nav-link {
-              background: transparent;
-              border-bottom: none;
-              color: $color-1;
-              font-size: 20px;
+    li {
+      .p-tabview-nav-link {
+        background: transparent !important;
+        border-bottom: none;
+        color: $color-1;
+        font-size: 20px;
 
-              &:not(.p-disabled):focus {
-                outline: none;
-                outline-offset: 0;
-                box-shadow: none;
-              }
-            }
-          }
+        .p-tabview-title {
+          color: $color-1;
         }
 
-        .p-tabview-panels {
-          margin-top: 25px;
-          background: transparent;
-          border: 1px solid rgba(255, 255, 255, 0.119);
-
-          h5 {
-            color: $color-1;
-            font-size: 33px;
-            margin-bottom: 10px;
-          }
-
-          p {
-            color: $color-1;
-            font-size: 19px;
-            font-weight: 300;
-          }
+        &:not(.p-disabled):focus {
+          outline: none;
+          outline-offset: 0;
+          box-shadow: none;
         }
       }
+    }
+  }
+
+  .p-tabview-panels {
+    margin-top: 25px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.119);
+
+    h5 {
+      color: $color-1;
+      font-size: 33px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $color-1;
+      font-size: 19px;
+      font-weight: 300;
     }
   }
 }
@@ -2008,6 +2012,150 @@ $animation-duration:1s;
   }
 }
 
+#ticket-pay {
+  h3 {
+    text-align: center;
+    background: $color-3;
+    font-size: 45px;
+    padding: 25px 0;
+    color: $color-1;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    position: relative;
+
+    .back {
+      position: absolute;
+      top: -95px;
+    }
+  }
+
+  .information {
+    background: $color-3;
+    padding: 30px 20px;
+    color: $color-1;
+    margin-bottom: 30px;
+    border-radius: 5px;
+
+    label {
+      font-size: 18px;
+    }
+
+    &.payMethod {
+
+      label {
+        color: $color-1;
+        font-size: 20px;
+      }
+
+      .form-btn {
+        border-top: 1px solid rgba(255, 255, 255, 0.119);
+        padding-top: 5px;
+        margin-top: 20px;
+      }
+
+      input {
+        border: 1px solid rgba(255, 255, 255, 0.219);
+        border-radius: 10px;
+        padding: 15px 10px;
+      }
+    }
+
+    .p-tabview-nav,
+    .p-tabview-panels {
+      background: transparent;
+    }
+
+    h4 {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.119);
+    }
+
+    input {
+      margin-top: 5px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+      background: transparent;
+      outline: none;
+      box-shadow: none;
+      border-radius: 0px;
+      border-top: transparent;
+      border-right: transparent;
+      border-left: transparent;
+      color: #9aace5;
+      padding-left: 0;
+      padding-bottom: 10px;
+
+      &::placeholder {
+        padding-left: 0;
+        color: #9aace5;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .pay-dec {
+    background: $color-3;
+    padding: 20px;
+    position: sticky;
+    top: 10px;
+
+    h4 {
+      text-align: center;
+      color: $color-1;
+      font-size: 30px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+      padding-bottom: 20px;
+    }
+
+    ul {
+      div {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        align-items: flex-start;
+
+        span {
+          color: $color-1;
+          font-size: 23px;
+
+          &.dif {
+            color: #9aace5;
+            font-size: 19px;
+          }
+        }
+      }
+
+      .price {
+        border-top: 1px solid rgba(255, 255, 255, 0.119);
+        margin-top: 30px;
+        display: flex;
+
+        p {
+          font-size: 20px;
+          color: $color-1;
+        }
+      }
+    }
+
+  }
+}
+
+#pay {
+  background: $color-3;
+  text-align: center;
+  padding: 30px 0;
+  color: $color-1;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+
+  span {
+    color: $color-5;
+  }
+}
+
 #footer {
   padding-top: 90px;
   padding-bottom: 30px;
@@ -2149,6 +2297,10 @@ $animation-duration:1s;
 }
 
 @media only screen and (max-width:992px) {
+  #ticket-pay {
+    margin-bottom: 30px;
+  }
+
   .ticket-sets {
     .container {
       padding: 20px;
@@ -2370,29 +2522,28 @@ $animation-duration:1s;
   }
 
   .ticket-dec {
-    .container {
-      .ticket-item {
-        ul {
-          flex-direction: column;
-          gap: 30px;
+    .ticket-item {
+      ul {
+        flex-direction: column;
+        gap: 30px;
 
-          li {
-            &:nth-child(2) {
-              text-align: center;
-              display: flex;
-              justify-content: center;
-            }
+        li {
+          &:nth-child(2) {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+          }
 
-            &:nth-child(3) {
-              text-align: center;
-              display: flex;
-              justify-content: center;
-            }
+          &:nth-child(3) {
+            text-align: center;
+            display: flex;
+            justify-content: center;
           }
         }
       }
     }
   }
+
 
   #movie-list {
     .container {
@@ -2441,6 +2592,58 @@ $animation-duration:1s;
 }
 
 @media only screen and (max-width:578px) {
+
+  #ticket-pay {
+    margin-bottom: 30px;
+
+    .container {
+      .back {
+        position: absolute;
+        top: -82px;
+      }
+    }
+
+    h3 {
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    .information {
+      h4 {
+        text-align: center;
+      }
+    }
+
+    .pay-dec {
+      h4 {
+        font-size: 21px;
+      }
+
+      ul {
+        div {
+          span {
+            font-size: 19px;
+
+            &.dif {
+              font-size: 18px;
+            }
+          }
+        }
+
+        .price {
+          p {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  #pay {
+    padding: 20px 0;
+    font-size: 24px;
+  }
+
   .banner-title {
     width: 95%;
   }

@@ -1,65 +1,20 @@
-import React, { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
-import { Dropdown } from 'primereact/dropdown';
-import { MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { ticketSetsPlan } from '../data/Data'
+import TicketBanner from './TicketBanner';
+import TicketSetCount from './TicketSetCount';
+import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 
 const TicketSet = () => {
 
-    const [selectedCount, setSelectedCount] = useState(null);
-    const CountSet = [
-        { name: 1 },
-        { name: 2 },
-        { name: 3 },
-        { name: 4 },
-        { name: 5 },
-    ];
-
     return (
         <>
-            <section id='ticket-set'>
-                <div className="ticket-banner">
-                    <img src="https://pixner.net/boleto/demo/assets/images/banner/banner04.jpg" alt="" />
-                    <div className="banner-title">
-                        <p>Venus</p>
-                        <span>
-                            23 may, 13:00, Heydər Əliyev mərkəzi
-                        </span>
-                    </div>
-                </div>
-            </section>
-
+            <TicketBanner title='Venus' dec='10:00, Heydər əliyev mərkəzi' src='https://pixner.net/boleto/demo/assets/images/banner/banner04.jpg' />
             <div className="ticket-dec">
                 <Container>
-                    <div className="ticket-item">
-                        <ul>
-                            <li>
-                                <Link className='hover t-btn' to='/ticket-plan'>
-                                    <MdKeyboardDoubleArrowLeft /> Geri
-                                </Link>
-                            </li>
-                            <li>
-                                <Dropdown
-                                    value={selectedCount}
-                                    onChange={(e) => setSelectedCount(e.value)}
-                                    options={CountSet}
-                                    optionLabel="name"
-                                    placeholder="Oturacaq sayı seçin"
-                                    className='drop'
-                                />
-                            </li>
-                            <li>
-                                <p className="date">
-                                    05:00 <br />
-                                    <span> dəqiqə qaldı</span>
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
+                    <TicketSetCount />
                 </Container>
             </div>
-
             <div className="ticket-sets">
                 <Container>
                     <div className="set-title">
@@ -111,8 +66,8 @@ const TicketSet = () => {
                                 <span>150₼</span>
                             </Col>
                             <Col>
-                                <Link className='hover t-btn' to='/ticket-plan'>
-                                    Növbəti   <MdKeyboardDoubleArrowRight />
+                                <Link className='hover t-btn' to='/ticket-pay'>
+                                    Ödəniş et  <MdKeyboardDoubleArrowRight />
                                 </Link>
                             </Col>
                         </Row>

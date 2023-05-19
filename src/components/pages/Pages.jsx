@@ -10,6 +10,7 @@ import Register from '../login&register/Register';
 import Reset from '../login&register/Reset';
 import { TicketPlan } from '../ticketPlan/TicketPlan';
 import TicketSet from '../ticketPlan/TicketSet';
+import TicketPay from '../ticketPlan/TicketPay';
 
 export const Pages = () => {
     return (
@@ -49,6 +50,11 @@ export const Pages = () => {
                             <Header />
                             <TicketSet />
                             <Footer />
+                        </>
+                    } />
+                    <Route path='/ticket-pay' element={
+                        <>
+                            <TicketPay />
                         </>
                     } />
                     <Route path='/Login' element={<Login />} />
