@@ -30,6 +30,32 @@ a {
   background-color: #F5F5F5;
 }
 
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 170px;
+}
+.video-container .play-icon {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.video-container .play-icon svg {
+  fill: #fff;
+  font-size: 70px;
+}
+.video-container::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  content: "";
+  cursor: pointer;
+}
+.video-container video {
+  position: absolute;
+}
+
 *::-webkit-scrollbar-thumb {
   background-color: #000000;
 }
@@ -901,8 +927,8 @@ body.active {
 }
 #detail .dec-container .swiper-modal .close {
   position: absolute;
-  right: 10%;
-  top: 10%;
+  right: 0px;
+  top: 0;
   cursor: pointer;
   cursor: pointer;
   z-index: 10;
@@ -915,7 +941,14 @@ body.active {
   height: 100%;
   display: grid;
   place-items: center;
-  max-width: 1200px;
+  max-width: 900px;
+  height: 630px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
 }
 #detail .dec-container .swiper-modal .mySwiper .swiper-button-next {
   background: #31d7a9;
@@ -2189,11 +2222,18 @@ body.active {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
   }
+  .video-container {
+    height: 301px;
+  }
   #detail {
     padding-bottom: 50px;
   }
   #detail .container {
     padding: 0;
+  }
+  #detail .container .dec-img {
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media only screen and (max-width: 578px) {
@@ -2493,31 +2533,37 @@ body.active {
     align-items: center;
     gap: 0px;
   }
+  #detail .video-container {
+    height: 230px;
+  }
   #detail .dec-container .dec-img {
-    height: 200px;
+    height: 230px;
   }
   #detail .dec-container .swiper-modal .close {
     right: 20px;
-    top: 190px;
+    top: 0px;
+  }
+  #detail .dec-container .swiper-modal .mySwiper {
+    height: 400px;
   }
   #detail .dec-container .swiper-modal .mySwiper .dec-img {
     height: 250px;
   }
   #detail .dec-container .swiper-modal .mySwiper .swiper-button-next {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     right: 5px;
   }
   #detail .dec-container .swiper-modal .mySwiper .swiper-button-next::after {
-    font-size: 17px;
+    font-size: 20px;
   }
   #detail .dec-container .swiper-modal .mySwiper .swiper-button-prev {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     left: 5px;
   }
   #detail .dec-container .swiper-modal .mySwiper .swiper-button-prev::after {
-    font-size: 17px;
+    font-size: 20px;
   }
   #ticket-filter .container .filter-flex .drop {
     width: 83%;

@@ -10,12 +10,12 @@ import { FaFacebookF } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { BsTwitter } from 'react-icons/bs';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
+import { AiOutlinePlayCircle } from 'react-icons/ai';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation } from "swiper";
 import { movieList } from '../data/Data';
-import VideSlide1 from '../../assets/video/video-slide.mp4'
 import Advert from '../home/Advert';
 import MovieListSingle from '../home/MovieListSingle';
 import MoviesTop from '../home/MoviesTop';
@@ -84,6 +84,7 @@ const Detail = () => {
         }
     };
 
+    console.log(movie)
 
     return (
         <main>
@@ -182,17 +183,29 @@ const Detail = () => {
                                     },
                                 }}
                             >
-                                <SwiperSlide>
-                                    <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details01.jpg" alt="" onClick={() => handleSlideClick(0)} />
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <video className='dec-img' controls onClick={() => handleSlideClick(1)} >
-                                        <source src={VideSlide1} type="video/ogg" />
-                                    </video>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details02.jpg" alt="" onClick={() => handleSlideClick(2)} />
-                                </SwiperSlide>
+                                {movie.eventsContent.map((event, index) => (
+                                    <SwiperSlide key={index}>
+                                        {event.img && (
+                                            <img
+                                                className='dec-img'
+                                                src={event.img}
+                                                alt=""
+                                                onClick={() => handleSlideClick(index)}
+                                            />
+                                        )}
+                                        {event.video && (
+                                            <div className='video-container' onClick={() => handleSlideClick(index)}>
+                                                <video className='dec-img'>
+                                                    <source src={event.video} type="video/mp4" />
+                                                </video>
+                                                <div className="play-icon">
+                                                    <AiOutlinePlayCircle />
+                                                </div>
+                                            </div>
+                                        )}
+                                    </SwiperSlide>
+                                ))}
+
                             </Swiper>
                             {modalOpen && (
                                 <div className={`swiper-modal ${modalOpen ? 'active' : ''}`}>
@@ -201,22 +214,29 @@ const Detail = () => {
                                         modules={[Navigation]}
                                         className="mySwiper"
                                         initialSlide={currentSlide}
+                                        spaceBetween={10}
                                     >
-                                        <SwiperSlide>
-                                            <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details01.jpg" alt="" />
-                                        </SwiperSlide>
-                                        <SwiperSlide>
-                                            <video controls className='dec-img'>
-                                                <source src={VideSlide1} type="video/ogg" />
-                                            </video>
-                                        </SwiperSlide>
-                                        <SwiperSlide>
-                                            <img className='dec-img' src="https://pixner.net/boleto/demo/assets/images/movie/movie-details02.jpg" alt="" />
-                                        </SwiperSlide>
+                                            {movie.eventsContent.map((event, index) => (
+                                                <SwiperSlide key={index}>
+                                                    {event.img && (
+                                                        <img
+                                                            className='dec-img'
+                                                            src={event.img}
+                                                            alt=""
+                                                            onClick={() => handleSlideClick(index)}
+                                                        />
+                                                    )}
+                                                    {event.video && (
+                                                        <video className='dec-img' controls>
+                                                            <source src={event.video} type="video/mp4" />
+                                                        </video>
+                                                    )}
+                                                </SwiperSlide>
+                                            ))}
+                                        <div className="close" onClick={() => setModalOpen(false)}>
+                                            <AiOutlineCloseCircle />
+                                        </div>
                                     </Swiper>
-                                    <div className="close" onClick={() => setModalOpen(false)}>
-                                        <AiOutlineCloseCircle />
-                                    </div>
                                 </div>
                             )}
                             <div className="tabs-area">

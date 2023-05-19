@@ -10,6 +10,17 @@ export const movieList = {
             banner: "https://wallpapers.com/images/featured/eyu0znclsfx37s76.jpg",
             price: '400 ₼-dan',
             date: <div>26<br />Okt</div>,
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 15,
@@ -18,6 +29,17 @@ export const movieList = {
             bannerVideo: videoSlide1,
             price: '400 ₼-dan',
             date: <div>14<br />Sen</div>,
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 16,
@@ -26,6 +48,17 @@ export const movieList = {
             banner: "https://a-static.besthdwallpaper.com/super-mario-bros-computer-animation-movie-poster-wallpaper-2880x1620-107794_52.jpg",
             price: '400 ₼-dan',
             date: <div>1<br />Okt</div>,
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 17,
@@ -34,6 +67,17 @@ export const movieList = {
             banner: "https://collider.com/wp-content/uploads/transformers-3-poster-banner-01.jpg",
             price: '400 ₼-dan',
             date: <div>26<br />Okt</div>,
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
     ],
     Movies: [
@@ -43,7 +87,18 @@ export const movieList = {
             movieName: "Alone",
             date: <div>26<br />İyun</div>,
             price: '15 ₼-dan',
-            banner: "https://new.static.tv.nu/19052343?forceFit=0&height=1152&quality=50&width=2048"
+            banner: "https://new.static.tv.nu/19052343?forceFit=0&height=1152&quality=50&width=2048",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 2,
@@ -51,7 +106,18 @@ export const movieList = {
             movieName: "Mars",
             date: <div>2<br />Okt</div>,
             price: '25 ₼-dan',
-            banner: "https://images5.alphacoders.com/641/641364.png"
+            banner: "https://images5.alphacoders.com/641/641364.png",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 3,
@@ -59,7 +125,18 @@ export const movieList = {
             movieName: "Venus",
             date: <div>6<br />Avg</div>,
             price: '4 ₼-dan',
-            banner: "https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg"
+            banner: "https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 5,
@@ -67,7 +144,18 @@ export const movieList = {
             movieName: "Venus",
             price: '20 ₼-dan',
             date: <div>21<br />Sen</div>,
-            banner: "https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg"
+            banner: "https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 30,
@@ -75,7 +163,18 @@ export const movieList = {
             movieName: "Venus",
             price: '20 ₼-dan',
             date: <div>21<br />Sen</div>,
-            banner: "https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg"
+            banner: "https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         }
     ],
 
@@ -86,7 +185,18 @@ export const movieList = {
             movieName: "Digital Economy Conference",
             date: <div>21<br />Sen</div>,
             price: '150 ₼-dan',
-            banner: "https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            banner: "https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 7,
@@ -94,7 +204,18 @@ export const movieList = {
             movieName: "Web Design Conferensa",
             date: <div>21<br />Sen</div>,
             price: '120 ₼-dan',
-            banner: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            banner: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 8,
@@ -102,7 +223,18 @@ export const movieList = {
             movieName: "Digital Thinkers Meetup",
             date: <div>21<br />Sen</div>,
             price: '400 ₼-dan',
-            banner: "https://getwallpapers.com/wallpaper/full/5/1/2/73312.jpg"
+            banner: "https://getwallpapers.com/wallpaper/full/5/1/2/73312.jpg",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 9,
@@ -110,7 +242,18 @@ export const movieList = {
             movieName: "Digital Thinkers Meetup",
             date: <div>21<br />Sen</div>,
             price: '60 ₼-dan',
-            banner: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            banner: "https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         }
     ],
 
@@ -121,7 +264,18 @@ export const movieList = {
             movieName: "Digital Economy Conference",
             date: <div>21<br />Sen</div>,
             price: '120 ₼-dan',
-            banner: "https://e1.pxfuel.com/desktop-wallpaper/181/166/desktop-wallpaper-football-53202-football-fans.jpg"
+            banner: "https://e1.pxfuel.com/desktop-wallpaper/181/166/desktop-wallpaper-football-53202-football-fans.jpg",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 11,
@@ -129,7 +283,18 @@ export const movieList = {
             movieName: "Web Design Conferensa",
             date: <div>21<br />Sen</div>,
             price: '300 ₼-dan',
-            banner: "https://w0.peakpx.com/wallpaper/231/327/HD-wallpaper-soccer-ball-net-goal-football-football-stadium.jpg"
+            banner: "https://w0.peakpx.com/wallpaper/231/327/HD-wallpaper-soccer-ball-net-goal-football-football-stadium.jpg",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
         {
             id: 12,
@@ -137,7 +302,18 @@ export const movieList = {
             movieName: "Digital Thinkers Meetup",
             date: <div>21<br />Sen</div>,
             price: '400 ₼-dan',
-            banner: "https://4kwallpapers.com/images/walls/thumbs_2t/3746.jpg"
+            banner: "https://4kwallpapers.com/images/walls/thumbs_2t/3746.jpg",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
 
         },
         {
@@ -146,7 +322,18 @@ export const movieList = {
             movieName: "Digital Thinkers Meetup",
             date: <div>21<br />Sen</div>,
             price: '300 ₼-dan',
-            banner: "https://4kwallpapers.com/images/walls/thumbs_2t/3746.jpg"
+            banner: "https://4kwallpapers.com/images/walls/thumbs_2t/3746.jpg",
+            eventsContent: [
+                {
+                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                },
+                {
+                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                },
+                {
+                    video: videoSlide1
+                }
+            ]
         },
     ]
 };
@@ -461,37 +648,37 @@ export const ticketSetsPlan = [
                 component: <MdOutlineChair />,
                 price: 10,
                 id: 35,
-                order:3,
+                order: 3,
             },
             {
                 component: <MdOutlineChair />,
                 price: 10,
                 id: 36,
-                order:4,
+                order: 4,
             },
             {
                 component: <MdOutlineChair />,
                 price: 10,
                 id: 37,
-                order:5,
+                order: 5,
             },
             {
                 component: <MdOutlineChair />,
                 price: 10,
                 id: 38,
-                order:6,
+                order: 6,
             },
             {
                 component: <MdOutlineChair />,
                 price: 10,
                 id: 39,
-                order:7,
+                order: 7,
             },
             {
                 component: <MdOutlineChair />,
                 price: 10,
                 id: 40,
-                order:8,
+                order: 8,
             },
         ],
     },
