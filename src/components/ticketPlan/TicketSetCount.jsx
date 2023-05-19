@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Dropdown } from 'primereact/dropdown';
 import { MdKeyboardDoubleArrowLeft } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import Time from './Time';
 
 const TicketSetCount = () => {
 
@@ -33,10 +34,7 @@ const TicketSetCount = () => {
                     />
                 </li>
                 <li>
-                    <p className="date">
-                        05:00 <br />
-                        <span> dəqiqə qaldı</span>
-                    </p>
+                    <Time />
                 </li>
             </ul>
         </div>

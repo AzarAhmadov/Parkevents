@@ -4,6 +4,7 @@ import { Container, Col, Row } from 'react-bootstrap';
 import { TabView, TabPanel } from 'primereact/tabview';
 import { MdKeyboardDoubleArrowLeft } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import Time from './Time';
 
 const TicketPay = () => {
     useEffect(() => {
@@ -19,6 +20,9 @@ const TicketPay = () => {
                             <MdKeyboardDoubleArrowLeft />
                             Geri
                         </Link>
+                    </div>
+                    <div className="time">
+                        <Time />
                     </div>
                     <Row>
                         <Col lg={8}>

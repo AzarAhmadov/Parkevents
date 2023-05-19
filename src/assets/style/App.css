@@ -153,6 +153,7 @@ body.active {
   display: flex;
   align-items: center;
   height: 90px;
+  border-bottom: 2px solid transparent;
 }
 #header nav ul li:hover ul {
   top: 80px;
@@ -270,9 +271,15 @@ body.active {
 }
 #header nav ul li.menu-item a {
   padding: 30px 0;
+  border-bottom: 2px solid transparent;
 }
 #header nav ul li.menu-item a.active {
   border-bottom: 2px solid #31d7a9;
+  transition: none;
+}
+#header nav ul li.menu-item a.active::after {
+  height: 0px;
+  transition: 400ms none;
 }
 #header nav ul li.menu-item a::after {
   position: absolute;
@@ -1358,6 +1365,14 @@ body.active {
   color: #849cce;
 }
 
+.date {
+  font-size: 22px;
+  color: #fff;
+}
+.date span {
+  color: #849cce;
+}
+
 .t-btn {
   background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
   padding: 7px 20px;
@@ -1745,6 +1760,12 @@ body.active {
   position: absolute;
   top: -95px;
 }
+#ticket-pay .container .time {
+  position: absolute;
+  top: -115px;
+  right: 101px;
+  text-align: center;
+}
 #ticket-pay .information {
   background: #0a1e5e;
   padding: 30px 20px;
@@ -1916,6 +1937,9 @@ body.active {
 @media only screen and (max-width: 1400px) {
   .container {
     padding: 0;
+  }
+  #ticket-pay .container .time {
+    right: 0px;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -2152,11 +2176,20 @@ body.active {
   }
   #ticket-pay .container .back {
     position: absolute;
-    top: -82px;
+    top: -86px;
+  }
+  #ticket-pay .container .time {
+    position: absolute;
+    top: -90px;
+    right: 15px;
+  }
+  #ticket-pay .container .time .date {
+    line-height: 20px;
+    font-size: 17px;
   }
   #ticket-pay h3 {
-    padding: 20px 0;
-    font-size: 30px;
+    padding: 25px 0;
+    font-size: 28px;
   }
   #ticket-pay .information h4 {
     text-align: center;
