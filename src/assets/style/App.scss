@@ -2716,6 +2716,16 @@ $animation-duration:1s;
     font-size: 24px;
   }
 
+  #ticket-set{
+    .ticket-banner{
+      .banner-title{
+        p{
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
   .banner-title {
     width: 95%;
   }
@@ -3192,6 +3202,23 @@ $animation-duration:1s;
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  #plan {
+    height: 339px;
+    .plan-banner {
+      height: 430px;
+      .ticket-name {
+        width: 100%;
+        text-align: center;
+        padding: 0 10px;
+
+        p {
+          font-size:40px;
+          line-height: 50px;
         }
       }
     }

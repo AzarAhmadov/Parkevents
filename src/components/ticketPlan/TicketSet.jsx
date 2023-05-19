@@ -44,10 +44,12 @@ const TicketSet = () => {
         toast.current.show({ severity: 'info', summary: 'Diqqət', detail: 'Öncə oturacaq sayı seçin', life: 1500 });
     }
 
+    const movie = useSelector((state) => state.movie);
+
     return (
         <>
             <Toast ref={toast} />
-            <TicketBanner title='Venus' dec='10:00, Heydər əliyev mərkəzi' src='https://pixner.net/boleto/demo/assets/images/banner/banner04.jpg' />
+            <TicketBanner title={movie.movieName} dec='10:00, Heydər əliyev mərkəzi' src='https://pixner.net/boleto/demo/assets/images/banner/banner04.jpg' />
             <div className="ticket-dec">
                 <Container>
                     <TicketSetCount />

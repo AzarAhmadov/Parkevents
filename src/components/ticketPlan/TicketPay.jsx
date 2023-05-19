@@ -7,9 +7,11 @@ import { Link } from 'react-router-dom';
 import Time from './Time';
 
 const TicketPay = () => {
+    
     useEffect(() => {
         { window.scrollTo(0, 0) }
     }, [])
+
     return (
         <>
             <section id='ticket-pay'>

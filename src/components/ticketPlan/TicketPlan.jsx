@@ -1,20 +1,23 @@
 import React, { useEffect } from 'react'
 import TicketFilter from './TicketFilter'
 import TicketTable from './TicketTable'
+import { useSelector } from 'react-redux';
 
 export const TicketPlan = () => {
-    
+
     useEffect(() => {
         { window.scrollTo(0, 0) }
     }, [])
+
+    const movie = useSelector((state) => state.movie);
 
     return (
         <main>
             <section id='plan'>
                 <div className="plan-banner">
-                    <img src="https://pixner.net/boleto/demo/assets/images/banner/banner03.jpg" alt="" />
+                    <img src={movie.movieImg} alt="" />
                     <div className="ticket-name">
-                        <p> Venus </p>
+                        <p> {movie.movieName} </p>
                     </div>
                 </div>
             </section>

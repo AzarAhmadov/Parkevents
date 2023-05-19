@@ -19,6 +19,8 @@ import VideSlide1 from '../../assets/video/video-slide.mp4'
 import Advert from '../home/Advert';
 import MovieListSingle from '../home/MovieListSingle';
 import MoviesTop from '../home/MoviesTop';
+import { useDispatch } from 'react-redux';
+import { setMovieInfo } from '../../app/features/movieDetail/MovieDetail';
 
 const getMovieById = (id) => {
     const categories = Object.values(movieList);
@@ -60,7 +62,6 @@ const Detail = () => {
         scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, []);
 
-
     const mediaRender = () => {
         if (movie && movie.bannerVideo) {
             return (
@@ -74,6 +75,15 @@ const Detail = () => {
             return null;
         }
     }
+
+    const dispatch = useDispatch();
+
+    const handleTicketButtonClick = () => {
+        if (movie) {
+            dispatch(setMovieInfo({ movieName: movie.movieName, movieImg: movie.movieImg }));
+        }
+    };
+
 
     return (
         <main>
@@ -107,7 +117,8 @@ const Detail = () => {
                                     </div>
                                     <div className="ticket">
                                         <div className='d-flex'>
-                                            <Link to='/ticket-plan' className='buy hover'>
+
+                                            <Link to='/ticket-plan' className='buy hover' onClick={handleTicketButtonClick}>
                                                 Bilet əldə edin
                                             </Link>
 
