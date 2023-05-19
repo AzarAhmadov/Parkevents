@@ -16,7 +16,7 @@ const MovieList = () => {
                 <Row>
                     <Col lg={3}>
 
-                        <Advert advert='https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner01.jpg'/>
+                        <Advert advert='https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner01.jpg' />
 
                         <div className="trend">
                             <h4> Trend axtarışlar </h4>
@@ -34,21 +34,21 @@ const MovieList = () => {
                             </div>
                         </div>
 
-                        <Advert advert='https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner02.jpg'/>
+                        <Advert advert='https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner02.jpg' />
 
                     </Col>
                     <Col lg={9}>
                         <div className="movies-list-content">
 
-                            <MoviesTop title='Fimlər' linkName='Hamısına bax' link='/SearchCaregory/Bütün-tədbirlər'/>
-                            
+                            <MoviesTop title="Fimlər" linkName="Hamısına bax" link="SearchCategory/Bütün-tədbirlər" />
+
                             <MovieListSingle movies={movieList.Movies} slidesPerView={3} />
 
-                            <MoviesTop title='Teatr' linkName='Hamısına bax' link='/SearchCaregory/Bütün-tədbirlər'/>
+                            <MoviesTop title="Teatr" linkName="Hamısına bax" link="SearchCategory/Bütün-tədbirlər" />
 
                             <MovieListSingle movies={movieList.Events} slidesPerView={3} />
 
-                            <MoviesTop title='İdman oyunları' linkName='Hamısına bax' link='/SearchCaregory/Bütün-tədbirlər'/>
+                            <MoviesTop title='İdman oyunları' linkName='Hamısına bax' link="SearchCategory/Bütün-tədbirlər" />
 
                             <MovieListSingle movies={movieList.Sports} slidesPerView={3} />
 

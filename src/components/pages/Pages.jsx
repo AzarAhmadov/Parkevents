@@ -1,5 +1,6 @@
-import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import Header from '../header/Header';
 import Home from '../home/Home';
 import Footer from '../footer/Footer';
@@ -12,57 +13,130 @@ import { TicketPlan } from '../ticketPlan/TicketPlan';
 import TicketSet from '../ticketPlan/TicketSet';
 import TicketPay from '../ticketPlan/TicketPay';
 
-export const Pages = () => {
-    return (
-        <>
-            <BrowserRouter>
-                <Routes>
-                    <Route path='/' element={
-                        <>
-                            <Header />
-                            <Home />
-                            <Footer />
-                        </>
-                    } />
-                    <Route path='/detail/:id' element={
-                        <>
-                            <Header />
-                            <Detail />
-                            <Footer />
-                        </>
-                    } />
-                    <Route path='/SearchCaregory/:id' element={
-                        <>
-                            <Header />
-                            <SearchCategory />
-                            <Footer />
-                        </>
-                    } />
-                    <Route path='/ticket-plan' element={
-                        <>
-                            <Header />
-                            <TicketPlan />
-                            <Footer />
-                        </>
-                    } />
-                    <Route path='/ticket-set' element={
-                        <>
-                            <Header />
-                            <TicketSet />
-                            <Footer />
-                        </>
-                    } />
-                    <Route path='/ticket-pay' element={
-                        <>
-                            <TicketPay />
-                        </>
-                    } />
-                    <Route path='/Login' element={<Login />} />
-                    <Route path='/Register' element={<Register />} />
-                    <Route path='/Reset' element={<Reset />} />
-                </Routes>
+const transition = {
+    duration: 1,
+    ease: 'easeInOut',
+};
 
-            </BrowserRouter>
-        </>
-    )
-}
+const animationVariants = {
+    initial: {
+        opacity: 0,
+        x: -5,
+    },
+    animate: {
+        opacity: 1,
+        x: 0,
+    },
+    exit: {
+        opacity: 0,
+        x: 0,
+    },
+};
+
+const AnimatedRoute = ({ element }) => {
+    const location = useLocation();
+
+    return (
+        <motion.div
+            key={location.pathname}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            variants={animationVariants}
+            transition={transition}
+        >
+            {element}
+        </motion.div>
+    );
+};
+
+const Pages = () => {
+    return (
+        <Router>
+            <AnimatePresence mode='wait'>
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={
+                                    <>
+                                        <Home />
+                                    </>
+                                } />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/detail/:id"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={<Detail />} />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/SearchCategory/:id"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={<SearchCategory />} />
+                                <Footer />
+                            </>
+                        }
+                    />
+
+                    <Route
+                        path="/ticket-plan"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={<TicketPlan />} />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/ticket-set"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={<TicketSet />} />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/ticket-pay"
+                        element={
+                            <>
+                                <AnimatedRoute element={<TicketPay />} />
+                            </>
+                        }
+                    />
+                    <Route path="/Login" element={
+                        <>
+                            <AnimatedRoute element={<Login />} />
+                        </>
+                    } />
+                    <Route path="/Register" element={
+                        <>
+                            <AnimatedRoute element={<Register />} />
+                        </>
+                    } />
+                    <Route path="/Reset" element={
+                        <>
+                            <AnimatedRoute element={<Reset />} />
+                        </>
+                    } />
+                </Routes>
+            </AnimatePresence>
+        </Router>
+    );
+};
+
+export default Pages;

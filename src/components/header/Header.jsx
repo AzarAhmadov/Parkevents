@@ -32,8 +32,9 @@ const Header = () => {
 
     const navigate = useNavigate();
 
-    const handleLinkName = (categoryName) => {
-        navigate(`/SearchCaregory/${categoryName}`);
+    const handleLinkName = (name) => {
+        const encodedId = encodeURIComponent(name);
+        navigate(`/SearchCategory/${encodedId}`);
     };
 
     const openBar = () => {
@@ -84,59 +85,60 @@ const Header = () => {
                             <nav>
                                 <ul>
                                     <li onClick={() => handleLinkName('Bütün-tədbirlər')} className='menu-item'>
-                                        <NavLink to='/SearchCaregory/Bütün-tədbirlər'>
+                                        <NavLink to={`/SearchCategory/${encodeURIComponent('Bütün-tədbirlər')}`}>
                                             Bütün tədbirlər
                                         </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Konsert')} className='menu-item'>
-                                        <NavLink to='/SearchCaregory/Konsert'>
+                                        <NavLink to={`/SearchCategory/${encodeURIComponent('Konsert')}`}>
                                             Konsert
                                         </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Futbol')} className='menu-item'>
-                                        <NavLink to='/SearchCaregory/Futbol'>
+                                        <NavLink to={`/SearchCategory/${encodeURIComponent(' Futbol')}`}>
                                             Futbol
                                         </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Teatr')} className='menu-item'>
-                                        <NavLink to='/SearchCaregory/Teatr'>
+                                        <NavLink to={`/SearchCategory/${encodeURIComponent('Teatr')}`}>
                                             Teatr
                                         </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Muzeylər')} className='menu-item'>
-                                        <NavLink to='/SearchCaregory/Muzeylər'>
+                                        <NavLink to={`/SearchCategory/${encodeURIComponent('Muzeylər')}`}>
                                             Muzeylər
                                         </NavLink>
                                     </li>
                                     <li onClick={() => handleLinkName('Tədbirlər')} className='menu-item'>
-                                        <NavLink to='/SearchCaregory/Tədbirlər'>
+                                        <NavLink to={`/SearchCategory/${encodeURIComponent('Tədbirlər')}`}>
                                             Tədbirlər
                                         </NavLink>
                                     </li>
+
                                     <li className='other'>
                                         <Link>
                                             Digər
                                         </Link>
                                         <ul>
-                                            <li onClick={() => handleLinkName('Əlave link')}>
-                                                <Link>
-                                                    Əlave link
-                                                </Link>
+                                            <li onClick={() => handleLinkName('Əlavə')}>
+                                                <NavLink to={`/SearchCategory/${encodeURIComponent('Əlavə')}`}>
+                                                    Əlavə link
+                                                </NavLink>
                                             </li>
-                                            <li onClick={() => handleLinkName('Əlave link')}>
-                                                <Link>
-                                                    Əlave link
-                                                </Link>
+                                            <li onClick={() => handleLinkName('Əlavə')}>
+                                                <NavLink to={`/SearchCategory/${encodeURIComponent('Əlavə')}`}>
+                                                    Əlavə link
+                                                </NavLink>
                                             </li>
-                                            <li onClick={() => handleLinkName('Əlave link')}>
-                                                <Link>
-                                                    Əlave link
-                                                </Link>
+                                            <li onClick={() => handleLinkName(' Əlavə')}>
+                                                <NavLink to={`/SearchCategory/${encodeURIComponent('Əlavə')}`}>
+                                                    Əlavə link
+                                                </NavLink>
                                             </li>
-                                            <li onClick={() => handleLinkName('Əlave link')}>
-                                                <Link>
-                                                    Əlave link
-                                                </Link>
+                                            <li onClick={() => handleLinkName('Əlavə')}>
+                                                <NavLink to={`/SearchCategory/${encodeURIComponent('Əlavə')}`}>
+                                                    Əlavə link
+                                                </NavLink>
                                             </li>
                                             <div className="arrow"></div>
                                         </ul>
@@ -162,7 +164,7 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             <li className='out'>
-                                                <Link>
+                                                <Link to='/register'>
                                                     Çıxış
                                                 </Link>
                                                 <BiLogInCircle />
@@ -183,22 +185,34 @@ const Header = () => {
             <section ref={mobilRef} className='mobil-menu'>
                 <ul className='navigation'>
                     <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Bütün-tədbirlər' >Bütün tədbirlər</NavLink>
+                        <NavLink to={`/SearchCategory/${encodeURIComponent('Bütün-tədbirlər')}`}>
+                            Bütün tədbirlər
+                        </NavLink>
                     </li>
                     <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Konsert' >Konsert</NavLink>
+                        <NavLink to={`/SearchCategory/${encodeURIComponent('Konsert')}`}>
+                            Konsert
+                        </NavLink>
                     </li>
                     <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Futbol'>Futbol</NavLink>
+                        <NavLink to={`/SearchCategory/${encodeURIComponent('Futbol')}`}>
+                            Futbol
+                        </NavLink>
                     </li>
                     <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Teatr'>Teatr</NavLink>
+                        <NavLink to={`/SearchCategory/${encodeURIComponent('Teatr')}`}>
+                            Teatr
+                        </NavLink>
                     </li>
                     <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Muzeylər' >Muzeylər</NavLink>
+                        <NavLink to={`/SearchCategory/${encodeURIComponent('Muzeylər')}`}>
+                            Muzeylər
+                        </NavLink>
                     </li>
                     <li onClick={close} className='nav-item'>
-                        <NavLink to='/SearchCaregory/Tədbirlər' >Tədbirlər</NavLink>
+                        <NavLink to={`/SearchCategory/${encodeURIComponent('Tədbirlər')}`}>
+                            Tədbirlər
+                        </NavLink>
                     </li>
                 </ul>
                 <div onClick={close} className="close">

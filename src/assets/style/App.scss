@@ -1,8 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-// Bootstrap scss
-
 // Reset 
 * {
   margin: 0;
@@ -12,6 +10,7 @@
   border: none;
   box-sizing: border-box;
   list-style: none;
+  scroll-behavior: unset !important;
 }
 
 ul,
@@ -57,7 +56,7 @@ html,
 body {
   font-family: 'Poppins', sans-serif;
   background: $color-4;
-  scroll-behavior: smooth;
+  scroll-behavior: unset !important;
 
   &.active {
     overflow: hidden;
@@ -2716,10 +2715,10 @@ $animation-duration:1s;
     font-size: 24px;
   }
 
-  #ticket-set{
-    .ticket-banner{
-      .banner-title{
-        p{
+  #ticket-set {
+    .ticket-banner {
+      .banner-title {
+        p {
           font-size: 40px;
         }
       }
@@ -3209,15 +3208,17 @@ $animation-duration:1s;
 
   #plan {
     height: 339px;
+
     .plan-banner {
       height: 430px;
+
       .ticket-name {
         width: 100%;
         text-align: center;
         padding: 0 10px;
 
         p {
-          font-size:40px;
+          font-size: 40px;
           line-height: 50px;
         }
       }

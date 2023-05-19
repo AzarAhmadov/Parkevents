@@ -80,7 +80,7 @@ const Detail = () => {
 
     const handleTicketButtonClick = () => {
         if (movie) {
-            dispatch(setMovieInfo({ movieName: movie.movieName, movieImg: movie.movieImg }));
+            dispatch(setMovieInfo({ movieName: movie.movieName, movieImg: movie.banner }));
         }
     };
 

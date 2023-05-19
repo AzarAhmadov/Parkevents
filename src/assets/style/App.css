@@ -7,6 +7,7 @@
   border: none;
   box-sizing: border-box;
   list-style: none;
+  scroll-behavior: unset !important;
 }
 
 ul,
@@ -43,7 +44,7 @@ html,
 body {
   font-family: "Poppins", sans-serif;
   background: #001232;
-  scroll-behavior: smooth;
+  scroll-behavior: unset !important;
 }
 html.active,
 body.active {
