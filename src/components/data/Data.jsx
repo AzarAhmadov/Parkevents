@@ -684,3 +684,50 @@ export const ticketSetsPlan = [
     },
 ];
 
+export const story = [
+    {
+        title: "Mabel Matiz",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/2db37cf6f9514343875372f7298c1c78.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/09e4f8bbaf4041e89d7b5ac9361b4305.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/39eceb033c794fe7949fab8e8993ab5b.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/fe2b378b195c4b53b2bff0b1bb3ae7fa.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/fe2b378b195c4b53b2bff0b1bb3ae7fa.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+    },
+]

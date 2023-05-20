@@ -58,10 +58,6 @@ const Detail = () => {
 
     const scrollRef = useRef(null);
 
-    useEffect(() => {
-        scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }, []);
-
     const mediaRender = () => {
         if (movie && movie.bannerVideo) {
             return (
@@ -84,7 +80,9 @@ const Detail = () => {
         }
     };
 
-    console.log(movie)
+    useEffect(() => {
+        scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, []);
 
     return (
         <main>
@@ -216,23 +214,23 @@ const Detail = () => {
                                         initialSlide={currentSlide}
                                         spaceBetween={10}
                                     >
-                                            {movie.eventsContent.map((event, index) => (
-                                                <SwiperSlide key={index}>
-                                                    {event.img && (
-                                                        <img
-                                                            className='dec-img'
-                                                            src={event.img}
-                                                            alt=""
-                                                            onClick={() => handleSlideClick(index)}
-                                                        />
-                                                    )}
-                                                    {event.video && (
-                                                        <video className='dec-img' controls>
-                                                            <source src={event.video} type="video/mp4" />
-                                                        </video>
-                                                    )}
-                                                </SwiperSlide>
-                                            ))}
+                                        {movie.eventsContent.map((event, index) => (
+                                            <SwiperSlide key={index}>
+                                                {event.img && (
+                                                    <img
+                                                        className='dec-img'
+                                                        src={event.img}
+                                                        alt=""
+                                                        onClick={() => handleSlideClick(index)}
+                                                    />
+                                                )}
+                                                {event.video && (
+                                                    <video className='dec-img' controls>
+                                                        <source src={event.video} type="video/mp4" />
+                                                    </video>
+                                                )}
+                                            </SwiperSlide>
+                                        ))}
                                         <div className="close" onClick={() => setModalOpen(false)}>
                                             <AiOutlineCloseCircle />
                                         </div>

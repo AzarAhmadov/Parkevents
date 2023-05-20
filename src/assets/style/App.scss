@@ -185,7 +185,7 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.119);
   position: sticky;
   z-index: 1000;
-  height: 90px;
+  height: 110px;
   display: flex;
   align-items: center;
 
@@ -347,7 +347,7 @@ body {
 
         &.menu-item {
           a {
-            padding: 30px 0;
+            padding: 38px 0;
             border-bottom: 2px solid transparent;
 
             &.active {
@@ -847,7 +847,7 @@ body {
 
   .detail-banner {
     position: absolute;
-    top: -100px;
+    top: -110px;
     left: 0;
     width: 100%;
     height: 500px;
@@ -1868,7 +1868,7 @@ body {
 }
 
 #plan {
-  height: 355px;
+  height: 340px;
 
   .plan-banner {
     height: 450px;
@@ -2324,6 +2324,184 @@ $animation-duration:1s;
   }
 }
 
+.story-back {
+  background: $color-3;
+  width: 100%;
+
+  .story-area {
+    background: $color-3;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .storySwiper {
+      padding-top: 15px;
+      padding-bottom: 45px;
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        .story {
+          border: 1px solid #31d7a8a9;
+          width: 85px;
+          height: 85px;
+          border-radius: 50%;
+          background-image: radial-gradient(circle 975px at 2.6% 48.3%, rgb(28, 35, 137) 0%, rgba(95, 184, 224, 1) 99.7%);
+          color: $color-1;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          flex-direction: column;
+          position: relative;
+          box-shadow: rgba(35, 34, 34, 0.2) 0px 8px 24px;
+          flex-shrink: 0;
+
+          .bottom {
+            position: absolute;
+            bottom: -32px;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            color: #aebbe4;
+            width: 120px;
+          }
+
+          p {
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.storyTime {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .autoplay-progress {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    font-size: 25px;
+    z-index: 10;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: $color-1;
+    border: 1px solid $color-5;
+    border-radius: 50%;
+    background: $color-5;
+
+    svg {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    background-color: $color-5;
+    color: $color-1;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    &::after {
+      font-size: 30px;
+    }
+  }
+
+  .swiper-button-prev {
+    background-color: $color-5;
+    color: $color-1;
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    &::after {
+      font-size: 30px;
+    }
+  }
+
+  .story {
+    height: 100%;
+
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      cursor: pointer;
+
+      svg {
+        font-size: 50px;
+        fill: $color-1;
+      }
+    }
+
+    .left {
+      position: absolute;
+      top: 40px;
+      left: 90px;
+      display: flex;
+      align-items: center;
+
+      p {
+        display: none;
+      }
+
+      span {
+        padding-left: 10px;
+        color: $color-1;
+      }
+    }
+
+    .story-link {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 80px;
+      color: $color-2;
+      padding: 10px 20px;
+      font-size: 27px;
+      border-radius: 10px;
+      background: #ffffffa0;
+    }
+
+    .story-img {
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: max-content;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+}
+
 // Responsive
 @media only screen and (max-width:1400px) {
   .container {
@@ -2718,6 +2896,37 @@ $animation-duration:1s;
 }
 
 @media only screen and (max-width:578px) {
+  .story-back .story-area .storySwiper .swiper-slide .story {
+    width: 80px;
+    height: 80px;
+    padding: 3px;
+  }
+
+  .story-back .story-area .storySwiper .swiper-slide .story p {
+    font-size: 12px;
+  }
+
+  .storyTime {
+    .autoplay-progress {
+      left: 10px;
+      top: 10px;
+    }
+
+    .story {
+      padding: 0px;
+
+      .left {
+        top: 32px;
+        left: 80px;
+      }
+
+      .story-img {
+        padding: 0px;
+        width: 100%;
+      }
+    }
+  }
+
   .next {
     max-width: 100%;
 
@@ -3296,7 +3505,7 @@ $animation-duration:1s;
   }
 
   #plan {
-    height: 339px;
+    height: 320px;
 
     .plan-banner {
       height: 430px;
