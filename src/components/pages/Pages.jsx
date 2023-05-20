@@ -59,9 +59,9 @@ const Pages = () => {
                         path="/"
                         element={
                             <>
-                                <Header />
                                 <AnimatedRoute element={
                                     <>
+                                        <Header />
                                         <Home />
                                     </>
                                 } />
@@ -73,8 +73,12 @@ const Pages = () => {
                         path="/detail/:id"
                         element={
                             <>
-                                <Header />
-                                <AnimatedRoute element={<Detail />} />
+                                <AnimatedRoute element={
+                                    <>
+                                        <Header />
+                                        <Detail />
+                                    </>
+                                } />
                                 <Footer />
                             </>
                         }

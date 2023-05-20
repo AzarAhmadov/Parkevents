@@ -2927,7 +2927,7 @@ $animation-duration:1s;
     max-width: 100% !important;
   }
 
-   .storyTime {
+  .storyTime {
     .autoplay-progress {
       left: 10px;
       top: 10px;
@@ -3115,6 +3115,7 @@ $animation-duration:1s;
 
       nav {
         top: 22px;
+
         .open-bar {
           margin-left: 5px;
         }
@@ -3353,11 +3354,25 @@ $animation-duration:1s;
   #detail {
     padding-bottom: 0;
 
+    .detail-banner {
+      height: 440px;
+    }
+
     .detail-bottom {
+      bottom: 150px;
       margin-bottom: 150px;
 
       .detail-txt {
         top: -20px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+
+        .category {
+          width: max-content;
+        }
 
         ul {
           li {
@@ -3433,6 +3448,8 @@ $animation-duration:1s;
     }
 
     .dec-container {
+      margin-top: -150px;
+
       .dec-img {
         height: 230px;
       }
@@ -3475,7 +3492,8 @@ $animation-duration:1s;
   }
 
   #ticket-filter {
-    margin-top: 20px;
+    margin-top: -11px;
+
     .container {
       .filter-flex {
         .drop {
@@ -3532,7 +3550,7 @@ $animation-duration:1s;
     height: 320px;
 
     .plan-banner {
-      height: 430px;
+      height: 400px;
 
       .ticket-name {
         width: 100%;
@@ -3540,8 +3558,8 @@ $animation-duration:1s;
         padding: 0 10px;
 
         p {
-          font-size: 40px;
-          line-height: 50px;
+          font-size: 35px;
+          line-height: 40px;
         }
       }
     }

@@ -2707,11 +2707,24 @@ body.active {
   #detail {
     padding-bottom: 0;
   }
+  #detail .detail-banner {
+    height: 440px;
+  }
   #detail .detail-bottom {
+    bottom: 150px;
     margin-bottom: 150px;
   }
   #detail .detail-bottom .detail-txt {
     top: -20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  #detail .detail-bottom .detail-txt .category {
+    width: -moz-max-content;
+    width: max-content;
   }
   #detail .detail-bottom .detail-txt ul li {
     font-size: 18px;
@@ -2767,6 +2780,9 @@ body.active {
   #detail .video-container {
     height: 230px;
   }
+  #detail .dec-container {
+    margin-top: -150px;
+  }
   #detail .dec-container .dec-img {
     height: 230px;
   }
@@ -2797,7 +2813,7 @@ body.active {
     font-size: 20px;
   }
   #ticket-filter {
-    margin-top: 20px;
+    margin-top: -11px;
   }
   #ticket-filter .container .filter-flex .drop {
     width: 83%;
@@ -2832,7 +2848,7 @@ body.active {
     height: 320px;
   }
   #plan .plan-banner {
-    height: 430px;
+    height: 400px;
   }
   #plan .plan-banner .ticket-name {
     width: 100%;
@@ -2840,8 +2856,8 @@ body.active {
     padding: 0 10px;
   }
   #plan .plan-banner .ticket-name p {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 40px;
   }
 }
 @media only screen and (max-width: 375px) {
