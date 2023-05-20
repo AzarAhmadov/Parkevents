@@ -2796,6 +2796,9 @@ body.active {
   #detail .dec-container .swiper-modal .mySwiper .swiper-button-prev::after {
     font-size: 20px;
   }
+  #ticket-filter {
+    padding-top: 48px;
+  }
   #ticket-filter .container .filter-flex .drop {
     width: 83%;
   }
