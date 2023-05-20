@@ -1589,6 +1589,7 @@ body.active {
   flex-wrap: wrap;
   justify-content: center;
   gap: 6px 15px;
+  width: 80%;
   margin-top: 5px;
 }
 .ticket-sets .next .row .col .grid span {
@@ -2333,6 +2334,9 @@ body.active {
   }
   .ticket-sets .s-img {
     padding: 50px 0;
+  }
+  .ticket-sets .next .row .col .grid {
+    width: 100%;
   }
   .ticket-sets .next .row .col p {
     font-size: 21px;

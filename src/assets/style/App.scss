@@ -1842,6 +1842,7 @@ body {
           flex-wrap: wrap;
           justify-content: center;
           gap: 6px 15px;
+          width: 80%;
           margin-top: 5px;
 
           span {
@@ -2408,6 +2409,7 @@ $animation-duration:1s;
   .ticket-sets {
     padding-top: 0 !important;
     margin-top: -50px;
+
     .container {
       padding: 20px;
     }
@@ -2858,6 +2860,10 @@ $animation-duration:1s;
     .next {
       .row {
         .col {
+          .grid {
+            width: 100%;
+          }
+
           p {
             font-size: 21px;
           }

@@ -114,15 +114,10 @@ const TicketSet = () => {
                                         {selectedIds.map((selectedId) => {
                                             let foundArmchair = null;
                                             let foundLine = null;
-
-                                            // ticketSetsPlan dizisindeki her bir bileti kontrol edin
                                             for (const ticketSet of ticketSetsPlan) {
-                                                // selectedId'ye sahip koltuğu bulmaya çalışın
                                                 const selectedArmchair = ticketSet.armchair.find(
                                                     (armchair) => armchair.id === selectedId
                                                 );
-
-                                                // Eğer koltuk bulunduysa, foundArmchair ve foundLine değişkenlerini güncelleyin
                                                 if (selectedArmchair) {
                                                     foundArmchair = selectedArmchair;
                                                     foundLine = ticketSet.line;
@@ -133,7 +128,7 @@ const TicketSet = () => {
                                             if (foundArmchair) {
                                                 return (
                                                     <span key={selectedId}>
-                                                        Sıra {foundLine}, Yer {foundArmchair.order}
+                                                      {foundLine}, Yer {foundArmchair.order}
                                                     </span>
                                                 );
                                             }
