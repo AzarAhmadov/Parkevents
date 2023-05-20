@@ -112,15 +112,28 @@ const TicketSet = () => {
                                 {selectedIds.length > 0 ? (
                                     <div className='grid'>
                                         {selectedIds.map((selectedId) => {
-                                            const ticket = ticketSetsPlan.find((ticketSet) =>
-                                                ticketSet.armchair.some((armchair) => armchair.id === selectedId)
-                                            );
+                                            let foundArmchair = null;
+                                            let foundLine = null;
 
-                                            if (ticket) {
-                                                const selectedArmchair = ticket.armchair.find((armchair) => armchair.id === selectedId);
+                                            // ticketSetsPlan dizisindeki her bir bileti kontrol edin
+                                            for (const ticketSet of ticketSetsPlan) {
+                                                // selectedId'ye sahip koltuğu bulmaya çalışın
+                                                const selectedArmchair = ticketSet.armchair.find(
+                                                    (armchair) => armchair.id === selectedId
+                                                );
+
+                                                // Eğer koltuk bulunduysa, foundArmchair ve foundLine değişkenlerini güncelleyin
+                                                if (selectedArmchair) {
+                                                    foundArmchair = selectedArmchair;
+                                                    foundLine = ticketSet.line;
+                                                    break;
+                                                }
+                                            }
+
+                                            if (foundArmchair) {
                                                 return (
                                                     <span key={selectedId}>
-                                                        sıra {selectedArmchair.order}, yer {selectedArmchair.line} {selectedArmchair.order}
+                                                        Sıra {foundLine}, Yer {foundArmchair.order}
                                                     </span>
                                                 );
                                             }

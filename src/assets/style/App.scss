@@ -1823,6 +1823,10 @@ body {
         flex-direction: column;
         border-right: 1px solid rgba(255, 255, 255, 0.219);
 
+        &:first-child {
+          min-width: 410px;
+        }
+
         &:last-child {
           border-right: 0;
         }
@@ -1837,14 +1841,12 @@ body {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          width: 100%;
           gap: 6px 15px;
           margin-top: 5px;
 
           span {
-            width: 130px;
             color: $color-5;
-            font-size: 22px;
+            font-size: 21px;
             font-weight: 500;
           }
         }
@@ -2392,6 +2394,10 @@ $animation-duration:1s;
       max-width: 95%;
     }
   }
+
+  .next {
+    max-width: 95%;
+  }
 }
 
 @media only screen and (max-width:992px) {
@@ -2400,6 +2406,8 @@ $animation-duration:1s;
   }
 
   .ticket-sets {
+    padding-top: 0 !important;
+    margin-top: -50px;
     .container {
       padding: 20px;
     }
@@ -2487,6 +2495,25 @@ $animation-duration:1s;
     .container {
       .category-grid {
         grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+
+  .next {
+    max-width: 90%;
+    overflow: hidden;
+
+    .row {
+      flex-direction: column;
+
+      .col {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+        border-right: none !important;
+        padding: 25px !important;
+
+        &:last-child {
+          border-bottom: none !important;
+        }
       }
     }
   }
@@ -2579,6 +2606,17 @@ $animation-duration:1s;
     }
   }
 
+  #ticket-set {
+    .ticket-banner {
+      height: 400px;
+    }
+  }
+
+  .ticket-dec {
+    margin-top: 60px;
+    transform: translateY(-100px);
+  }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -2596,25 +2634,6 @@ $animation-duration:1s;
 
       .movieName {
         font-size: 20px;
-      }
-    }
-  }
-
-  .next {
-    width: 100%;
-    overflow: hidden;
-
-    .row {
-      flex-direction: column;
-
-      .col {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.219);
-        border-right: none !important;
-        padding: 25px !important;
-
-        &:last-child {
-          border-bottom: none !important;
-        }
       }
     }
   }
@@ -2697,6 +2716,19 @@ $animation-duration:1s;
 }
 
 @media only screen and (max-width:578px) {
+  .next {
+    max-width: 100%;
+
+    .row {
+      .col {
+        min-width: 100% !important;
+
+        .grid {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
 
   #ticket-pay {
     margin-bottom: 30px;
@@ -3175,6 +3207,7 @@ $animation-duration:1s;
 
         .mySwiper {
           height: 400px;
+
           .dec-img {
             height: 250px
           }

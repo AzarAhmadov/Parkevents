@@ -1573,6 +1573,9 @@ body.active {
   flex-direction: column;
   border-right: 1px solid rgba(255, 255, 255, 0.219);
 }
+.ticket-sets .next .row .col:first-child {
+  min-width: 410px;
+}
 .ticket-sets .next .row .col:last-child {
   border-right: 0;
 }
@@ -1585,14 +1588,12 @@ body.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%;
   gap: 6px 15px;
   margin-top: 5px;
 }
 .ticket-sets .next .row .col .grid span {
-  width: 130px;
   color: #31d7a9;
-  font-size: 22px;
+  font-size: 21px;
   font-weight: 500;
 }
 .ticket-sets .next .row .col .none {
@@ -2033,10 +2034,17 @@ body.active {
   #header .container {
     max-width: 95%;
   }
+  .next {
+    max-width: 95%;
+  }
 }
 @media only screen and (max-width: 992px) {
   #ticket-pay {
     margin-bottom: 30px;
+  }
+  .ticket-sets {
+    padding-top: 0 !important;
+    margin-top: -50px;
   }
   .ticket-sets .container {
     padding: 20px;
@@ -2096,6 +2104,21 @@ body.active {
   }
   #category .container .category-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .next {
+    max-width: 90%;
+    overflow: hidden;
+  }
+  .next .row {
+    flex-direction: column;
+  }
+  .next .row .col {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+    border-right: none !important;
+    padding: 25px !important;
+  }
+  .next .row .col:last-child {
+    border-bottom: none !important;
   }
   .advert {
     margin: 10px 0;
@@ -2157,6 +2180,13 @@ body.active {
   #ticket-table .col-lg-9 .ticket-place div:last-child {
     border-bottom: none;
   }
+  #ticket-set .ticket-banner {
+    height: 400px;
+  }
+  .ticket-dec {
+    margin-top: 60px;
+    transform: translateY(-100px);
+  }
 }
 @media only screen and (max-width: 768px) {
   .container {
@@ -2170,21 +2200,6 @@ body.active {
   }
   #hero .hero-img .movieName {
     font-size: 20px;
-  }
-  .next {
-    width: 100%;
-    overflow: hidden;
-  }
-  .next .row {
-    flex-direction: column;
-  }
-  .next .row .col {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.219);
-    border-right: none !important;
-    padding: 25px !important;
-  }
-  .next .row .col:last-child {
-    border-bottom: none !important;
   }
   .ticket-dec .ticket-item ul {
     flex-direction: column;
@@ -2237,6 +2252,15 @@ body.active {
   }
 }
 @media only screen and (max-width: 578px) {
+  .next {
+    max-width: 100%;
+  }
+  .next .row .col {
+    min-width: 100% !important;
+  }
+  .next .row .col .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
   #ticket-pay {
     margin-bottom: 30px;
   }
