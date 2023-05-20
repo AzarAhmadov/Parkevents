@@ -3108,11 +3108,13 @@ $animation-duration:1s;
 
   #header {
     padding: 0px;
+    height: 90px;
 
     .container {
       max-width: 100%;
 
       nav {
+        top: 22px;
         .open-bar {
           margin-left: 5px;
         }

@@ -2545,9 +2545,13 @@ body.active {
   }
   #header {
     padding: 0px;
+    height: 90px;
   }
   #header .container {
     max-width: 100%;
+  }
+  #header .container nav {
+    top: 22px;
   }
   #header .container nav .open-bar {
     margin-left: 5px;
