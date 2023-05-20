@@ -2725,6 +2725,9 @@ body.active {
     bottom: 150px;
     margin-bottom: 150px;
   }
+  #detail .detail-bottom .date ul li {
+    font-size: 18px !important;
+  }
   #detail .detail-bottom .detail-txt {
     top: -20px;
     height: 300px;

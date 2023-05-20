@@ -642,7 +642,6 @@ body {
   }
 }
 
-
 #category {
   padding-bottom: 100px;
 
@@ -3372,6 +3371,14 @@ $animation-duration:1s;
     .detail-bottom {
       bottom: 150px;
       margin-bottom: 150px;
+
+      .date {
+        ul {
+          li {
+            font-size: 18px !important;
+          }
+        }
+      }
 
       .detail-txt {
         top: -20px;
