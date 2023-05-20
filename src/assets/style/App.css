@@ -2437,18 +2437,18 @@ body.active {
   .story-area {
     max-width: 100% !important;
   }
-  s .storyTime .autoplay-progress {
+  .storyTime .autoplay-progress {
     left: 10px;
     top: 10px;
   }
-  s .storyTime .story {
+  .storyTime .story {
     padding: 0px;
   }
-  s .storyTime .story .left {
+  .storyTime .story .left {
     top: 27px;
     left: 80px;
   }
-  s .storyTime .story .story-img {
+  .storyTime .story .story-img {
     padding: 0px;
     width: 100%;
   }
