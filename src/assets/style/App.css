@@ -2044,8 +2044,8 @@ body.active {
     margin-bottom: 30px;
   }
   .ticket-sets {
-    padding-top: 0 !important;
-    margin-top: -50px;
+    padding-top: 0;
+    margin-top: -90px;
   }
   .ticket-sets .container {
     padding: 20px;
