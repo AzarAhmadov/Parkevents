@@ -15,7 +15,15 @@ export const TicketPlan = () => {
         <main>
             <section id='plan'>
                 <div className="plan-banner">
-                    <img src={movie.movieImg} alt="" />
+                    {movie.movieVideo ? (
+                        <video muted className='banner-video' controls={false} autoPlay>
+                            <source src={movie.movieVideo} type="video/mp4" />
+                        </video>
+
+                    ) : (
+                        <img src={movie.movieImg} alt="" />
+                    )}
+
                     <div className="ticket-name">
                         <p> {movie.movieName} </p>
                     </div>

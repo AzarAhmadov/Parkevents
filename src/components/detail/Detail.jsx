@@ -76,7 +76,7 @@ const Detail = () => {
 
     const handleTicketButtonClick = () => {
         if (movie) {
-            dispatch(setMovieInfo({ movieName: movie.movieName, movieImg: movie.banner }));
+            dispatch(setMovieInfo({ movieName: movie.movieName, movieImg: movie.banner, movieVideo: movie.bannerVideo }));
         }
     };
 

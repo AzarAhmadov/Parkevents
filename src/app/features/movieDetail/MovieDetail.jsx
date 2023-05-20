@@ -5,11 +5,13 @@ const movieSlice = createSlice({
     initialState: {
         movieName: '',
         movieImg: '',
+        movieVideo: '',
     },
     reducers: {
         setMovieInfo: (state, action) => {
             state.movieName = action.payload.movieName;
             state.movieImg = action.payload.movieImg;
+            state.movieVideo = action.payload.movieVideo;
         },
     },
 });

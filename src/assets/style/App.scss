@@ -397,7 +397,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 100;
-  transition: 500ms all;
+  transition: 500ms ease-in-out;
 }
 
 #hero {
@@ -841,6 +841,12 @@ body {
   }
 }
 
+.banner-video {
+  width: 100%;
+  object-fit: cover;
+  height: 495px;
+}
+
 #detail {
   position: relative;
   padding-bottom: 120px;
@@ -852,12 +858,6 @@ body {
     width: 100%;
     height: 500px;
     z-index: 1;
-
-    .banner-video {
-      width: 100%;
-      object-fit: cover;
-      height: 495px;
-    }
 
     &::after {
       width: 100%;
@@ -880,6 +880,10 @@ body {
     padding-top: 180px;
     position: relative;
     z-index: 10;
+
+    .date {
+      font-size: 19px;
+    }
 
     &::after {
       width: 100%;
@@ -928,7 +932,7 @@ body {
 
       .ticket {
         position: absolute;
-        bottom: -117px;
+        bottom: -113px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -939,6 +943,7 @@ body {
           cursor: pointer;
           display: flex;
           align-items: center;
+          margin-top: -2px;
 
           button {
             border: 1px solid #9aace5;
@@ -958,7 +963,6 @@ body {
               fill: $color-1;
             }
           }
-
 
           .number {
             margin-left: 15px;
@@ -1914,6 +1918,8 @@ body {
   background: $color-3;
   width: 100%;
   padding: 30px 0;
+  position: relative;
+  z-index: 10;
 
   .container {
     padding: 0 20px;
@@ -2495,6 +2501,11 @@ $animation-duration:1s;
       background: #ffffffa0;
       display: flex;
       align-items: center;
+
+      &:hover {
+        bottom: 90px;
+        background: $color-1;
+      }
 
       svg {
         margin-left: 5px;

@@ -79,6 +79,44 @@ export const movieList = {
                 }
             ]
         },
+        {
+            id: 18,
+            movieImg: "https://wallpaperaccess.com/full/3270717.jpg",
+            movieName: "Ip man",
+            banner: "https://e1.pxfuel.com/desktop-wallpaper/39/696/desktop-wallpaper-ip-man-3.jpg",
+            price: '400 ₼-dan',
+            date: <div>26<br />Okt</div>,
+            eventsContent: [
+                {
+                    img: "https://wallpaper-house.com/data/out/10/wallpaper2you_374383.jpg",
+                },
+                {
+                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ffIwoAHk6RcjkL5MfuRnb8viBkh-dfgs8tXIhH3ct952L5T5z63DLyTwv4xjVFa5oBU&usqp=CAU"
+                },
+                {
+                    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlqZy-pJZo9A2b0bAmWfy93B_RL3SSoyPCKg&usqp=CAU"
+                },
+                {
+                    img: "https://cdn.wallpapersafari.com/14/38/oxC6XU.jpg"
+                },
+            ]
+        },
+        {
+            id: 19,
+            movieImg: "https://w0.peakpx.com/wallpaper/73/916/HD-wallpaper-movie-prisoners-hugh-jackman-jake-gyllenhaal.jpg",
+            movieName: "Prisoners",
+            banner: "https://i.ytimg.com/vi/7-cGASTeAro/maxresdefault.jpg",
+            price: '400 ₼-dan',
+            date: <div>26<br />Okt</div>,
+            eventsContent: [
+                {
+                    img: "https://e1.pxfuel.com/desktop-wallpaper/298/985/desktop-wallpaper-prisoners-movie-prisoners.jpg",
+                },
+                {
+                    img: "https://c4.wallpaperflare.com/wallpaper/890/18/472/movie-prisoners-hugh-jackman-jake-gyllenhaal-wallpaper-thumb.jpg"
+                },
+            ]
+        },
     ],
     Movies: [
         {
@@ -687,62 +725,62 @@ export const ticketSetsPlan = [
 export const story = [
     {
         title: "Mabel Matiz",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/2db37cf6f9514343875372f7298c1c78.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/09e4f8bbaf4041e89d7b5ac9361b4305.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/39eceb033c794fe7949fab8e8993ab5b.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/fe2b378b195c4b53b2bff0b1bb3ae7fa.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/fe2b378b195c4b53b2bff0b1bb3ae7fa.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
     {
         title: "Bu gunki yenilikler",
-        linkName:"Keçid",
+        linkName: "Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
 ]
