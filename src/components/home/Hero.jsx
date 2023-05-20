@@ -21,7 +21,7 @@ const Hero = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 3000,
+          delay: 3500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -31,6 +31,7 @@ const Hero = () => {
         modules={[Autoplay, Navigation, EffectFlip]}
         effect={"flip"}
         className="mySwiper"
+        loop={true}
       >
         {
           movieList.MoviesHero.map((el, idx) => (

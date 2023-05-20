@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Autoplay, } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import { useNavigate } from 'react-router-dom';
@@ -18,6 +18,10 @@ const MovieListSingle = ({ movies, slidesPerView }) => {
     return (
         <section className='movies-slider'>
             <Swiper
+                autoplay={{
+                    delay: 3500,
+                    disableOnInteraction: false,
+                }}
                 className='movieSwiper'
                 slidesPerView={slidesPerView}
                 spaceBetween={30}
@@ -25,7 +29,7 @@ const MovieListSingle = ({ movies, slidesPerView }) => {
                     clickable: true,
                     dynamicBullets: true,
                 }}
-                modules={[Pagination]}
+                modules={[Pagination, Autoplay]}
                 breakpoints={{
                     0: {
                         slidesPerView: 1,
