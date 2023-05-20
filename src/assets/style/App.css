@@ -2001,7 +2001,7 @@ body.active {
 }
 .story-back .story-area {
   background: #0a1e5e;
-  max-width: 1400px;
+  max-width: 90%;
   margin: 0 auto;
 }
 .story-back .story-area .storySwiper {
@@ -2119,7 +2119,7 @@ body.active {
 }
 .storyTime .story .left {
   position: absolute;
-  top: 40px;
+  top: 35px;
   left: 90px;
   display: flex;
   align-items: center;
@@ -2128,8 +2128,13 @@ body.active {
   display: none;
 }
 .storyTime .story .left span {
-  padding-left: 10px;
+  margin-left: 10px;
   color: #fff;
+  background: rgba(255, 255, 255, 0.6274509804);
+  padding: 5px;
+  border-radius: 4px;
+  color: #0a1e5e;
+  font-weight: 600;
 }
 .storyTime .story .story-link {
   position: absolute;
@@ -2137,10 +2142,15 @@ body.active {
   transform: translateX(-50%);
   bottom: 80px;
   color: #000;
-  padding: 10px 20px;
+  padding: 5px 15px;
   font-size: 27px;
   border-radius: 10px;
   background: rgba(255, 255, 255, 0.6274509804);
+  display: flex;
+  align-items: center;
+}
+.storyTime .story .story-link svg {
+  margin-left: 5px;
 }
 .storyTime .story .story-img {
   padding: 20px;
@@ -2220,8 +2230,8 @@ body.active {
   }
   #header .container nav {
     position: absolute;
-    right: 20px;
-    top: 21px;
+    right: 10px;
+    top: 31px;
     width: -moz-max-content;
     width: max-content;
     display: flex;
@@ -2238,7 +2248,10 @@ body.active {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 15px;
+  }
+  #header .container nav .open-bar svg {
+    font-size: 43px;
   }
   #hero .hero-img {
     height: 500px;
@@ -2421,18 +2434,21 @@ body.active {
   .story-back .story-area .storySwiper .swiper-slide .story p {
     font-size: 12px;
   }
-  .storyTime .autoplay-progress {
+  .story-area {
+    max-width: 100% !important;
+  }
+  s .storyTime .autoplay-progress {
     left: 10px;
     top: 10px;
   }
-  .storyTime .story {
+  s .storyTime .story {
     padding: 0px;
   }
-  .storyTime .story .left {
-    top: 32px;
+  s .storyTime .story .left {
+    top: 27px;
     left: 80px;
   }
-  .storyTime .story .story-img {
+  s .storyTime .story .story-img {
     padding: 0px;
     width: 100%;
   }

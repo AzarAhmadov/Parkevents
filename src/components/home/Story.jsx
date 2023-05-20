@@ -5,24 +5,22 @@ import "swiper/css/pagination";
 import { story } from '../data/Data'
 import { Autoplay, Navigation } from 'swiper';
 import { AiOutlineCloseCircle } from 'react-icons/ai'
-import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
+
 
 const Story = () => {
 
     const [selectedStory, setSelectedStory] = useState(null);
     const [showStory, setShowStory] = useState(false);
-    const [activeIndex, setActiveIndex] = useState(-1);
 
     const handleClick = (clickedStory) => {
         setSelectedStory(clickedStory);
         setShowStory(true);
-        setActiveIndex(index);
     };
 
     const handleClose = () => {
         setShowStory(false);
-        setActiveIndex(-1);
     };
 
     const progressCircle = useRef(null);
@@ -49,16 +47,15 @@ const Story = () => {
                                 spaceBetween: 0,
                             },
                             768: {
-                                slidesPerView: 5,
+                                slidesPerView: 6,
                                 spaceBetween: 0,
                             },
                             1000: {
-                                slidesPerView: 7,
+                                slidesPerView: 9,
                                 spaceBetween: 40,
                             },
                             1500: {
-                                slidesPerView: 9,
-                                spaceBetween: 0,
+                                slidesPerView: 12,
                             },
                         }}
                     >
@@ -106,13 +103,14 @@ const Story = () => {
                     {story
                         .filter((el) => el !== selectedStory)
                         .map((el, idx) => {
-                            const isActive = activeIndex === idx;
                             return (
                                 <SwiperSlide key={`${el.title}-${idx}`}>
-                                    <div className={`story ${isActive ? 'active' : ''}`}>
+                                    <div className='story'>
                                         <div className='p-relative'>
                                             <img className='story-img' src={el.img} alt='story' />
-                                            <Link className='story-link'> {el.linkName} </Link>
+                                            <Link className='story-link'>
+                                                {el.linkName} <MdKeyboardDoubleArrowUp />
+                                            </Link>
                                         </div>
                                         <div className='left'>
                                             <p>{el.title}</p>

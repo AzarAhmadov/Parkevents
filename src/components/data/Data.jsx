@@ -730,4 +730,19 @@ export const story = [
         linkName:"Keçid",
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+    },
+    {
+        title: "Bu gunki yenilikler",
+        linkName:"Keçid",
+        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+    },
 ]
