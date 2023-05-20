@@ -94,9 +94,11 @@ const Pages = () => {
                         path="/ticket-plan"
                         element={
                             <>
-                                <Header />
-                                <AnimatedRoute element={<TicketPlan />} />
-                                <Footer />
+                                <AnimatedRoute element={<>
+                                    <Header />
+                                    <TicketPlan />
+                                    <Footer />
+                                </>} />
                             </>
                         }
                     />
@@ -104,9 +106,11 @@ const Pages = () => {
                         path="/ticket-set"
                         element={
                             <>
-                                <Header />
-                                <AnimatedRoute element={<TicketSet />} />
-                                <Footer />
+                                <AnimatedRoute element={<>
+                                    <Header />
+                                    <TicketSet />
+                                    <Footer />
+                                </>} />
                             </>
                         }
                     />
@@ -119,23 +123,30 @@ const Pages = () => {
                         }
                     />
                     <Route path="/Login" element={
-                        <>
-                            <AnimatedRoute element={<Login />} />
-                        </>
+                        <AnimatedRoute element={
+                            <>
+                                <Login />
+                            </>
+                        } />
+
                     } />
                     <Route path="/Register" element={
-                        <>
-                            <AnimatedRoute element={<Register />} />
-                        </>
+                        <AnimatedRoute element={
+                            <>
+                                <Register />
+                            </>
+                        } />
                     } />
                     <Route path="/Reset" element={
-                        <>
-                            <AnimatedRoute element={<Reset />} />
-                        </>
+                        <AnimatedRoute element={
+                            <>
+                                <Reset />
+                            </>
+                        } />
                     } />
                 </Routes>
             </AnimatePresence>
-        </Router>
+        </Router >
     );
 };
 
