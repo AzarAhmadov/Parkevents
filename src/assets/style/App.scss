@@ -790,11 +790,12 @@ body {
     top: 0;
     left: 20px;
     background-image: -webkit-linear-gradient(45deg, #f54646 0%, #f53da1 100%);
-    padding: 12px;
+    padding: 10px;
     border-radius: 0 0 30px 30px;
     width: max-content;
     text-align: center;
     color: $color-1;
+    font-size: 16px;
   }
 
   &:hover {

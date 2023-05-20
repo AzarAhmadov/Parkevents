@@ -19,7 +19,7 @@ const Header = () => {
     }, []);
 
     const handleScroll = () => {
-        if (window.pageYOffset > 500) {
+        if (window.pageYOffset > 300) {
             setActive(true);
         } else {
             setActive(false);
