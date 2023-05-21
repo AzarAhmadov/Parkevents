@@ -784,3 +784,63 @@ export const story = [
         img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
     },
 ]
+
+export const blogData = [
+    {
+        id: 1,
+        blogImgs: [
+            'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
+            'https://pixner.net/boleto/demo/assets/images/blog/blog02.jpg',
+            'https://pixner.net/boleto/demo/assets/images/blog/blog03.jpg',
+        ],
+        blogTitle: "Sayitimiz artiq istifadəyə hazirdir",
+        comment: 20,
+        seen: 31220,
+        blogDec:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
+    },
+    {
+        id: 2,
+        blogImgs: [
+            'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
+        ],
+        blogTitle: "Sayitimiz artiq istifadəyə hazirdir",
+        comment: 20,
+        seen: 2020,
+        blogDec:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
+    },
+    {
+        id: 3,
+        blogImgs: [
+            'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
+        ],
+        blogTitle: "Sayitimiz artiq istifadəyə hazirdi Sayitimiz artiq istifadəyə hazirdir",
+        comment: 120,
+        seen: 10,
+        blogDec:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
+    },
+];
+
+export const blogAside = [
+    {
+        id: 1,
+        blogImgs: 'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
+        blogTitle: "Sayitimiz artiq istifadəyə hazirdir",
+        comment: 20,
+        seen: 31220,
+        blogDec:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
+    },
+    {
+        id: 2,
+        blogImgs:'https://pixner.net/boleto/demo/assets/images/blog/blog03.jpg',
+        blogTitle: "Sayitimiz artiq istifadəyə hazirdir",
+        comment: 20,
+        seen: 31220,
+        blogDec:
+            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
+    },
+
+];
