@@ -3212,29 +3212,13 @@ $animation-duration:1s;
     padding: 30px 30px;
     max-width: 1140px;
 
-    .css-wjh20t-MuiPagination-ul {
-      margin-top: 24px !important;
-      display: flex !important;
-      justify-content: center !important;
-
-      li {
-        color: $color-1 !important;
-
-        .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
-          background: $gradient !important;
-        }
-
-        .css-1v2lvtn-MuiPaginationItem-root {
-          color: $color-1 !important;
-          font-size: 20px !important;
-        }
-
-        button {
-          border-radius: 50% !important;
-          color: $color-1 !important;
-          width: 50px !important;
-          height: 50px !important;
-          font-size: 30px !important;
+    .ant-pagination {
+      display: flex;
+      justify-content: center;
+      li{
+        color: $color-1;
+        button{
+          color: $color-1;
         }
       }
     }
@@ -3371,10 +3355,6 @@ $animation-duration:1s;
 
     .container {
       max-width: 700px;
-    }
-
-    .css-wjh20t-MuiPagination-ul {
-      margin-bottom: 20px;
     }
   }
 
@@ -3850,30 +3830,6 @@ $animation-duration:1s;
 
     .blog-c {
       padding: 16px;
-
-      .css-wjh20t-MuiPagination-ul {
-        margin-top: 24px !important;
-        display: flex !important;
-
-        li {
-          color: $color-1;
-
-          .css-1v2lvtn-MuiPaginationItem-root {
-            color: $color-1 !important;
-            font-size: 15px !important;
-            background: red;
-          }
-
-          button {
-            border-radius: 50%;
-            color: $color-1;
-            width: 35px;
-            height: 35px;
-            font-size: 22px;
-
-          }
-        }
-      }
 
       .blog-right-item {
         .search {

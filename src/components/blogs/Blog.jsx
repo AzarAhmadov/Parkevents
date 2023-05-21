@@ -4,10 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { AiOutlineSearch } from 'react-icons/ai';
 import SingleBlog from './SingleBlog';
 import BlogAside from '../blogs/BlogAside';
-import Stack from '@mui/material/Stack';
-import { Pagination, PaginationItem} from '@mui/material';
-import '@mui/material/styles';
-import { ArrowBack, ArrowForward } from '@mui/icons-material';
+import { Pagination } from 'antd';
 
 const Blog = () => {
 
@@ -15,6 +12,9 @@ const Blog = () => {
         window.scrollTo(0, 0)
     }, [])
 
+    const onShowSizeChange = (current, pageSize) => {
+        console.log(current, pageSize);
+    };
 
     return (
         <main id='blog-main'>
@@ -24,19 +24,13 @@ const Blog = () => {
                     <Row>
                         <Col lg={8}>
                             <SingleBlog />
-                            <Stack spacing={1}>
-                                <Pagination
-                                    count={15}
-                                    renderItem={(item) => (
-                                        <PaginationItem
-                                            {...item}
-                                            icon={
-                                                item.type === 'previous' ? <ArrowBack /> : <ArrowForward />
-                                            }
-                                        />
-                                    )}
-                                />
-                            </Stack>
+                            <Pagination
+                                showSizeChanger={false}
+                                onShowSizeChange={onShowSizeChange}
+                                defaultCurrent={21}
+                                total={100}
+                                showLessItems
+                            />
                         </Col>
                         <Col lg={4}>
                             <div className="blog-right">
