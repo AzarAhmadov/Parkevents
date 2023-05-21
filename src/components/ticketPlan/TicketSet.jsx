@@ -8,6 +8,7 @@ import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { useSelector } from 'react-redux'
 import { Toast } from 'primereact/toast';
 import TicketBannerImg from '../../../public/ticketBanner.jpeg';
+import CinemaImg from '../../../public/cinemaScreen.png'
 
 const TicketSet = () => {
 
@@ -62,7 +63,7 @@ const TicketSet = () => {
                         <p>Səhnə</p>
                     </div>
                     <div className="s-img">
-                        <img src='../../../public/cinemaScreen.png' alt="Cinema" />
+                        <img src={CinemaImg} alt="Cinema" />
                     </div>
                     <div className="set-title">
                         <p>Oturacaqlar</p>
