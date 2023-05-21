@@ -7,6 +7,7 @@ import TicketSetCount from './TicketSetCount';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 import { useSelector } from 'react-redux'
 import { Toast } from 'primereact/toast';
+import TicketBannerImg from '../../../public/ticketBanner.jpeg';
 
 const TicketSet = () => {
 
@@ -49,7 +50,7 @@ const TicketSet = () => {
     return (
         <main>
             <Toast ref={toast} />
-            <TicketBanner title={movie.movieName} dec='10:00, Heydər əliyev mərkəzi' src='../../../public/ticketBanner.jpeg' />
+            <TicketBanner title={movie.movieName} dec='10:00, Heydər əliyev mərkəzi' src={TicketBannerImg} />
             <div className="ticket-dec">
                 <Container>
                     <TicketSetCount />
