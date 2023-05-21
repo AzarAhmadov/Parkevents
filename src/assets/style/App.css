@@ -1565,13 +1565,13 @@ body.active {
 .ticket-sets .next {
   background: #050068;
   border-radius: 10px;
-  width: 100%;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
 .ticket-sets .next .row .col {
-  padding: 30px 0;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1579,7 +1579,7 @@ body.active {
   border-right: 1px solid rgba(255, 255, 255, 0.219);
 }
 .ticket-sets .next .row .col:first-child {
-  min-width: 410px;
+  min-width: 340px;
 }
 .ticket-sets .next .row .col:last-child {
   border-right: 0;
@@ -2459,7 +2459,7 @@ body.active {
   display: flex;
   flex-direction: column;
   padding: 0px 20px 20px 20px;
-  max-height: 350px;
+  max-height: 400px;
   overflow: hidden;
   height: -moz-fit-content;
   height: fit-content;
@@ -2493,9 +2493,9 @@ body.active {
 }
 .app .comment-list .comment .comment-actions .comment-like {
   color: rgba(255, 255, 255, 0.5882352941);
-  padding: 2px;
   background: transparent;
   border-radius: 5px;
+  font-size: 16px;
 }
 .app .comment-list .comment .comment-actions .comment-like .like-count {
   margin-left: 5px;

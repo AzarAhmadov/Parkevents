@@ -63,14 +63,14 @@ const Comment = ({ comment, onLike, onUnlike, onDelete, onEdit, likedComments })
                     <p className="comment-text">{comment.text}</p>
                     {!isEditing && (
                         <button className="comment-delete" onClick={handleDelete}>
-                            Yorumu sil
+                            Sil
                         </button>
                     )}
                 </div>
             )}
             <div className="comment-actions">
                 <button className="comment-like" onClick={handleLike}>
-                    Yorumu bəyən
+                    Kommenti bəyən
                     <span className="like-count">{likes}</span>
                 </button>
             </div>
@@ -122,7 +122,7 @@ const CommentForm = ({ onComment }) => {
                 value={text}
                 onChange={handleChange}
                 onKeyPress={handleKeyPress}
-                placeholder="Yorumunuzu qeyd edin"
+                placeholder="Komment yazın"
                 className="comment-input"
                 rows={4}
             />
@@ -196,7 +196,7 @@ const GetComment = () => {
     return (
         <div className="app">
             <h1 className="app-title">
-                Yorumlar
+                Kommentlər
                 <AiOutlineComment />
             </h1>
             <CommentList

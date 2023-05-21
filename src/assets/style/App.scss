@@ -1812,14 +1812,14 @@ body {
   .next {
     background: #050068;
     border-radius: 10px;
-    width: 100%;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
 
     .row {
       .col {
-        padding: 30px 0;
+        padding: 20px 0;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1827,7 +1827,7 @@ body {
         border-right: 1px solid rgba(255, 255, 255, 0.219);
 
         &:first-child {
-          min-width: 410px;
+          min-width: 340px;
         }
 
         &:last-child {
@@ -2856,7 +2856,7 @@ $animation-duration:1s;
     display: flex;
     flex-direction: column;
     padding: 0px 20px 20px 20px;
-    max-height: 350px;
+    max-height: 400px;
     overflow: hidden;
     height: fit-content;
     overflow: auto;
@@ -2892,9 +2892,9 @@ $animation-duration:1s;
 
         .comment-like {
           color: #ffffff96;
-          padding: 2px;
           background: transparent;
           border-radius: 5px;
+          font-size: 16px;
 
           .like-count {
             margin-left: 5px;

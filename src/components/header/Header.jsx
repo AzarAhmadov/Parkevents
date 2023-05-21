@@ -155,11 +155,6 @@ const Header = () => {
                                             </li>
                                             <li>
                                                 <Link>
-                                                    Cüzdan
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link>
                                                     Tənzimləmələr
                                                 </Link>
                                             </li>
