@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { AiOutlineUser } from 'react-icons/ai';
 import { AiOutlineComment } from 'react-icons/ai';
 
-const Comment = ({ comment, onLike,onUnlike, likedComments }) => {
+const Comment = ({ comment, onLike, onUnlike, onDelete, onEdit, likedComments }) => {
     const isLiked = likedComments && likedComments.includes(comment.id);
     const [likes, setLikes] = useState(comment.likes);
     const [liked, setLiked] = useState(isLiked);
+    const [isEditing, setIsEditing] = useState(false);
+    const [editedText, setEditedText] = useState(comment.text);
 
     const handleLike = () => {
         if (!liked) {
@@ -19,6 +21,29 @@ const Comment = ({ comment, onLike,onUnlike, likedComments }) => {
         }
     };
 
+    const handleDelete = () => {
+        onDelete(comment.id);
+    };
+
+    const handleEdit = () => {
+        setIsEditing(true);
+    };
+
+    const handleSaveEdit = () => {
+        if (editedText.trim() !== '') {
+            onEdit(comment.id, editedText);
+            setIsEditing(false);
+        }
+    };
+
+    const handleCancelEdit = () => {
+        setIsEditing(false);
+        setEditedText(comment.text);
+    };
+
+    const handleChange = (event) => {
+        setEditedText(event.target.value);
+    };
 
     return (
         <div className="comment">
@@ -26,7 +51,23 @@ const Comment = ({ comment, onLike,onUnlike, likedComments }) => {
                 <AiOutlineUser className="user" />
                 <p className="comment-author">{comment.name}</p>
             </div>
-            <p className="comment-text">{comment.text}</p>
+            {isEditing ? (
+                <textarea
+                    value={editedText}
+                    onChange={handleChange}
+                    className="comment-edit-input"
+                    rows={4}
+                />
+            ) : (
+                <div className='comment-edit'>
+                    <p className="comment-text">{comment.text}</p>
+                    {!isEditing && (
+                        <button className="comment-delete" onClick={handleDelete}>
+                            Yorumu sil
+                        </button>
+                    )}
+                </div>
+            )}
             <div className="comment-actions">
                 <button className="comment-like" onClick={handleLike}>
                     Yorumu bəyən
@@ -37,7 +78,7 @@ const Comment = ({ comment, onLike,onUnlike, likedComments }) => {
     );
 };
 
-const CommentList = ({ comments, onLike, onUnlike }) => {
+const CommentList = ({ comments, onLike, onUnlike, onDelete, onEdit }) => {
     return (
         <div className="comment-list">
             {comments.map((comment, index) => (
@@ -46,6 +87,8 @@ const CommentList = ({ comments, onLike, onUnlike }) => {
                     comment={comment}
                     onLike={onLike}
                     onUnlike={onUnlike}
+                    onDelete={onDelete}
+                    onEdit={onEdit}
                 />
             ))}
         </div>
@@ -87,8 +130,8 @@ const CommentForm = ({ onComment }) => {
                 Göndər
             </button>
         </div>
-    );
-};
+    )
+}
 
 const GetComment = () => {
     const [comments, setComments] = useState([]);
@@ -109,7 +152,7 @@ const GetComment = () => {
     const handleComment = (text) => {
         const newComment = {
             id: comments.length + 1,
-            name: 'Azar Ahmadov', // Yorum yapanın adını burada ayarlayabilirsiniz
+            name: 'Azar Ahmadov',
             text: text,
             likes: 0,
             replies: [],
@@ -130,13 +173,38 @@ const GetComment = () => {
         setComments(updatedComments);
     };
 
+    const handleDelete = (commentId) => {
+        const updatedComments = comments.filter(
+            (comment) => comment.id !== commentId
+        );
+        setComments(updatedComments);
+    };
+
+    const handleEdit = (commentId, editedText) => {
+        const updatedComments = comments.map((comment) => {
+            if (comment.id === commentId) {
+                return {
+                    ...comment,
+                    text: editedText,
+                };
+            }
+            return comment;
+        });
+        setComments(updatedComments);
+    };
+
     return (
         <div className="app">
             <h1 className="app-title">
                 Yorumlar
                 <AiOutlineComment />
             </h1>
-            <CommentList comments={comments} onLike={handleLike} onUnlike={handleUnlike} />
+            <CommentList
+                comments={comments}
+                onLike={handleLike}
+                onUnlike={handleUnlike}
+                onDelete={handleDelete}
+            />
             <CommentForm onComment={handleComment} />
         </div>
     );

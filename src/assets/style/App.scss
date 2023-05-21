@@ -2845,7 +2845,7 @@ $animation-duration:1s;
     padding: 25px 25px;
     font-size: 35px;
 
-    svg{
+    svg {
       fill: $color-1;
       margin-left: 12px;
     }
@@ -2860,6 +2860,24 @@ $animation-duration:1s;
     overflow: hidden;
     height: fit-content;
     overflow: auto;
+
+    .comment-edit {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+
+      p {
+        padding-right: 5px;
+      }
+
+      .comment-delete {
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 0.5882352941);
+        background: transparent;
+      }
+    }
 
     .comment {
       display: flex;
@@ -2877,11 +2895,11 @@ $animation-duration:1s;
           padding: 2px;
           background: transparent;
           border-radius: 5px;
-        }
-      }
 
-      .comment-text {
-        margin-top: 10px;
+          .like-count {
+            margin-left: 5px;
+          }
+        }
       }
 
       .comment-header {
@@ -3421,8 +3439,9 @@ $animation-duration:1s;
   .app {
     .app-title {
       font-size: 25px;
-    }}
-  
+    }
+  }
+
 
   #get-download {
     transform: translateY(0px);

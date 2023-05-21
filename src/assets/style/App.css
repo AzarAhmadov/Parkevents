@@ -2465,6 +2465,21 @@ body.active {
   height: fit-content;
   overflow: auto;
 }
+.app .comment-list .comment-edit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.app .comment-list .comment-edit p {
+  padding-right: 5px;
+}
+.app .comment-list .comment-edit .comment-delete {
+  white-space: nowrap;
+  color: rgba(255, 255, 255, 0.5882352941);
+  background: transparent;
+}
 .app .comment-list .comment {
   display: flex;
   border-bottom: 1px solid rgba(49, 215, 168, 0.1607843137);
@@ -2482,8 +2497,8 @@ body.active {
   background: transparent;
   border-radius: 5px;
 }
-.app .comment-list .comment .comment-text {
-  margin-top: 10px;
+.app .comment-list .comment .comment-actions .comment-like .like-count {
+  margin-left: 5px;
 }
 .app .comment-list .comment .comment-header {
   display: flex;
