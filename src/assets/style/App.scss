@@ -34,6 +34,12 @@ $color-2:#000;
 $color-3:#0a1e5e;
 $color-4:#001232;
 $color-5:#31d7a9;
+$color-6:rgba(245, 245, 245, 0.8274509804);
+$color-7: #ffffffa0;
+$color-8:rgba(255, 255, 255, 0.219);
+$color-9:#ffffff96;
+$color-10:#f5f5f5d3;
+$color-11:rgba(255, 255, 255, 0.119);
 $gradient: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
 
 *::-webkit-scrollbar-track {
@@ -73,7 +79,7 @@ $gradient: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #000000;
+  background-color: $color-2;
 }
 
 *::-webkit-scrollbar {
@@ -102,7 +108,7 @@ body {
   gap: 3px;
 
   li {
-    border: 1px solid rgba(255, 255, 255, 0.219);
+    border: 1px solid $color-8;
     padding: 2px 6px;
     color: $color-1;
     cursor: pointer;
@@ -182,7 +188,7 @@ body {
 
 
 #header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+  border-bottom: 1px solid $color-11;
   position: sticky;
   z-index: 1000;
   height: 110px;
@@ -499,6 +505,7 @@ body {
       position: relative;
       background: linear-gradient(to right, rgba(38, 49, 209, 0.612), rgba(89, 72, 213, 0.713)), url(../../../public/Banner.jpeg);
       background-size: cover;
+      background-position: center center;
 
       .search-top {
         text-align: center;
@@ -747,7 +754,7 @@ body {
     content: "";
     width: 100%;
     height: 2px;
-    background: rgba(255, 255, 255, 0.119);
+    background: $color-11;
   }
 
   h4 {
@@ -834,7 +841,7 @@ body {
     }
 
     .price {
-      border-top: 1px solid rgba(255, 255, 255, 0.119);
+      border-top: 1px solid $color-11;
       padding-top: 15px;
       color: $color-1;
     }
@@ -907,7 +914,7 @@ body {
       }
 
       .category {
-        border: 1px solid rgba(255, 255, 255, 0.219);
+        border: 1px solid $color-8;
         border-radius: 20px;
         padding: 5px 15px;
         color: #9aace5;
@@ -994,7 +1001,7 @@ body {
             a {
               width: 50px;
               height: 50px;
-              border: 1px solid rgba(255, 255, 255, 0.119);
+              border: 1px solid $color-11;
               border-radius: 50%;
               display: grid;
               place-items: center;
@@ -1209,7 +1216,7 @@ body {
   .p-tabview-panels {
     margin-top: 25px;
     background: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.119);
+    border: 1px solid $color-11;
 
     h5 {
       color: $color-1;
@@ -1383,7 +1390,7 @@ body {
               width: 40px;
               height: 40px;
               border-radius: 50%;
-              border: 1px solid rgba(255, 255, 255, 0.119);
+              border: 1px solid $color-11;
               padding: 11px;
               fill: $color-1;
 
@@ -1406,7 +1413,7 @@ body {
           &::after {
             width: 190px;
             height: 1px;
-            background: rgba(255, 255, 255, 0.219);
+            background: $color-8;
             content: "";
             position: absolute;
             top: 50%;
@@ -1416,7 +1423,7 @@ body {
           &::before {
             width: 190px;
             height: 1px;
-            background: rgba(255, 255, 255, 0.219);
+            background: $color-8;
             content: "";
             position: absolute;
             top: 50%;
@@ -1456,7 +1463,7 @@ body {
       padding: 20px;
 
       &.nav-item {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+        border-bottom: 1px solid $color-11;
 
         &:last-child {
           border-bottom: none;
@@ -1605,7 +1612,7 @@ body {
         text-align: center;
 
         .drop {
-          border: 1px solid rgba(255, 255, 255, 0.119);
+          border: 1px solid $color-11;
           border-radius: 20px;
           padding: 0 5px;
 
@@ -1705,7 +1712,7 @@ body {
         margin-top: 60px;
         display: flex;
         flex-direction: column;
-        border: 1px solid rgba(255, 255, 255, 0.219);
+        border: 1px solid $color-8;
         border-radius: 10px;
         padding: 25px 0;
         gap: 20px;
@@ -1755,7 +1762,7 @@ body {
           color: $color-1;
           font-size: 20px;
           border-radius: 5px;
-          border: 1px solid rgba(255, 255, 255, 0.219);
+          border: 1px solid $color-8;
           padding: 6px;
           width: 100px;
           display: block;
@@ -1824,7 +1831,7 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        border-right: 1px solid rgba(255, 255, 255, 0.219);
+        border-right: 1px solid $color-8;
 
         &:first-child {
           min-width: 340px;
@@ -1943,7 +1950,7 @@ body {
       }
 
       .drop {
-        border: 1px solid rgba(255, 255, 255, 0.119);
+        border: 1px solid $color-11;
         width: 100%;
         border-radius: 50px;
         padding-left: 5px;
@@ -2148,13 +2155,13 @@ $animation-duration:1s;
       }
 
       .form-btn {
-        border-top: 1px solid rgba(255, 255, 255, 0.119);
+        border-top: 1px solid $color-11;
         padding-top: 5px;
         margin-top: 20px;
       }
 
       input {
-        border: 1px solid rgba(255, 255, 255, 0.219);
+        border: 1px solid $color-8;
         border-radius: 10px;
         padding: 15px 10px;
       }
@@ -2168,12 +2175,12 @@ $animation-duration:1s;
     h4 {
       padding-bottom: 30px;
       margin-bottom: 30px;
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.119);
+      border-bottom: 1px dashed $color-11;
     }
 
     input {
       margin-top: 5px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+      border-bottom: 1px solid $color-11;
       background: transparent;
       outline: none;
       box-shadow: none;
@@ -2203,7 +2210,7 @@ $animation-duration:1s;
       text-align: center;
       color: $color-1;
       font-size: 30px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+      border-bottom: 1px solid $color-11;
       padding-bottom: 20px;
     }
 
@@ -2226,7 +2233,7 @@ $animation-duration:1s;
       }
 
       .price {
-        border-top: 1px solid rgba(255, 255, 255, 0.119);
+        border-top: 1px solid $color-11;
         margin-top: 30px;
         display: flex;
 
@@ -2422,7 +2429,7 @@ $animation-duration:1s;
       padding: 5px 15px;
       font-size: 27px;
       border-radius: 10px;
-      background: #ffffffa0;
+      background: $color-7;
       display: flex;
       align-items: center;
 
@@ -2491,6 +2498,10 @@ $animation-duration:1s;
       }
 
       li {
+        color: $color-1;
+        font-size: 23px;
+        cursor: auto;
+
         a {
           color: $color-1;
           font-size: 23px;
@@ -2536,7 +2547,7 @@ $animation-duration:1s;
         }
 
         p {
-          color: #f5f5f5d3;
+          color: $color-10;
           font-weight: 400;
           max-width: 540px;
           line-height: 25px;
@@ -2692,7 +2703,7 @@ $animation-duration:1s;
     p {
       max-width: 730px;
       margin: 0 auto;
-      color: #f5f5f5d3;
+      color: $color-10;
       font-size: 18px;
     }
   }
@@ -2712,7 +2723,7 @@ $animation-duration:1s;
 
     &:hover {
       .icon {
-        border: 1px solid rgba(255, 255, 255, 0.119);
+        border: 1px solid $color-11;
       }
     }
 
@@ -2722,7 +2733,7 @@ $animation-duration:1s;
     }
 
     p {
-      color: #f5f5f5d3;
+      color: $color-10;
       margin-top: -30px;
       width: 100%;
       font-size: 15px;
@@ -2779,7 +2790,7 @@ $animation-duration:1s;
   .row-2 {
     margin-top: 25px;
     padding-top: 25px;
-    border-top: 1px solid rgba(255, 255, 255, 0.119);
+    border-top: 1px solid $color-11;
   }
 
   .copyright {
@@ -2799,7 +2810,7 @@ $animation-duration:1s;
       a {
         width: 50px;
         height: 50px;
-        border: 1px solid rgba(255, 255, 255, 0.119);
+        border: 1px solid $color-11;
         border-radius: 50%;
         display: grid;
         place-items: center;
@@ -2834,14 +2845,15 @@ $animation-duration:1s;
 .app {
   margin-top: 20px;
   color: $color-1;
-  border: 1px solid rgba(255, 255, 255, 0.119);
+  border: 1px solid $color-11;
   border-radius: 10px;
+  margin-bottom: 30px;
 
   .app-title {
     margin-bottom: 10px;
     color: $color-1;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+    border-bottom: 1px solid $color-11;
     padding: 25px 25px;
     font-size: 35px;
 
@@ -2891,7 +2903,7 @@ $animation-duration:1s;
         margin-top: 5px;
 
         .comment-like {
-          color: #ffffff96;
+          color: $color-9;
           background: transparent;
           border-radius: 5px;
           font-size: 16px;
@@ -2937,7 +2949,7 @@ $animation-duration:1s;
 
     .comment-input {
       background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.119);
+      border: 1px solid $color-11;
       width: 100%;
       resize: none;
       height: 130px;
@@ -2954,6 +2966,83 @@ $animation-duration:1s;
     }
   }
 
+}
+
+#blog {
+  padding: 80px 0 140px;
+  transform: translateY(-170px);
+
+  .container {
+    background: $color-3;
+    padding: 50px 50px;
+    max-width: 1140px;
+
+    .blog-left-item {
+      .blog-content {
+        background: $color-11;
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 400px;
+          border-radius: 10px;
+        }
+
+        .blog-txt {
+          padding: 30px;
+
+          &:hover {
+            .blog-title {
+              color: $color-5;
+            }
+          }
+
+          .blog-title {
+            font-size: 30px;
+            transition: 300ms all;
+            color: $color-1;
+          }
+
+          ul {
+            display: flex;
+            gap: 20px;
+            padding: 15px 0;
+
+            li {
+              display: flex;
+              align-items: center;
+              color: $color-1;
+
+              svg {
+                margin-right: 6px;
+                fill: $color-5;
+              }
+            }
+          }
+
+          .blog-dec {
+            color: $color-6;
+            font-size: 17px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+          }
+        }
+
+        .det-bottom {
+          border-top: 1px solid $color-11;
+          text-align: center;
+          padding: 30px 0;
+
+          a {
+            color: $color-5;
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // Responsive
@@ -2978,7 +3067,7 @@ $animation-duration:1s;
       padding-right: 0px;
 
       span {
-        border-top: 1px solid rgba(255, 255, 255, 0.119);
+        border-top: 1px solid $color-11;
         padding-top: 10px;
         margin-top: 5px;
       }
@@ -3034,6 +3123,9 @@ $animation-duration:1s;
 }
 
 @media only screen and (max-width:992px) {
+  .app {
+    margin-bottom: 0px;
+  }
 
   #global-banner {
     height: 278px;
@@ -3226,7 +3318,7 @@ $animation-duration:1s;
       flex-direction: column;
 
       .col {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+        border-bottom: 1px solid $color-8;
         border-right: none !important;
         padding: 25px !important;
 
@@ -3445,9 +3537,9 @@ $animation-duration:1s;
 
   #get-download {
     transform: translateY(0px);
-    margin-top: 20px;
-    margin-bottom: 50px;
-    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    padding: 10px;
 
     .container {
       .row {
@@ -3534,11 +3626,13 @@ $animation-duration:1s;
 
     .content {
       h4 {
-        font-size: 35px;
+        font-size: 30px;
       }
 
       ul {
         li {
+          font-size: 20px;
+
           a {
             font-size: 20px;
           }

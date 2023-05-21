@@ -47,6 +47,11 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
+                                <Link to='/blog'>
+                                    Bloglar
+                                </Link>
+                            </li>
+                            <li>
                                 <Link>
                                     Suallar
                                 </Link>

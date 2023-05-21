@@ -2,22 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowForward } from 'react-icons/io';
 
-const GlobalBanner = () => {
+const GlobalBanner = ({ title, linkTo, linkName, linkName2, linkTo2 }) => {
     return (
         <section id='global-banner'>
             <div className="content">
-                <h4> Mobil tədbiq endir </h4>
+                <h4> {title} </h4>
                 <ul>
                     <li>
-                        <Link> Ana səhifə </Link>
+                        <Link to={linkTo}> Ana səhifə </Link>
                     </li>
                     <IoIosArrowForward />
                     <li>
-                        <Link> Mobil tədbiq </Link>
+                        {linkName}
+                    </li>
+                    <li>
+                        <Link> {linkName2} </Link>
                     </li>
                 </ul>
             </div>
-        </section>
+        </section >
     )
 }
 

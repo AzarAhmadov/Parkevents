@@ -13,6 +13,7 @@ import { TicketPlan } from '../ticketPlan/TicketPlan';
 import TicketSet from '../ticketPlan/TicketSet';
 import TicketPay from '../ticketPlan/TicketPay';
 import Download from '../download/Download';
+import Blog from '../blogs/Blog';
 
 const transition = {
     duration: 1,
@@ -133,6 +134,26 @@ const Pages = () => {
                             <>
                                 <Header />
                                 <AnimatedRoute element={<Download />} />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/download"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={<Download />} />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/blog"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={<Blog />} />
                                 <Footer />
                             </>
                         }

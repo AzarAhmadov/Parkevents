@@ -1,5 +1,5 @@
 import React from 'react'
-import GlobalBanner from './GlobalBanner'
+import GlobalBanner from '../globalBanner/GlobalBanner'
 import GetDownload from './GetDownload'
 import Cards from './Cards'
 import { useEffect } from 'react'
@@ -12,7 +12,7 @@ const Download = () => {
 
     return (
         <main>
-            <GlobalBanner />
+            <GlobalBanner title='Mobil tədbiq endir' linkTo='/' linkName='Mobil tədbiq' />
             <GetDownload />
             <Cards />
         </main>
