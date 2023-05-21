@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import GlobalBanner from '../globalBanner/GlobalBanner'
 import { Col, Container, Row } from 'react-bootstrap'
 import { AiOutlineSearch } from 'react-icons/ai';
 import SingleBlog from './SingleBlog';
 import BlogAside from '../blogs/BlogAside';
-import { Pagination } from 'antd';
+import { Paginator } from 'primereact/paginator';
 
 const Blog = () => {
 
@@ -12,8 +12,12 @@ const Blog = () => {
         window.scrollTo(0, 0)
     }, [])
 
-    const onShowSizeChange = (current, pageSize) => {
-        console.log(current, pageSize);
+    const [first, setFirst] = useState(0);
+    const [rows, setRows] = useState(10);
+
+    const onPageChange = (event) => {
+        setFirst(event.first);
+        setRows(event.rows);
     };
 
     return (
@@ -24,13 +28,7 @@ const Blog = () => {
                     <Row>
                         <Col lg={8}>
                             <SingleBlog />
-                            <Pagination
-                                showSizeChanger={false}
-                                onShowSizeChange={onShowSizeChange}
-                                defaultCurrent={21}
-                                total={100}
-                                showLessItems
-                            />
+                            <Paginator first={first} rows={rows} totalRecords={120} onPageChange={onPageChange} />
                         </Col>
                         <Col lg={4}>
                             <div className="blog-right">

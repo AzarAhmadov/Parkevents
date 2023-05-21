@@ -2758,15 +2758,29 @@ body.active {
   padding: 30px 30px;
   max-width: 1140px;
 }
-#blog .blog-c .ant-pagination {
-  display: flex;
-  justify-content: center;
+#blog .blog-c .p-paginator {
+  background: transparent;
+  padding: 0;
 }
-#blog .blog-c .ant-pagination li {
-  color: #fff;
+#blog .blog-c .p-paginator .p-paginator-next {
+  border: none;
+  box-shadow: none;
 }
-#blog .blog-c .ant-pagination li button {
+#blog .blog-c .p-paginator .p-paginator-prev {
+  border: none;
+  box-shadow: none;
+}
+#blog .blog-c .p-paginator .p-paginator-pages .p-paginator-page.p-highlight {
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
   color: #fff;
+  box-shadow: none !important;
+  border: none;
+}
+#blog .blog-c .p-paginator .p-paginator-first {
+  display: none;
+}
+#blog .blog-c .p-paginator .p-paginator-last {
+  display: none;
 }
 #blog .blog-c .blog-right {
   position: sticky;
@@ -3731,6 +3745,13 @@ body.active {
   #plan .plan-banner .ticket-name p {
     font-size: 35px;
     line-height: 40px;
+  }
+  #blog .blog-c .p-paginator {
+    padding: 0;
+  }
+  #blog .blog-c .p-paginator .p-paginator-pages .p-paginator-page {
+    min-width: 37px;
+    height: 37px;
   }
 }
 @media only screen and (max-width: 375px) {

@@ -3212,14 +3212,35 @@ $animation-duration:1s;
     padding: 30px 30px;
     max-width: 1140px;
 
-    .ant-pagination {
-      display: flex;
-      justify-content: center;
-      li{
-        color: $color-1;
-        button{
+    .p-paginator {
+      background: transparent;
+      padding: 0;
+
+      .p-paginator-next {
+        border: none;
+        box-shadow: none;
+      }
+
+      .p-paginator-prev {
+        border: none;
+        box-shadow: none;
+      }
+
+      .p-paginator-pages {
+        .p-paginator-page.p-highlight {
+          background: $gradient;
           color: $color-1;
+          box-shadow: none !important;
+          border: none;
         }
+      }
+
+      .p-paginator-first {
+        display: none;
+      }
+
+      .p-paginator-last {
+        display: none;
       }
     }
 
@@ -4663,6 +4684,21 @@ $animation-duration:1s;
         p {
           font-size: 35px;
           line-height: 40px;
+        }
+      }
+    }
+  }
+
+  #blog {
+    .blog-c {
+      .p-paginator {
+        padding: 0;
+
+        .p-paginator-pages {
+          .p-paginator-page {
+            min-width: 37px;
+            height: 37px;
+          }
         }
       }
     }
