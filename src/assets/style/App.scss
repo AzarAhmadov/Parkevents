@@ -2831,6 +2831,113 @@ $animation-duration:1s;
   }
 }
 
+.app {
+  margin-top: 20px;
+  color: $color-1;
+  border: 1px solid rgba(255, 255, 255, 0.119);
+  border-radius: 10px;
+
+  .app-title {
+    margin-bottom: 10px;
+    color: $color-1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+    padding: 25px 25px;
+    font-size: 35px;
+
+    svg{
+      fill: $color-1;
+      margin-left: 12px;
+    }
+  }
+
+  .comment-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+    max-height: 350px;
+    overflow: hidden;
+    height: fit-content;
+    overflow: auto;
+
+    .comment {
+      display: flex;
+      border-bottom: 1px solid #31d7a829;
+      padding-bottom: 10px;
+      margin: 10px 0;
+      align-items: flex-start;
+      flex-direction: column;
+
+      .comment-actions {
+        margin-top: 5px;
+
+        .comment-like {
+          color: #ffffff96;
+          padding: 2px;
+          background: transparent;
+          border-radius: 5px;
+        }
+      }
+
+      .comment-text {
+        margin-top: 10px;
+      }
+
+      .comment-header {
+        display: flex;
+        align-items: center;
+
+        .user {
+          margin-right: 10px;
+          width: 40px;
+          height: 40px;
+          background-image: radial-gradient(circle 897px at 9% 80.3%, rgba(55, 60, 245, 1) 0%, rgba(234, 161, 15, 0.90) 100.2%);
+          color: $color-1;
+          border-radius: 50%;
+          padding: 6px;
+        }
+      }
+    }
+  }
+
+  .comment-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+
+    .comment-button {
+      background: $gradient;
+      padding: 10px 20px;
+      border-radius: 30px;
+      color: $color-1;
+      font-size: 17px;
+    }
+
+    .comment-input {
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.119);
+      width: 100%;
+      resize: none;
+      height: 130px;
+      border-radius: 10px;
+      color: $color-1;
+      font-size: 18px;
+      padding: 12px;
+      margin-bottom: 20px;
+
+      &::placeholder {
+        font-size: 18px;
+        color: $color-1;
+      }
+    }
+  }
+
+}
+
 // Responsive
 @media only screen and (max-width:1400px) {
   .container {
@@ -3311,6 +3418,12 @@ $animation-duration:1s;
 
 @media only screen and (max-width:578px) {
 
+  .app {
+    .app-title {
+      font-size: 25px;
+    }}
+  
+
   #get-download {
     transform: translateY(0px);
     margin-top: 20px;
@@ -3367,6 +3480,7 @@ $animation-duration:1s;
 
   #cards {
     padding-bottom: 20px;
+
     .title {
       span {
         font-size: 20px;
@@ -3381,8 +3495,8 @@ $animation-duration:1s;
       }
     }
 
-    .card-item{
-      .title{
+    .card-item {
+      .title {
         font-size: 20px;
       }
     }
@@ -3390,7 +3504,8 @@ $animation-duration:1s;
 
   #global-banner {
     height: 220px;
-    .content{
+
+    .content {
       padding-top: 50px;
     }
 

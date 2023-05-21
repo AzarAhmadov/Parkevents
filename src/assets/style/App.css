@@ -2436,6 +2436,104 @@ body.active {
   color: #fff;
 }
 
+.app {
+  margin-top: 20px;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.119);
+  border-radius: 10px;
+}
+.app .app-title {
+  margin-bottom: 10px;
+  color: #fff;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+  padding: 25px 25px;
+  font-size: 35px;
+}
+.app .app-title svg {
+  fill: #fff;
+  margin-left: 12px;
+}
+.app .comment-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+  max-height: 350px;
+  overflow: hidden;
+  height: -moz-fit-content;
+  height: fit-content;
+  overflow: auto;
+}
+.app .comment-list .comment {
+  display: flex;
+  border-bottom: 1px solid rgba(49, 215, 168, 0.1607843137);
+  padding-bottom: 10px;
+  margin: 10px 0;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.app .comment-list .comment .comment-actions {
+  margin-top: 5px;
+}
+.app .comment-list .comment .comment-actions .comment-like {
+  color: rgba(255, 255, 255, 0.5882352941);
+  padding: 2px;
+  background: transparent;
+  border-radius: 5px;
+}
+.app .comment-list .comment .comment-text {
+  margin-top: 10px;
+}
+.app .comment-list .comment .comment-header {
+  display: flex;
+  align-items: center;
+}
+.app .comment-list .comment .comment-header .user {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background-image: radial-gradient(circle 897px at 9% 80.3%, rgb(55, 60, 245) 0%, rgba(234, 161, 15, 0.9) 100.2%);
+  color: #fff;
+  border-radius: 50%;
+  padding: 6px;
+}
+.app .comment-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 20px 20px 20px;
+}
+.app .comment-form .comment-button {
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 17px;
+}
+.app .comment-form .comment-input {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.119);
+  width: 100%;
+  resize: none;
+  height: 130px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+.app .comment-form .comment-input::-moz-placeholder {
+  font-size: 18px;
+  color: #fff;
+}
+.app .comment-form .comment-input::placeholder {
+  font-size: 18px;
+  color: #fff;
+}
+
 @media only screen and (max-width: 1400px) {
   .container {
     padding: 0;
@@ -2755,6 +2853,9 @@ body.active {
   }
 }
 @media only screen and (max-width: 578px) {
+  .app .app-title {
+    font-size: 25px;
+  }
   #get-download {
     transform: translateY(0px);
     margin-top: 20px;

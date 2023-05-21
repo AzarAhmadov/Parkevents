@@ -21,6 +21,7 @@ import MovieListSingle from '../home/MovieListSingle';
 import MoviesTop from '../home/MoviesTop';
 import { useDispatch } from 'react-redux';
 import { setMovieInfo } from '../../app/features/movieDetail/MovieDetail';
+import Comment from '../comment/Comment';
 
 const getMovieById = (id) => {
     const categories = Object.values(movieList);
@@ -268,6 +269,10 @@ const Detail = () => {
                                     </TabPanel>
                                 </TabView>
                             </div>
+
+                            <Col xs={12}>
+                                <Comment />
+                            </Col>
                         </Col>
                     </Row>
                     <div className='mt-5'>
