@@ -2759,19 +2759,19 @@ body.active {
   max-width: 1140px;
 }
 #blog .blog-c .css-wjh20t-MuiPagination-ul {
-  margin-top: 24px;
-  display: flex;
-  justify-content: center;
+  margin-top: 24px !important;
+  display: flex !important;
+  justify-content: center !important;
 }
 #blog .blog-c .css-wjh20t-MuiPagination-ul li {
   color: #fff;
 }
 #blog .blog-c .css-wjh20t-MuiPagination-ul li .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
-  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%) !important;
 }
 #blog .blog-c .css-wjh20t-MuiPagination-ul li .css-1v2lvtn-MuiPaginationItem-root {
-  color: #fff;
-  font-size: 20px;
+  color: #fff !important;
+  font-size: 20px !important;
 }
 #blog .blog-c .css-wjh20t-MuiPagination-ul li button {
   border-radius: 50%;
@@ -3202,15 +3202,15 @@ body.active {
     padding: 16px;
   }
   #blog .blog-c .css-wjh20t-MuiPagination-ul {
-    margin-top: 24px;
-    display: flex;
+    margin-top: 24px !important;
+    display: flex !important;
   }
   #blog .blog-c .css-wjh20t-MuiPagination-ul li {
     color: #fff;
   }
   #blog .blog-c .css-wjh20t-MuiPagination-ul li .css-1v2lvtn-MuiPaginationItem-root {
-    color: #fff;
-    font-size: 17px;
+    color: #fff !important;
+    font-size: 17px !important;
   }
   #blog .blog-c .css-wjh20t-MuiPagination-ul li button {
     border-radius: 50%;
