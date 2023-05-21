@@ -12,6 +12,7 @@ import Reset from '../login&register/Reset';
 import { TicketPlan } from '../ticketPlan/TicketPlan';
 import TicketSet from '../ticketPlan/TicketSet';
 import TicketPay from '../ticketPlan/TicketPay';
+import Download from '../download/Download';
 
 const transition = {
     duration: 1,
@@ -123,6 +124,16 @@ const Pages = () => {
                         element={
                             <>
                                 <AnimatedRoute element={<TicketPay />} />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/download"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={<Download />} />
+                                <Footer />
                             </>
                         }
                     />

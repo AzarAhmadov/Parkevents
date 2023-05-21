@@ -56,6 +56,11 @@ const Footer = () => {
                                     Təhlükəsizlik
                                 </Link>
                             </li>
+                            <li>
+                                <Link to='/download'>
+                                    Endir
+                                </Link>
+                            </li>
                         </ul>
                     </Col>
                 </Row>

@@ -41,51 +41,53 @@ const TicketFilter = () => {
     ];
 
     return (
-        <section id='ticket-filter'>
-            <Container>
-                <Row>
-                    <Col>
-                        <div className="filter-flex">
-                            <MdDateRange className='f-icon' />
-                            <Dropdown
-                                value={selectedDate}
-                                options={dates}
-                                optionLabel="name"
-                                onChange={(e) => setSelectedDate(e.value)}
-                                placeholder="Tarix seçin"
-                                className='drop'
-                            />
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className="filter-flex">
-                            <MdPlace className='f-icon' />
-                            <Dropdown
-                                value={selectedPlace}
-                                options={places}
-                                optionLabel="name"
-                                onChange={(e) => setSelectedPlace(e.value)}
-                                placeholder="Məkanlar"
-                                className='drop'
-                            />
-                        </div>
-                    </Col>
-                    <Col>
-                        <div className="filter-flex">
-                            <MdOutlineLanguage className='f-icon' />
-                            <Dropdown
-                                value={selectedLang}
-                                options={Lang}
-                                optionLabel="name"
-                                onChange={(e) => setSelectedLang(e.value)}
-                                placeholder="Dillər"
-                                className='drop'
-                            />
-                        </div>
-                    </Col>
-                </Row>
-            </Container>
-        </section>
+        <main>
+            <section id='ticket-filter'>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className="filter-flex">
+                                <MdDateRange className='f-icon' />
+                                <Dropdown
+                                    value={selectedDate}
+                                    options={dates}
+                                    optionLabel="name"
+                                    onChange={(e) => setSelectedDate(e.value)}
+                                    placeholder="Tarix seçin"
+                                    className='drop'
+                                />
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className="filter-flex">
+                                <MdPlace className='f-icon' />
+                                <Dropdown
+                                    value={selectedPlace}
+                                    options={places}
+                                    optionLabel="name"
+                                    onChange={(e) => setSelectedPlace(e.value)}
+                                    placeholder="Məkanlar"
+                                    className='drop'
+                                />
+                            </div>
+                        </Col>
+                        <Col>
+                            <div className="filter-flex">
+                                <MdOutlineLanguage className='f-icon' />
+                                <Dropdown
+                                    value={selectedLang}
+                                    options={Lang}
+                                    optionLabel="name"
+                                    onChange={(e) => setSelectedLang(e.value)}
+                                    placeholder="Dillər"
+                                    className='drop'
+                                />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+        </main>
     )
 }
 

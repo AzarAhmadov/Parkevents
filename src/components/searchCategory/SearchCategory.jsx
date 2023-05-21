@@ -24,38 +24,40 @@ const SearchCategory = () => {
     };
 
     return (
-        <section id='category'>
-            <div className="category-content">
-                <Container>
-                    <SearchFilter searchClass="search-category" />
-                </Container>
-            </div>
-
-            <Container>
-                <div className="title">{formattedId}</div>
-                <div className="category-grid">
-                    {
-                        [...movieList.Movies, ...movieList.Events, ...movieList.Sports, ...movieList.MoviesHero]
-                            .slice(0, itemsToShow)
-                            .map((el, idx) => (
-                                <div key={idx} className="content" onClick={() => handleMovieClick(el)}>
-                                    <img src={el.movieImg} alt={el.movieName} />
-                                    <div className="movies-name">
-                                        <span>{el.movieName}</span>
-                                        <div className="price">{el.price}</div>
-                                    </div>
-                                    <div className="date">{el.date}</div>
-                                </div>
-                            ))
-                    }
+        <main>
+            <section id='category'>
+                <div className="category-content">
+                    <Container>
+                        <SearchFilter searchClass="search-category" />
+                    </Container>
                 </div>
-                {itemsToShow < movieList.Movies.length + movieList.Events.length + movieList.Sports.length + movieList.MoviesHero.length && (
-                    <button className="show-more-button" onClick={handleShowMore}>
-                       Daha çok göstər
-                    </button>
-                )}
-            </Container>
-        </section>
+
+                <Container>
+                    <div className="title">{formattedId}</div>
+                    <div className="category-grid">
+                        {
+                            [...movieList.Movies, ...movieList.Events, ...movieList.Sports, ...movieList.MoviesHero]
+                                .slice(0, itemsToShow)
+                                .map((el, idx) => (
+                                    <div key={idx} className="content" onClick={() => handleMovieClick(el)}>
+                                        <img src={el.movieImg} alt={el.movieName} />
+                                        <div className="movies-name">
+                                            <span>{el.movieName}</span>
+                                            <div className="price">{el.price}</div>
+                                        </div>
+                                        <div className="date">{el.date}</div>
+                                    </div>
+                                ))
+                        }
+                    </div>
+                    {itemsToShow < movieList.Movies.length + movieList.Events.length + movieList.Sports.length + movieList.MoviesHero.length && (
+                        <button className="show-more-button" onClick={handleShowMore}>
+                            Daha çok göstər
+                        </button>
+                    )}
+                </Container>
+            </section>
+        </main>
     );
 }
 

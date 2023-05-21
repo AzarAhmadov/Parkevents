@@ -47,9 +47,9 @@ const TicketSet = () => {
     const movie = useSelector((state) => state.movie);
 
     return (
-        <>
+        <main>
             <Toast ref={toast} />
-            <TicketBanner title={movie.movieName} dec='10:00, Heydər əliyev mərkəzi' src='https://pixner.net/boleto/demo/assets/images/banner/banner04.jpg' />
+            <TicketBanner title={movie.movieName} dec='10:00, Heydər əliyev mərkəzi' src='../../../public/ticketBanner.jpeg' />
             <div className="ticket-dec">
                 <Container>
                     <TicketSetCount />
@@ -61,7 +61,7 @@ const TicketSet = () => {
                         <p>Səhnə</p>
                     </div>
                     <div className="s-img">
-                        <img src="https://pixner.net/boleto/demo/assets/images/movie/screen-thumb.png" alt="" />
+                        <img src='../../../public/cinemaScreen.png' alt="Cinema" />
                     </div>
                     <div className="set-title">
                         <p>Oturacaqlar</p>
@@ -128,7 +128,7 @@ const TicketSet = () => {
                                             if (foundArmchair) {
                                                 return (
                                                     <span key={selectedId}>
-                                                      {foundLine}, Yer {foundArmchair.order}
+                                                        {foundLine}, Yer {foundArmchair.order}
                                                     </span>
                                                 );
                                             }
@@ -154,7 +154,7 @@ const TicketSet = () => {
                     </div>
                 </Container>
             </div>
-        </>
+        </main>
     )
 }
 export default TicketSet

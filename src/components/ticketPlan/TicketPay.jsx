@@ -13,7 +13,7 @@ const TicketPay = () => {
     }, [])
 
     return (
-        <>
+        <main>
             <section id='ticket-pay'>
                 <h3> Sifariş </h3>
                 <Container>
@@ -185,7 +185,7 @@ const TicketPay = () => {
             <footer id='pay'>
                 Park <span>Events</span>
             </footer>
-        </>
+        </main>
     )
 }
 

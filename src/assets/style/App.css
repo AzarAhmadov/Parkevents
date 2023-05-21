@@ -427,7 +427,7 @@ body.active {
   flex-direction: column;
   padding: 30px 20px;
   position: relative;
-  background: linear-gradient(to right, rgba(23, 36, 231, 0.612), rgba(166, 55, 183, 0.604)), url(https://pixner.net/boleto/demo/assets/images/ticket/ticket-bg01.jpg);
+  background: linear-gradient(to right, rgba(38, 49, 209, 0.612), rgba(89, 72, 213, 0.713)), url(../../../public/Banner.jpeg);
   background-size: cover;
 }
 #search .container .search-content .search-top {
@@ -1068,7 +1068,7 @@ body.active {
 #login::after {
   width: 100%;
   height: 100%;
-  background: url("http://pixner.net/boleto/demo/assets/images/account/account-bg.jpg");
+  background: url(../../../public/login&registerBanner.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -1328,7 +1328,7 @@ body.active {
   height: 350px;
 }
 #ticket-set .ticket-banner {
-  height: 450px;
+  height: 470px;
   width: 100%;
   position: absolute;
   top: 0;
@@ -1342,7 +1342,6 @@ body.active {
   left: 0;
   content: "";
   background: linear-gradient(30deg, rgba(0, 18, 50, 0.134891) 0%, #001232 90%);
-  background: linear-gradient(180deg, rgba(0, 18, 50, 0.134891) 0%, #001232 90%);
   z-index: 1;
 }
 #ticket-set .ticket-banner img {
@@ -1942,67 +1941,6 @@ body.active {
   color: #31d7a9;
 }
 
-#footer {
-  padding-top: 90px;
-  padding-bottom: 30px;
-  position: relative;
-  position: relative;
-  z-index: 1;
-  margin-top: -20px;
-}
-#footer::after {
-  background: url(http://pixner.net/boleto/demo/assets/images/footer/footer-shape.png);
-  width: 100%;
-  height: 100%;
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-#footer .row-2 {
-  margin-top: 25px;
-  padding-top: 25px;
-  border-top: 1px solid rgba(255, 255, 255, 0.119);
-}
-#footer .copyright {
-  color: rgba(255, 255, 255, 0.7254901961);
-}
-#footer .sosial {
-  display: flex;
-}
-#footer .sosial li {
-  margin-left: 20px;
-}
-#footer .sosial li:first-child {
-  margin-left: 0;
-}
-#footer .sosial li a {
-  width: 50px;
-  height: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.119);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-}
-#footer .sosial li a:hover {
-  background: #31d7a9;
-}
-#footer .sosial li a svg {
-  color: #fff;
-}
-#footer ul li {
-  margin-left: 25px;
-}
-#footer ul li:first-child {
-  margin-left: 0;
-}
-#footer ul li a {
-  font-size: 20px;
-  color: #fff;
-}
-
 .story-back {
   background: #0a1e5e;
   width: 100%;
@@ -2177,6 +2115,327 @@ body.active {
      object-fit: cover;
 }
 
+#global-banner {
+  height: 379px;
+  width: 100%;
+  position: relative;
+  background: red;
+}
+#global-banner::after {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: -121px;
+  content: "";
+  background: linear-gradient(to right, rgba(23, 36, 231, 0.612), rgba(166, 55, 183, 0.604)), url(../../../public/Banner.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+#global-banner .content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding-top: 80px;
+}
+#global-banner .content h4 {
+  font-size: 50px;
+  color: #fff;
+}
+#global-banner .content ul {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+#global-banner .content ul svg {
+  color: #fff;
+  font-size: 20px;
+}
+#global-banner .content ul li a {
+  color: #fff;
+  font-size: 23px;
+}
+
+#get-download {
+  transform: translateY(-100px);
+}
+#get-download .container .row {
+  padding-top: 100px;
+  background: #0a1e5e;
+}
+#get-download .container .row .title {
+  text-align: center;
+  padding-bottom: 40px;
+}
+#get-download .container .row .title h5 {
+  font-size: 35px;
+  color: #31d7a9;
+}
+#get-download .container .row .title span {
+  font-size: 55px;
+  color: #fff;
+  font-weight: 600;
+}
+#get-download .container .row .app-title {
+  padding-top: 20px;
+}
+#get-download .container .row .app-title span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  display: block;
+}
+#get-download .container .row .app-title p {
+  color: rgba(245, 245, 245, 0.8274509804);
+  font-weight: 400;
+  max-width: 540px;
+  line-height: 25px;
+  font-size: 17px;
+}
+#get-download .container .row ul {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+#get-download .container .row ul li {
+  display: flex;
+  align-items: center;
+}
+#get-download .container .row ul li.chart {
+  margin-top: 40px;
+}
+#get-download .container .row ul li.chart p {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 30px;
+  position: relative;
+}
+#get-download .container .row ul li.chart p:first-child {
+  padding-left: 60px;
+  padding-right: 90px;
+}
+#get-download .container .row ul li.chart p:first-child::after {
+  background: url(../../../public/left.png);
+  position: absolute;
+  left: 0;
+  content: "";
+  background-size: contain;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+#get-download .container .row ul li.chart p:first-child::before {
+  background: url(../../../public/right.png);
+  position: absolute;
+  right: 0;
+  content: "";
+  background-size: contain;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+#get-download .container .row ul li.chart p:last-child {
+  padding-left: 60px;
+  padding-right: 90px;
+}
+#get-download .container .row ul li.chart p:last-child::after {
+  background: url(../../../public/left.png);
+  position: absolute;
+  left: 0;
+  content: "";
+  background-size: contain;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+#get-download .container .row ul li.chart p:last-child::before {
+  background: url(../../../public/right.png);
+  position: absolute;
+  right: 0;
+  content: "";
+  background-size: contain;
+  top: 0;
+  width: 70px;
+  height: 70px;
+  background-repeat: no-repeat;
+}
+#get-download .container .row ul li.chart p span {
+  margin-top: -1px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  display: block;
+}
+#get-download .container .row ul li.apps a {
+  background-image: linear-gradient(108.7deg, rgb(221, 22, 224) 11%, rgb(111, 22, 190) 88.2%);
+  margin-right: 20px;
+  width: -moz-max-content;
+  width: max-content;
+  padding-right: 50px;
+  border-radius: 30px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+}
+#get-download .container .row ul li.apps a svg {
+  font-size: 30px;
+  fill: #fff;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.3215686275);
+  height: 70px;
+  width: 70px;
+  padding: 15px;
+  border-radius: 30px;
+}
+#get-download .container .row ul li.apps a:last-child {
+  margin-right: 0;
+  background-image: radial-gradient(circle 897px at 9% 80.3%, rgb(55, 60, 245) 0%, rgba(234, 161, 15, 0.9) 100.2%);
+}
+
+#cards {
+  padding-bottom: 70px;
+}
+#cards .title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+#cards .title span {
+  color: #31d7a9;
+  font-size: 30px;
+}
+#cards .title h5 {
+  color: #fff;
+  font-size: 50px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+#cards .title p {
+  max-width: 730px;
+  margin: 0 auto;
+  color: rgba(245, 245, 245, 0.8274509804);
+  font-size: 18px;
+}
+#cards .card-item {
+  text-align: center;
+  padding: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 30px;
+  margin-bottom: 30px;
+  transition: 300ms ease;
+}
+#cards .card-item:hover {
+  background: linear-gradient(120deg, #3b26db 1%, #7b19cb 100%);
+  border-color: transparent;
+}
+#cards .card-item:hover .icon {
+  border: 1px solid rgba(255, 255, 255, 0.119);
+}
+#cards .card-item .title {
+  color: #fff;
+  font-size: 25px;
+}
+#cards .card-item p {
+  color: rgba(245, 245, 245, 0.8274509804);
+  margin-top: -30px;
+  width: 100%;
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+#cards .card-item .icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px solid #2d4186;
+  padding: 10px;
+  margin: 0 auto 40px;
+  text-align: center;
+  position: relative;
+  transition: 200ms all;
+}
+#cards .card-item .icon svg {
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  padding: 14px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#footer {
+  padding-top: 90px;
+  padding-bottom: 30px;
+  position: relative;
+  position: relative;
+  z-index: 1;
+  margin-top: -20px;
+}
+#footer::after {
+  background: url(http://pixner.net/boleto/demo/assets/images/footer/footer-shape.png);
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#footer .row-2 {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.119);
+}
+#footer .copyright {
+  color: rgba(255, 255, 255, 0.7254901961);
+}
+#footer .sosial {
+  display: flex;
+}
+#footer .sosial li {
+  margin-left: 20px;
+}
+#footer .sosial li:first-child {
+  margin-left: 0;
+}
+#footer .sosial li a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.119);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+#footer .sosial li a:hover {
+  background: #31d7a9;
+}
+#footer .sosial li a svg {
+  color: #fff;
+}
+#footer ul li {
+  margin-left: 25px;
+}
+#footer ul li:first-child {
+  margin-left: 0;
+}
+#footer ul li a {
+  font-size: 20px;
+  color: #fff;
+}
+
 @media only screen and (max-width: 1400px) {
   .container {
     padding: 0;
@@ -2222,12 +2481,70 @@ body.active {
   }
 }
 @media only screen and (max-width: 992px) {
+  #global-banner {
+    height: 278px;
+  }
+  #global-banner::after {
+    height: 400px;
+  }
+  #global-banner .content {
+    padding-top: 65px;
+  }
+  #get-download {
+    transform: translateY(0px);
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  #get-download .container .row {
+    padding: 60px 30px;
+  }
+  #get-download .container .row .title {
+    padding-bottom: 0px;
+  }
+  #get-download .container .row .col-5 {
+    display: none;
+  }
+  #get-download .container .row .col-7 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  #get-download .container .row .col-7 .app-title {
+    text-align: center;
+  }
+  #get-download .container .row .col-7 ul {
+    justify-content: center;
+    align-items: center;
+  }
+  #get-download .container .row .col-7 ul li.chart p {
+    margin-right: 0;
+  }
+  #get-download .container .row .col-7 ul li.chart p:first-child {
+    padding-right: 60px;
+  }
+  #get-download .container .row .col-7 ul li.chart p:first-child::after {
+    width: 46px;
+  }
+  #get-download .container .row .col-7 ul li.chart p:first-child::before {
+    width: 46px;
+  }
+  #get-download .container .row .col-7 ul li.chart p:last-child {
+    padding-right: 60px;
+  }
+  #get-download .container .row .col-7 ul li.chart p:last-child::after {
+    width: 46px;
+  }
+  #get-download .container .row .col-7 ul li.chart p:last-child::before {
+    width: 46px;
+  }
   #ticket-pay {
     margin-bottom: 30px;
   }
   .ticket-sets {
     padding-top: 0;
-    margin-top: -90px;
+    margin-top: -80px;
   }
   .ticket-sets .container {
     padding: 20px;
@@ -2367,7 +2684,7 @@ body.active {
     border-bottom: none;
   }
   #ticket-set .ticket-banner {
-    height: 400px;
+    height: 420px;
   }
   .ticket-dec {
     margin-top: 60px;
@@ -2438,10 +2755,81 @@ body.active {
   }
 }
 @media only screen and (max-width: 578px) {
+  #get-download {
+    transform: translateY(0px);
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  #get-download .container .row {
+    padding: 40px 10px;
+  }
+  #get-download .container .row .title h5 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  #get-download .container .row .title span {
+    font-size: 27px;
+  }
+  #get-download .container .row .col-7 ul {
+    justify-content: center;
+    align-items: center;
+  }
+  #get-download .container .row .col-7 ul li {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  #get-download .container .row .col-7 ul li a {
+    width: 100%;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+  #get-download .container .row .col-7 ul li a:first-child {
+    margin-top: 0;
+  }
+  #get-download .container .row .col-7 ul li p {
+    margin-bottom: 40px;
+  }
+  #get-download .container .row .col-7 ul li p:last-child {
+    margin-bottom: 0;
+  }
+  #cards {
+    padding-bottom: 20px;
+  }
+  #cards .title span {
+    font-size: 20px;
+  }
+  #cards .title h5 {
+    font-size: 27px;
+  }
+  #cards .title p {
+    font-size: 16px;
+  }
+  #cards .card-item .title {
+    font-size: 20px;
+  }
+  #global-banner {
+    height: 220px;
+  }
+  #global-banner .content {
+    padding-top: 50px;
+  }
+  #global-banner::after {
+    height: 350px;
+  }
+  #global-banner .content h4 {
+    font-size: 35px;
+  }
+  #global-banner .content ul li a {
+    font-size: 20px;
+  }
   .story-back .story-area .storySwiper .swiper-slide .story {
     width: 80px;
     height: 80px;
     padding: 3px;
+  }
+  #ticket-set .ticket-banner {
+    height: 400px;
   }
   .story-back .story-area .storySwiper .swiper-slide .story p {
     font-size: 12px;
@@ -2513,7 +2901,9 @@ body.active {
     font-size: 24px;
   }
   #ticket-set .ticket-banner .banner-title p {
-    font-size: 40px;
+    font-size: 33px;
+    line-height: 40px;
+    margin-bottom: 5px;
   }
   .banner-title {
     width: 95%;
@@ -2727,7 +3117,7 @@ body.active {
     margin-bottom: 150px;
   }
   #detail .detail-bottom .date ul li {
-    font-size: 17px !important;
+    font-size: 15px !important;
   }
   #detail .detail-bottom .detail-txt {
     top: -20px;
@@ -2748,7 +3138,7 @@ body.active {
     margin-right: 0;
   }
   #detail .detail-bottom .detail-txt .movie-title {
-    line-height: 45px;
+    line-height: 38px;
     font-size: 32px;
   }
   #detail .detail-bottom .detail-txt .ticket {
