@@ -2753,32 +2753,32 @@ body.active {
   transform: translateY(-120px);
   padding: 0 15px;
 }
-#blog .css-wjh20t-MuiPagination-ul {
+#blog .blog-c {
+  background: #0a1e5e;
+  padding: 30px 30px;
+  max-width: 1140px;
+}
+#blog .blog-c .css-wjh20t-MuiPagination-ul {
   margin-top: 24px;
   display: flex;
   justify-content: center;
 }
-#blog .css-wjh20t-MuiPagination-ul li {
+#blog .blog-c .css-wjh20t-MuiPagination-ul li {
   color: #fff;
 }
-#blog .css-wjh20t-MuiPagination-ul li .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+#blog .blog-c .css-wjh20t-MuiPagination-ul li .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
   background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
 }
-#blog .css-wjh20t-MuiPagination-ul li .css-1v2lvtn-MuiPaginationItem-root {
+#blog .blog-c .css-wjh20t-MuiPagination-ul li .css-1v2lvtn-MuiPaginationItem-root {
   color: #fff;
   font-size: 20px;
 }
-#blog .css-wjh20t-MuiPagination-ul li button {
+#blog .blog-c .css-wjh20t-MuiPagination-ul li button {
   border-radius: 50%;
   color: #fff;
   width: 50px;
   height: 50px;
   font-size: 35px;
-}
-#blog .blog-c {
-  background: #0a1e5e;
-  padding: 30px 30px;
-  max-width: 1140px;
 }
 #blog .blog-c .blog-right {
   position: sticky;
@@ -3160,7 +3160,7 @@ body.active {
 }
 @media only screen and (max-width: 578px) {
   #single-post .mySwiper .swiper-button-next {
-    top: 120px;
+    top: 106px;
     right: 5px;
     width: 35px;
     height: 35px;
@@ -3169,7 +3169,7 @@ body.active {
     font-size: 17px;
   }
   #single-post .mySwiper .swiper-button-prev {
-    top: 120px;
+    top: 106px;
     left: 5px;
     width: 35px;
     height: 35px;
@@ -3198,35 +3198,35 @@ body.active {
   #blog {
     margin-bottom: 70px;
   }
-  #blog .css-wjh20t-MuiPagination-ul {
+  #blog .blog-c {
+    padding: 16px;
+  }
+  #blog .blog-c .css-wjh20t-MuiPagination-ul {
     margin-top: 24px;
     display: flex;
   }
-  #blog .css-wjh20t-MuiPagination-ul li {
+  #blog .blog-c .css-wjh20t-MuiPagination-ul li {
     color: #fff;
   }
-  #blog .css-wjh20t-MuiPagination-ul li .css-1v2lvtn-MuiPaginationItem-root {
+  #blog .blog-c .css-wjh20t-MuiPagination-ul li .css-1v2lvtn-MuiPaginationItem-root {
     color: #fff;
     font-size: 17px;
   }
-  #blog .css-wjh20t-MuiPagination-ul li button {
+  #blog .blog-c .css-wjh20t-MuiPagination-ul li button {
     border-radius: 50%;
     color: #fff;
     width: 35px;
     height: 35px;
     font-size: 22px;
   }
-  #blog .blog-c {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   #blog .blog-c .blog-right-item .search form label {
     font-size: 25px;
   }
+  #blog .blog-c .blog-left-item .blog-content {
+    margin-top: 0;
+  }
   #blog-aside .blog-content .mySwiper .swiper-button-next {
-    top: 117px;
+    top: 140px;
     width: 35px;
     height: 35px;
   }
@@ -3234,7 +3234,7 @@ body.active {
     font-size: 17px;
   }
   #blog-aside .blog-content .mySwiper .swiper-button-prev {
-    top: 117px;
+    top: 140px;
     width: 35px;
     height: 35px;
   }
@@ -3246,6 +3246,9 @@ body.active {
   }
   #blog-aside .blog-content .blog-title {
     font-size: 17px;
+  }
+  #blog-aside .blog-content img {
+    height: 230px !important;
   }
   .app .app-title {
     font-size: 25px;

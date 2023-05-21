@@ -3207,38 +3207,38 @@ $animation-duration:1s;
   transform: translateY(-120px);
   padding: 0 15px;
 
-  .css-wjh20t-MuiPagination-ul {
-    margin-top: 24px;
-    display: flex;
-    justify-content: center;
-
-    li {
-      color: $color-1;
-
-      .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
-        background: $gradient;
-      }
-
-      .css-1v2lvtn-MuiPaginationItem-root {
-        color: $color-1;
-        font-size: 20px;
-      }
-
-      button {
-        border-radius: 50%;
-        color: $color-1;
-        width: 50px;
-        height: 50px;
-        font-size: 35px;
-
-      }
-    }
-  }
-
   .blog-c {
     background: $color-3;
     padding: 30px 30px;
     max-width: 1140px;
+
+    .css-wjh20t-MuiPagination-ul {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+
+      li {
+        color: $color-1;
+
+        .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+          background: $gradient;
+        }
+
+        .css-1v2lvtn-MuiPaginationItem-root {
+          color: $color-1;
+          font-size: 20px;
+        }
+
+        button {
+          border-radius: 50%;
+          color: $color-1;
+          width: 50px;
+          height: 50px;
+          font-size: 35px;
+
+        }
+      }
+    }
 
     .blog-right {
       position: sticky;
@@ -3795,7 +3795,7 @@ $animation-duration:1s;
   #single-post {
     .mySwiper {
       .swiper-button-next {
-        top: 120px;
+        top: 106px;
         right: 5px;
         width: 35px;
         height: 35px;
@@ -3806,7 +3806,7 @@ $animation-duration:1s;
       }
 
       .swiper-button-prev {
-        top: 120px;
+        top: 106px;
         left: 5px;
         width: 35px;
         height: 35px;
@@ -3848,34 +3848,32 @@ $animation-duration:1s;
 
   #blog {
     margin-bottom: 70px;
-    .css-wjh20t-MuiPagination-ul {
-      margin-top: 24px;
-      display: flex;
-
-      li {
-        color: $color-1;
-
-        .css-1v2lvtn-MuiPaginationItem-root {
-          color: $color-1;
-          font-size: 17px;
-        }
-
-        button {
-          border-radius: 50%;
-          color: $color-1;
-          width: 35px;
-          height: 35px;
-          font-size: 22px;
-
-        }
-      }
-    }
 
     .blog-c {
-      padding-top: 20px;
-      padding-bottom: 40px;
-      padding-left: 20px;
-      padding-right: 20px;
+      padding: 16px;
+
+      .css-wjh20t-MuiPagination-ul {
+        margin-top: 24px;
+        display: flex;
+
+        li {
+          color: $color-1;
+
+          .css-1v2lvtn-MuiPaginationItem-root {
+            color: $color-1;
+            font-size: 17px;
+          }
+
+          button {
+            border-radius: 50%;
+            color: $color-1;
+            width: 35px;
+            height: 35px;
+            font-size: 22px;
+
+          }
+        }
+      }
 
       .blog-right-item {
         .search {
@@ -3886,6 +3884,12 @@ $animation-duration:1s;
           }
         }
       }
+
+      .blog-left-item {
+        .blog-content {
+          margin-top: 0;
+        }
+      }
     }
   }
 
@@ -3893,7 +3897,7 @@ $animation-duration:1s;
     .blog-content {
       .mySwiper {
         .swiper-button-next {
-          top: 117px;
+          top: 140px;
           width: 35px;
           height: 35px;
 
@@ -3903,7 +3907,7 @@ $animation-duration:1s;
         }
 
         .swiper-button-prev {
-          top: 117px;
+          top: 140px;
           width: 35px;
           height: 35px;
 
@@ -3919,6 +3923,10 @@ $animation-duration:1s;
 
       .blog-title {
         font-size: 17px;
+      }
+
+      img {
+        height: 230px !important;
       }
     }
   }
