@@ -2764,7 +2764,7 @@ body.active {
   justify-content: center !important;
 }
 #blog .blog-c .css-wjh20t-MuiPagination-ul li {
-  color: #fff;
+  color: #fff !important;
 }
 #blog .blog-c .css-wjh20t-MuiPagination-ul li .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
   background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%) !important;
@@ -2774,11 +2774,11 @@ body.active {
   font-size: 20px !important;
 }
 #blog .blog-c .css-wjh20t-MuiPagination-ul li button {
-  border-radius: 50%;
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  font-size: 35px;
+  border-radius: 50% !important;
+  color: #fff !important;
+  width: 50px !important;
+  height: 50px !important;
+  font-size: 30px !important;
 }
 #blog .blog-c .blog-right {
   position: sticky;
@@ -3210,7 +3210,8 @@ body.active {
   }
   #blog .blog-c .css-wjh20t-MuiPagination-ul li .css-1v2lvtn-MuiPaginationItem-root {
     color: #fff !important;
-    font-size: 17px !important;
+    font-size: 15px !important;
+    background: red;
   }
   #blog .blog-c .css-wjh20t-MuiPagination-ul li button {
     border-radius: 50%;

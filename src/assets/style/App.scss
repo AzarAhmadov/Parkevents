@@ -3218,7 +3218,7 @@ $animation-duration:1s;
       justify-content: center !important;
 
       li {
-        color: $color-1;
+        color: $color-1 !important;
 
         .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
           background: $gradient !important;
@@ -3230,12 +3230,11 @@ $animation-duration:1s;
         }
 
         button {
-          border-radius: 50%;
-          color: $color-1;
-          width: 50px;
-          height: 50px;
-          font-size: 35px;
-
+          border-radius: 50% !important;
+          color: $color-1 !important;
+          width: 50px !important;
+          height: 50px !important;
+          font-size: 30px !important;
         }
       }
     }
@@ -3861,7 +3860,8 @@ $animation-duration:1s;
 
           .css-1v2lvtn-MuiPaginationItem-root {
             color: $color-1 !important;
-            font-size: 17px !important;
+            font-size: 15px !important;
+            background: red;
           }
 
           button {

@@ -4,11 +4,10 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { AiOutlineSearch } from 'react-icons/ai';
 import SingleBlog from './SingleBlog';
 import BlogAside from '../blogs/BlogAside';
-import Pagination from '@mui/material/Pagination';
-import PaginationItem from '@mui/material/PaginationItem';
 import Stack from '@mui/material/Stack';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { Pagination, PaginationItem} from '@mui/material';
+import '@mui/material/styles';
+import { ArrowBack, ArrowForward } from '@mui/icons-material';
 
 const Blog = () => {
 
@@ -25,13 +24,15 @@ const Blog = () => {
                     <Row>
                         <Col lg={8}>
                             <SingleBlog />
-                            <Stack spacing={2}>
+                            <Stack spacing={1}>
                                 <Pagination
-                                    count={5}
+                                    count={15}
                                     renderItem={(item) => (
                                         <PaginationItem
-                                            slots={{ previous: ArrowBackIcon, next: ArrowForwardIcon }}
                                             {...item}
+                                            icon={
+                                                item.type === 'previous' ? <ArrowBack /> : <ArrowForward />
+                                            }
                                         />
                                     )}
                                 />
