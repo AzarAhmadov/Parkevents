@@ -13,7 +13,7 @@ const Question = () => {
             <section id='question'>
                 <Container>
                     <Row>
-                        <Accordion multiple activeIndex={[0]}>
+                        <Accordion>
                             <AccordionTab header="Tədbirə giriş üçün Elektron Bileti çap etmək kifayətdirmi?">
                                 <p>
                                     Bəli, elektron poçtunuza gələn e-bileti çap etməyiniz və yaxud mobil telefonunuzda göstərmək kifayətdir. Elektron biletlər çatdırılmır və ya fiziki biletlərlə əvəz olunmur.
