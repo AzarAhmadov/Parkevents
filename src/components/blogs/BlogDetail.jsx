@@ -14,7 +14,6 @@ import 'swiper/css/effect-fade';
 import { FaFacebookF } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { BsTwitter } from 'react-icons/bs';
-import { FaTiktok } from 'react-icons/fa';
 
 const BlogDetail = () => {
     const { id } = useParams();
@@ -81,11 +80,6 @@ const BlogDetail = () => {
                                     <li>
                                         <a href='#'>
                                             <BsTwitter />
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href='#'>
-                                            <FaTiktok />
                                         </a>
                                     </li>
                                 </ul>

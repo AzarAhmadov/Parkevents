@@ -3449,6 +3449,10 @@ $animation-duration:1s;
     li {
       margin-left: 10px;
 
+      &:first-child {
+        margin-left: 0;
+      }
+
       a {
         border-radius: 50%;
         background: $color-5;
@@ -4020,7 +4024,7 @@ $animation-duration:1s;
 
         .share {
           align-items: center;
-          padding: 13px;
+          padding: 7px 10px 6px 10px;
 
           ul {
             padding: 10px;
@@ -4030,6 +4034,7 @@ $animation-duration:1s;
               span {
                 display: none;
               }
+
             }
           }
         }
@@ -4339,7 +4344,7 @@ $animation-duration:1s;
       transform: translate(-50%, -50%);
 
       h4 {
-        font-size: 26px;
+        font-size: 27px;
         padding: 0 5px;
         line-height: 35px;
       }
