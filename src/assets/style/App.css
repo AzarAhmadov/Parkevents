@@ -3011,6 +3011,8 @@ body.active {
   margin: 10px 0;
   font-weight: bold;
   font-size: 19px;
+  display: flex;
+  align-items: flex-start;
 }
 #question .container .row .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
   background: #31d7a9;
@@ -3380,6 +3382,9 @@ body.active {
   }
 }
 @media only screen and (max-width: 578px) {
+  #question {
+    margin-bottom: 10px;
+  }
   #question .container {
     padding: 0 22px;
   }
@@ -3393,7 +3398,8 @@ body.active {
     line-height: 25px;
   }
   #question .container .row .p-accordion .p-accordion-header .p-accordion-header-link {
-    font-size: 18px;
+    font-size: 17px;
+    padding: 15px 15px;
   }
   #question .container .row .p-accordion .p-accordion-header .p-accordion-header-link .p-accordion-toggle-icon {
     background: #31d7a9;

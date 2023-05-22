@@ -3512,6 +3512,8 @@ $animation-duration:1s;
         margin: 10px 0;
         font-weight: bold;
         font-size: 19px;
+        display: flex;
+        align-items: flex-start;
 
         .p-accordion-toggle-icon {
           background: $color-5;
@@ -4071,6 +4073,7 @@ $animation-duration:1s;
 @media only screen and (max-width:578px) {
 
   #question {
+    margin-bottom: 10px;
     .container {
       padding: 0 22px;
 
@@ -4088,7 +4091,8 @@ $animation-duration:1s;
         }
 
         .p-accordion .p-accordion-header .p-accordion-header-link {
-          font-size: 18px;
+          font-size: 17px;
+          padding: 15px 15px;
 
           .p-accordion-toggle-icon {
             background: $color-5;
