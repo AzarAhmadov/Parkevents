@@ -3145,7 +3145,7 @@ $animation-duration:1s;
       font-weight: 500;
       font-size: 20px;
     }
-    
+
 
     ul {
       display: flex;
@@ -3567,10 +3567,10 @@ $animation-duration:1s;
     }
   }
 
-  #blog-aside{
-    .blog-content{
-      .mySwiper{
-        img{
+  #blog-aside {
+    .blog-content {
+      .mySwiper {
+        img {
           height: 300px;
         }
       }
@@ -4076,6 +4076,7 @@ $animation-duration:1s;
         }
 
         .comment-area {
+          margin-top: 15px;
           padding: 0 12px;
         }
 
@@ -4104,18 +4105,12 @@ $animation-duration:1s;
 
         .title {
           font-size: 20px;
-
-          &:first-child {
-            margin-top: 12px;
-          }
-
-          &:nth-child(odd) {
-            margin-bottom: 15px;
-          }
+          margin-top: 0 !important;
         }
 
         .simple-content {
           font-size: 15px;
+          margin-bottom: 15px;
         }
       }
     }

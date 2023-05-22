@@ -3384,6 +3384,7 @@ body.active {
     border-radius: 0;
   }
   #blog-detail .container .row .comment-area {
+    margin-top: 15px;
     padding: 0 12px;
   }
   #blog-detail .container .row .blog-content {
@@ -3406,15 +3407,11 @@ body.active {
   }
   #blog-detail .container .row .title {
     font-size: 20px;
-  }
-  #blog-detail .container .row .title:first-child {
-    margin-top: 12px;
-  }
-  #blog-detail .container .row .title:nth-child(odd) {
-    margin-bottom: 15px;
+    margin-top: 0 !important;
   }
   #blog-detail .container .row .simple-content {
     font-size: 15px;
+    margin-bottom: 15px;
   }
   #single-post .mySwiper .swiper-button-next {
     top: 106px;
