@@ -1946,11 +1946,13 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 10;
+      text-align: center;
 
       p {
         color: $color-1;
-        font-size: 55px;
+        font-size: 50px;
         font-weight: 600;
+        line-height: 55px;
       }
     }
   }
@@ -4323,6 +4325,36 @@ $animation-duration:1s;
 
     .blog-c {
       padding: 25px 16px;
+
+      .p-paginator {
+        background: transparent;
+        padding: 0;
+        margin-top: 10px;
+
+        .p-paginator-next {
+          min-width: 15px;
+        }
+
+        .p-paginator-next.p-paginator-element.p-link{
+          background: transparent !important;
+        }
+        .p-paginator-prev.p-paginator-element.p-link{
+          background: transparent !important;
+        }
+
+        .p-paginator-prev {
+          min-width: 15px;
+
+        }
+
+        .p-paginator-pages {
+          .p-paginator-page {
+            color: $color-7;
+            font-size: 17px;
+          }
+        }
+
+      }
 
       .blog-left-item {
         .blog-content {

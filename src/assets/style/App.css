@@ -1676,11 +1676,13 @@ body.active {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 10;
+  text-align: center;
 }
 #plan .plan-banner .ticket-name p {
   color: #fff;
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 600;
+  line-height: 55px;
 }
 
 #ticket-filter {
@@ -3570,6 +3572,27 @@ body.active {
   }
   #blog .blog-c {
     padding: 25px 16px;
+  }
+  #blog .blog-c .p-paginator {
+    background: transparent;
+    padding: 0;
+    margin-top: 10px;
+  }
+  #blog .blog-c .p-paginator .p-paginator-next {
+    min-width: 15px;
+  }
+  #blog .blog-c .p-paginator .p-paginator-next.p-paginator-element.p-link {
+    background: transparent !important;
+  }
+  #blog .blog-c .p-paginator .p-paginator-prev.p-paginator-element.p-link {
+    background: transparent !important;
+  }
+  #blog .blog-c .p-paginator .p-paginator-prev {
+    min-width: 15px;
+  }
+  #blog .blog-c .p-paginator .p-paginator-pages .p-paginator-page {
+    color: rgba(255, 255, 255, 0.6274509804);
+    font-size: 17px;
   }
   #blog .blog-c .blog-left-item .blog-content {
     margin-top: 0;
