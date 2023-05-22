@@ -48,23 +48,13 @@ const Footer = () => {
                     <Col className='d-flex justify-content-end g-0' xs={6}>
                         <ul className='d-flex'>
                             <li>
-                                <Link>
-                                    Haqqımızda
-                                </Link>
-                            </li>
-                            <li>
                                 <Link to='/blog'>
                                     Bloglar
                                 </Link>
                             </li>
                             <li>
-                                <Link>
+                                <Link to='/Question'>
                                     Suallar
-                                </Link>
-                            </li>
-                            <li>
-                                <Link>
-                                    Təhlükəsizlik
                                 </Link>
                             </li>
                             <li>

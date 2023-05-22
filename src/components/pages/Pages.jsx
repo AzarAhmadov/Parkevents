@@ -15,6 +15,7 @@ import TicketPay from '../ticketPlan/TicketPay';
 import Download from '../download/Download';
 import Blog from '../blogs/Blog';
 import BlogDetail from '../blogs/BlogDetail';
+import Question from '../Question/Question';
 
 const transition = {
     duration: 1,
@@ -165,6 +166,16 @@ const Pages = () => {
                             <>
                                 <Header />
                                 <AnimatedRoute element={<BlogDetail />} />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/Question"
+                        element={
+                            <>
+                                <Header />
+                                <AnimatedRoute element={<Question />} />
                                 <Footer />
                             </>
                         }
