@@ -14,6 +14,7 @@ import TicketSet from '../ticketPlan/TicketSet';
 import TicketPay from '../ticketPlan/TicketPay';
 import Download from '../download/Download';
 import Blog from '../blogs/Blog';
+import BlogDetail from '../blogs/BlogDetail';
 
 const transition = {
     duration: 1,
@@ -154,6 +155,16 @@ const Pages = () => {
                             <>
                                 <Header />
                                 <AnimatedRoute element={<Blog />} />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/blog-detail/:id"
+                        element={
+                            <>
+                                <Header />
+                                <BlogDetail element={<Blog />} />
                                 <Footer />
                             </>
                         }

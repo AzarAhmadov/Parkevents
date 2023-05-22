@@ -20,7 +20,7 @@ const SingleBlog = () => {
                                 <SwiperSlide key={blogImgIdx}>
                                     <div className="blog-left-item">
                                         <div className="blog-content">
-                                            <Link>
+                                            <Link to='/blog-detail/1'>
                                                 <img src={blogImg} alt="Blog Image" />
                                             </Link>
                                             <div className="blog-txt">

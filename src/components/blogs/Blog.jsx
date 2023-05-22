@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import GlobalBanner from '../globalBanner/GlobalBanner'
 import { Col, Container, Row } from 'react-bootstrap'
-import { AiOutlineSearch } from 'react-icons/ai';
 import SingleBlog from './SingleBlog';
 import BlogAside from '../blogs/BlogAside';
 import { Paginator } from 'primereact/paginator';
@@ -21,7 +20,7 @@ const Blog = () => {
     };
 
     return (
-        <main id='blog-main'>
+        <main>
             <GlobalBanner title='Bloglar' linkTo='/' linkName='Bloglar' />
             <section id='blog'>
                 <Container className='blog-c'>
@@ -32,17 +31,6 @@ const Blog = () => {
                         </Col>
                         <Col lg={4}>
                             <div className="blog-right">
-                                <div className="blog-right-item">
-                                    <div className="search">
-                                        <form>
-                                            <label htmlFor="searcg">
-                                                Axtarış
-                                            </label>
-                                            <input type="search" name="search" id="search" placeholder='Axtarış' />
-                                            <button type='submit' className='hover t-btn'> Axtarış <AiOutlineSearch /> </button>
-                                        </form>
-                                    </div>
-                                </div>
                                 <BlogAside />
                             </div>
                         </Col>

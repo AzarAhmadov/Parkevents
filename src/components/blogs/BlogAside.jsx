@@ -9,10 +9,12 @@ import "swiper/css/navigation";
 import { Navigation, EffectFade } from "swiper";
 import 'swiper/css/effect-fade';
 import Follow from './Follow';
+import BlogSearch from './BlogSearch';
 
 const SingleBlog = () => {
     return (
         <main>
+            <BlogSearch />
             <section id='blog-aside'>
                 <div className="blog-content">
                     <h5> Sonuncu bloglar </h5>
@@ -25,7 +27,7 @@ const SingleBlog = () => {
                                             <img src={el.blogImgs} alt="Blog Image" />
                                         </Link>
                                         <div className="blog-txt">
-                                            <Link className="blog-title">
+                                            <Link to='/blog-detail/1' className="blog-title">
                                                 {el.blogTitle}
                                             </Link>
                                             <ul>
