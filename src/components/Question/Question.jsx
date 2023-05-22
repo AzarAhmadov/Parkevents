@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import GlobalBanner from '../globalBanner/GlobalBanner'
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import { Container, Row } from 'react-bootstrap';
 
 const Question = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <main>
             <GlobalBanner title='Ən çox verilən suallar' linkTo='/' linkName='Suallar' />
