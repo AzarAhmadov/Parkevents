@@ -9,7 +9,8 @@ import { Toast } from 'primereact/toast';
 import { useSelector, useDispatch } from 'react-redux';
 import { setActiveProfile } from '../../app/features/ProfileLinks/ProfileLinks';
 
-const Profiles = () => {;
+const Profiles = () => {
+    ;
 
     const options = ['Kişi', 'Qadın'];
     const [value, setValue] = useState(options);
@@ -118,7 +119,7 @@ const Profiles = () => {;
                                             </p>
                                         </li>
                                         <li>
-                                            Vaxt bitib
+                                            Vaxtı bitib
                                         </li>
                                         <li>
                                             19 may 2023
