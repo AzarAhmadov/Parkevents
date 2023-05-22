@@ -3527,11 +3527,8 @@ body.active {
     grid-template-columns: repeat(2, 1fr);
   }
   .tabs-content .tabs-contents .order ul li {
-    height: 70px;
-    border-bottom: 1px solid red;
+    align-items: flex-start;
     border: none;
-  }
-  .tabs-content .tabs-contents .order ul li p {
     padding-top: 20px;
   }
   .tabs-content .tabs-contents .order ul li p.price {

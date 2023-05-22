@@ -4223,13 +4223,11 @@ $animation-duration:1s;
           grid-template-columns: repeat(2, 1fr);
 
           li {
-            height: 70px;
-            border-bottom: 1px solid red;
+            align-items: flex-start;
             border: none;
-
+            padding-top: 20px;
 
             p {
-              padding-top: 20px;
 
               &.price {
                 padding-top: 0;

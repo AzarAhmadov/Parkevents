@@ -6,13 +6,10 @@ import { MdLockReset } from 'react-icons/md';
 import { SelectButton } from 'primereact/selectbutton';
 import { Button } from 'primereact/button';
 import { Toast } from 'primereact/toast';
-const Profiles = () => {
+import { useSelector, useDispatch } from 'react-redux';
+import { setActiveProfile } from '../../app/features/ProfileLinks/ProfileLinks';
 
-    const [active, setActive] = useState(0);
-
-    const handleTabClick = (index) => {
-        setActive(index);
-    };
+const Profiles = () => {;
 
     const options = ['Kişi', 'Qadın'];
     const [value, setValue] = useState(options);
@@ -23,26 +20,33 @@ const Profiles = () => {
 
     const toast = useRef(null);
 
+    const activeLink = useSelector((state) => state.profileLink);
+    const dispatch = useDispatch();
+
+    const handleSetActive = (value) => {
+        dispatch(setActiveProfile(value));
+    };
+
     return (
         <main id='tabs-main'>
             <section id="profile">
                 <Container>
                     <ul className="tabs">
                         <li
-                            onClick={() => handleTabClick(0)}
-                            className={active === 0 ? 'active' : null}
+                            onClick={() => handleSetActive(0)}
+                            className={activeLink === 0 ? 'active' : null}
                         >
                             <AiOutlineUser />
                             <div className="dec">Profilə düzəliş et</div>
                         </li>
-                        <li onClick={() => handleTabClick(1)}
-                            className={active === 1 ? 'active' : null}
+                        <li onClick={() => handleSetActive(1)}
+                            className={activeLink === 1 ? 'active' : null}
                         >
                             <AiOutlineShopping />
                             <div className="dec">Sifarişlərin</div>
                         </li>
-                        <li onClick={() => handleTabClick(2)}
-                            className={active === 2 ? 'active' : null}
+                        <li onClick={() => handleSetActive(2)}
+                            className={activeLink === 2 ? 'active' : null}
                         >
                             <MdLockReset />
                             <div className="dec">Parolu sıfırla</div>
@@ -55,7 +59,7 @@ const Profiles = () => {
                 <Container>
                     <div className="tabs-content">
                         {
-                            <div className={active === 0 ? 'tabs-contents' : 'none'}>
+                            <div className={activeLink === 0 ? 'tabs-contents' : 'none'}>
                                 <h5> Şəxsi məlumatlar </h5>
                                 <Form>
                                     <Row>
@@ -103,7 +107,7 @@ const Profiles = () => {
                             </div>
                         }
                         {
-                            <div className={active === 1 ? 'tabs-contents' : 'none'}>
+                            <div className={activeLink === 1 ? 'tabs-contents' : 'none'}>
                                 <h5> Sifarişlər </h5>
                                 <div className="order">
                                     <ul>
@@ -148,7 +152,7 @@ const Profiles = () => {
                             </div>
                         }
                         {
-                            <div className={active === 2 ? 'tabs-contents' : 'none'}>
+                            <div className={activeLink === 2 ? 'tabs-contents' : 'none'}>
                                 <h5> Şifrəni yenilə </h5>
                                 <Form>
                                     <Row>

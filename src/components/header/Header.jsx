@@ -7,8 +7,9 @@ import { RiMenu4Fill } from 'react-icons/ri';
 import { IoMdClose } from 'react-icons/io';
 import { BiLogInCircle } from 'react-icons/bi';
 import { HiOutlineTicket } from 'react-icons/hi';
-
 import Container from 'react-bootstrap/esm/Container';
+import { useDispatch } from 'react-redux';
+import { setActiveProfile } from '../../app/features/ProfileLinks/ProfileLinks';
 
 const Header = () => {
     const [active, setActive] = useState(false);
@@ -57,6 +58,11 @@ const Header = () => {
         setActiveLang(index);
     };
 
+    const dispatch = useDispatch();
+
+    const handleSetActive = (value) => {
+        dispatch(setActiveProfile(value));
+    };
 
     return (
         <>
@@ -149,8 +155,18 @@ const Header = () => {
                                         </Link>
                                         <ul className='login-drop'>
                                             <li>
-                                                <Link to='/profile'>
+                                                <Link onClick={() => handleSetActive(0)} to='/profile'>
                                                     Profil
+                                                </Link>
+                                            </li>
+                                            <li onClick={() => handleSetActive(1)} >
+                                                <Link to='/profile'>
+                                                    Sifarişlərim
+                                                </Link>
+                                            </li>
+                                            <li onClick={() => handleSetActive(2)} >
+                                                <Link to='/profile'>
+                                                    Şifrəni yenilə
                                                 </Link>
                                             </li>
                                             <li className='out'>
