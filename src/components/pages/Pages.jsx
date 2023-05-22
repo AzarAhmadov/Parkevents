@@ -16,6 +16,7 @@ import Download from '../download/Download';
 import Blog from '../blogs/Blog';
 import BlogDetail from '../blogs/BlogDetail';
 import Question from '../Question/Question';
+import Profiles from '../profiles/Profiles';
 
 const transition = {
     duration: 1,
@@ -177,6 +178,20 @@ const Pages = () => {
                                 <Header />
                                 <AnimatedRoute element={<Question />} />
                                 <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/profile"
+                        element={
+                            <>
+                                <AnimatedRoute element={
+                                    <>
+                                        <Header />
+                                        <Profiles />
+                                        <Footer />
+                                    </>
+                                } />
                             </>
                         }
                     />

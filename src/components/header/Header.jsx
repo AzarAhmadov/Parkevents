@@ -149,13 +149,8 @@ const Header = () => {
                                         </Link>
                                         <ul className='login-drop'>
                                             <li>
-                                                <Link>
+                                                <Link to='/profile'>
                                                     Profil
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link>
-                                                    Tənzimləmələr
                                                 </Link>
                                             </li>
                                             <li className='out'>

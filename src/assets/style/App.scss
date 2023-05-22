@@ -240,6 +240,7 @@ body {
 
           &.login-drop {
             top: 70px;
+            width: 180px !important;
           }
 
           .arrow {
@@ -2932,7 +2933,7 @@ $animation-duration:1s;
       color: $color-6;
       padding-top: 10px;
       font-size: 18px;
-      padding-left: 5px;
+      padding-left: 4px;
     }
 
     .comment-edit {
@@ -3569,6 +3570,189 @@ $animation-duration:1s;
   }
 }
 
+#profile {
+  background: $color-3;
+  padding: 35px 0;
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+
+    li {
+      position: relative;
+      cursor: pointer;
+
+      &:hover .dec {
+        visibility: visible;
+        opacity: 1;
+        top: -30px;
+      }
+
+      .dec {
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: $color-10;
+        font-size: 20px;
+        white-space: nowrap;
+        position: 0;
+        visibility: hidden;
+        transition: 200ms all;
+      }
+
+      svg {
+        fill: $color-9;
+        font-size: 60px;
+      }
+
+      &.active {
+        &::after {
+          position: absolute;
+          content: "";
+          bottom: -34px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border: 15px solid $color-5;
+          border-bottom-width: 15px;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-top-color: transparent;
+        }
+
+        svg {
+          fill: $color-1;
+        }
+      }
+    }
+  }
+}
+
+#tabs-main {
+  min-height: 75vh;
+}
+
+.tabs-content {
+  margin-bottom: 130px;
+  margin-top: 30px;
+  display: flex;
+  background: $color-3;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+
+  .none {
+    display: none;
+  }
+
+  .tabs-contents {
+    width: 100%;
+    padding: 30px;
+
+    .order {
+      padding: 0 70px;
+
+      ul {
+        display: flex;
+        border: 1px solid $color-11;
+        border-radius: 10px;
+        align-items: center;
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        li {
+          flex: 1;
+          color: $color-1;
+          text-align: center;
+          font-size: 18px;
+          border-right: 1px solid $color-11;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:last-child {
+            border-right: none;
+          }
+
+          span {
+            color: $color-10;
+          }
+
+          p {
+            &.price {
+              font-size: 22px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-div {
+      display: flex;
+      justify-content: center;
+
+      button {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: centere;
+        background: #04338a;
+        color: $color-1;
+        border: 1px solid $color-4;
+        box-shadow: none;
+        font-size: 17px;
+        border-radius: 10px;
+      }
+    }
+
+    .p-component {
+      display: flex;
+      justify-content: space-between;
+
+      .p-button {
+        width: 100%;
+
+        &.p-highlight {
+          background: $color-5;
+          box-shadow: none;
+        }
+      }
+    }
+
+    h5 {
+      color: $color-1;
+      text-align: center;
+      border-bottom: 1px dotted $color-11;
+      padding-bottom: 25px;
+      margin-bottom: 25px;
+      font-size: 30px;
+    }
+
+    .col {
+      padding: 10px 20px;
+
+      input {
+        border: 1px solid rgba(255, 255, 255, 0.219);
+        border-radius: 10px;
+        background: transparent;
+        padding: 13px 10px;
+      }
+
+      label {
+        color: $color-1;
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
 // Responsive
 @media only screen and (max-width:1400px) {
   .container {
@@ -4010,6 +4194,58 @@ $animation-duration:1s;
 }
 
 @media only screen and (max-width:768px) {
+
+  .tabs-content {
+
+    .tabs-contents {
+      width: 100%;
+      padding: 30px 10px;
+
+      h5 {
+        font-size: 25px;
+      }
+
+      .btn-div {
+        width: 100%;
+        padding: 0 10px;
+
+        button {
+          width: 100%;
+        }
+      }
+
+      .order {
+        padding: 10px;
+        padding-top: 0;
+
+        ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+
+          li {
+            height: 70px;
+            border-bottom: 1px solid red;
+            border: none;
+
+
+            p {
+              padding-top: 20px;
+
+              &.price {
+                padding-top: 0;
+              }
+            }
+          }
+        }
+      }
+
+    }
+
+    .row {
+      flex-direction: column;
+    }
+  }
+
   .container {
     padding: 0px 15px;
   }
@@ -4106,6 +4342,41 @@ $animation-duration:1s;
 }
 
 @media only screen and (max-width:578px) {
+
+  #profile {
+    padding: 24px 0;
+
+    .tabs {
+      justify-content: space-evenly;
+      gap: 0;
+
+      li {
+        &:hover {
+          .dec {
+            top: -20px;
+          }
+        }
+
+        .dec {
+          font-size: 15px;
+        }
+
+        svg {
+          width: 50px;
+        }
+
+        &.active {
+          &::after {
+            bottom: -23px;
+          }
+        }
+      }
+    }
+  }
+
+  .tabs-content {
+    margin-bottom: 60px;
+  }
 
   .p-tabview {
     .p-tabview-nav {
