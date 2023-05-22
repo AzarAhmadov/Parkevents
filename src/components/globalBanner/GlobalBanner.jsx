@@ -16,7 +16,7 @@ const GlobalBanner = ({ title, linkTo, linkName, linkName2, linkTo2 }) => {
                         {linkName}
                     </li>
                     <li>
-                        <Link> {linkName2} </Link>
+                        <Link to={linkTo2}> {linkName2} </Link>
                     </li>
                 </ul>
             </div>

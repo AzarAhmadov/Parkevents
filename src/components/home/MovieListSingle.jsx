@@ -6,6 +6,7 @@ import "swiper/css/pagination";
 import { useNavigate } from 'react-router-dom';
 
 const MovieListSingle = ({ movies, slidesPerView }) => {
+    
     const navigate = useNavigate();
     const handleMovieClick = (movie) => {
         navigate(`/detail/${movie.id}`);

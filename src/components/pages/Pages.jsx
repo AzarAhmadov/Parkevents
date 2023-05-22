@@ -164,7 +164,7 @@ const Pages = () => {
                         element={
                             <>
                                 <Header />
-                                <BlogDetail element={<Blog />} />
+                                <AnimatedRoute element={<BlogDetail />} />
                                 <Footer />
                             </>
                         }

@@ -21,13 +21,13 @@ const Blog = () => {
 
     return (
         <main>
-            <GlobalBanner title='Bloglar' linkTo='/' linkName='Bloglar' />
+            <GlobalBanner title='Bloqlar' linkTo='/' linkName='Bloqlar' />
             <section id='blog'>
                 <Container className='blog-c'>
                     <Row>
                         <Col lg={8}>
                             <SingleBlog />
-                            <Paginator first={first} rows={rows} totalRecords={120} onPageChange={onPageChange} />
+                            <Paginator first={first} rows={rows} totalRecords={40} onPageChange={onPageChange} />
                         </Col>
                         <Col lg={4}>
                             <div className="blog-right">

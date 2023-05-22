@@ -9,51 +9,58 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation, EffectFade } from "swiper";
 import 'swiper/css/effect-fade';
+import { MdDateRange } from 'react-icons/md';
 
 const SingleBlog = () => {
+
     return (
-            <section id='single-post'>
-                {
-                    blogData.map((el, idx) => (
-                        <Swiper navigation={true} spaceBetween='20' effect="fade" modules={[Navigation, EffectFade]} className="mySwiper" key={idx}>
-                            {el.blogImgs.map((blogImg, blogImgIdx) => (
-                                <SwiperSlide key={blogImgIdx}>
-                                    <div className="blog-left-item">
-                                        <div className="blog-content">
-                                            <Link to='/blog-detail/1'>
-                                                <img src={blogImg} alt="Blog Image" />
-                                            </Link>
-                                            <div className="blog-txt">
-                                                <Link className="blog-title">
-                                                    {el.blogTitle}
-                                                </Link>
-                                                <ul>
-                                                    <li>
-                                                        <AiOutlineComment />
-                                                        {el.comment} komment
-                                                    </li>
-                                                    <li>
-                                                        <BiShowAlt />
-                                                        {el.seen} baxış
-                                                    </li>
-                                                </ul>
-                                                <p className="blog-dec">
-                                                    {el.blogDec}
-                                                </p>
-                                            </div>
-                                            <div className="det-bottom">
-                                                <Link>
-                                                    Ətraflı baxış <HiOutlineArrowNarrowRight />
-                                                </Link>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    ))
-                }
-            </section>
+        <section id='single-post'>
+            {blogData.blogLeft.map((el) => (
+                <div className="blog-left-item" key={el.id}>
+                    <div className="blog-content">
+                        {el.blogImgs.length > 1 ? (
+                            <Swiper navigation={true} spaceBetween={30} effect="fade" modules={[Navigation, EffectFade]} className="mySwiper">
+                                {el.blogImgs.map((blogImg, blogImgIdx) => (
+                                    <SwiperSlide key={blogImgIdx}>
+                                        <Link to={`/blog-detail/${el.id}`}>
+                                            <img src={blogImg} alt="Blog Image" />
+                                        </Link>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        ) : (
+                            <Link to={`/blog-detail/${el.id}`}>
+                                <img src={el.blogImgs[0]} alt="Blog Image" />
+                            </Link>
+                        )}
+                        <div className="blog-txt">
+                            <p className="date"><MdDateRange /> {el.date} </p>
+                            <Link className='blog-title' to={`/blog-detail/${el.id}`}>
+                                {el.blogMainTitle}
+                            </Link>
+                            <ul>
+                                <li>
+                                    <AiOutlineComment />
+                                    {el.comment} komment
+                                </li>
+                                <li>
+                                    <BiShowAlt />
+                                    {el.seen} baxış
+                                </li>
+                            </ul>
+                            <p className="blog-dec">
+                                {el.blogMainDec}
+                            </p>
+                        </div>
+                        <div className="det-bottom">
+                            <Link to={`/blog-detail/${el.id}`}>
+                                Ətraflı baxış <HiOutlineArrowNarrowRight />
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </section>
     )
 }
 

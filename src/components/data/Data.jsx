@@ -785,62 +785,164 @@ export const story = [
     },
 ]
 
-export const blogData = [
-    {
-        id: 1,
-        blogImgs: [
-            'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
-            'https://pixner.net/boleto/demo/assets/images/blog/blog02.jpg',
-            'https://pixner.net/boleto/demo/assets/images/blog/blog03.jpg',
-        ],
-        blogTitle: "Sayitimiz artiq istifadəyə hazirdir",
-        comment: 20,
-        seen: 31220,
-        blogDec:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
-    },
-    {
-        id: 2,
-        blogImgs: [
-            'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
-        ],
-        blogTitle: "Sayitimiz artiq istifadəyə hazirdir",
-        comment: 20,
-        seen: 2020,
-        blogDec:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
-    },
-    {
-        id: 3,
-        blogImgs: [
-            'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
-        ],
-        blogTitle: "Sayitimiz artiq istifadəyə hazirdi Sayitimiz artiq istifadəyə hazirdir",
-        comment: 120,
-        seen: 10,
-        blogDec:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
-    },
-];
+export const blogData = {
+    blogLeft: [
+        {
+            id: 1,
+            blogImgs: [
+                'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
+                'https://pixner.net/boleto/demo/assets/images/blog/blog02.jpg',
+                'https://pixner.net/boleto/demo/assets/images/blog/blog03.jpg',
+            ],
+            blogMainDec: 'Saytımız artıq istifadəyə hazırdır...',
+            blogMainTitle: "Saytımız artıq istifadəyə hazırdır...",
+            blogDetailContent:
+                <div className='detail-content'>
+                    <ul>
+                        <li>
+                            <p className="title"> İstediyiniz tədbir biletlərini asanlıqla əldə edə biləcəksiz ! </p>
+                            <p className='simple-content'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nobis accusamus deserunt doloremque natus cum blanditiis velit, quis architecto consectetur?
+                            </p>
+                        </li>
+                    </ul>
+                </div>,
+            comment: 20,
+            seen: 31220,
+            date: "19 may 2023",
+        },
+        {
+            id: 2,
+            blogImgs: [
+                'https://blog.biletix.com/wp-content/uploads/2023/05/111811-e1683109528885.jpg',
+            ],
+            blogMainDec: 'Sevilen sanatçı Hadise nin kariyer yolculuğunu mercek altına alıyoruz !',
+            blogMainTitle: "Yaz Günü Yakan Güneş Gibi Hadise!",
+            blogDetailContent:
+                <div className='detail-content'>
+                    <ul>
+                        <li>
+                            <p className="title"> Yaz Günü Yakan Güneş Gibi Hadise!</p>
+                            <p className='simple-content'>
+                                Hadise, tam adıyla Hadise Açıkgöz, 22 Ekim 1985 tarihinde Belçika’nın Mol şehrinde doğan Türk asıllı Belçikalı şarkıcı ve söz yazarı. Müzik kariyerine 2003 yılında Pop Idol yarışmasına katılarak başlayan sanatçı, 2005 yılında ilk albümü Sweat’i çıkardı. 2008 yılında Türkiye’yi Eurovision Şarkı Yarışması’nda temsil etti ve “Düm Tek Tek” adlı şarkısıyla 4. oldu.
+                            </p>
+                        </li>
+                        <li>
+                            <p className="title"> Hadise ve Eşsiz Müzik Hayatı: Başlangıç Yılları </p>
+                            <p className='simple-content'> Belçika’da büyüyen Açıkgöz, Sivaslı bir ailenin dört çocuğundan biri. 2003 yılında, Belçika’da düzenlenen Idol 2003 adlı yarışmaya katıldı. Yarışmayı kazanamamış olsa da albüm teklifi alan ve hazırlıklarına başlayan sanatçı, 2005 yılında çıkarmış olduğu ilk stüdyo albümü Sweat’in içerisinde yer alan Stir Me Up şarkısıyla birlikte Belçika’da ve Türkiye’de ses getiren bir üne sahip oldu. Kariyerinin başında Türk basınında daha fazla ilgi bulan Hadise, kariyerine Türkiye’de devam etme kararı aldı. </p>
+                        </li>
+                        <li>
+                            <p className="title"> Hadise Yaratan Albüm: Hadise</p>
+                            <p className='simple-content'> 2008 yılında, ikinci stüdyo albümü Hadise’yi yayımladı. Bu albüm İngilizce ve Türkçe şarkılardan oluşuyor. Albümde yer alan ve hemen hemen herkesin ezbere bildiği Deli Oğlan şarkısı, Türkiye müzik piyasasını sallamış bir hit. Serdar Ortaç’ın aynı yıl içinde çıkan Nefes albümündeki Düşman şarkısına da eşlik eden Açıkgöz, başarıdan başarıya koşmaya devam etti!
 
-export const blogAside = [
-    {
-        id: 1,
-        blogImgs: 'https://pixner.net/boleto/demo/assets/images/blog/blog01.jpg',
-        blogTitle: "Sayitimiz artiq istifadəyə hazirdir",
-        comment: 20,
-        seen: 31220,
-        blogDec:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
-    },
-    {
-        id: 2,
-        blogImgs:'https://pixner.net/boleto/demo/assets/images/blog/blog03.jpg',
-        blogTitle: "Sayitimiz artiq istifadəyə hazirdir",
-        comment: 20,
-        seen: 31220,
-        blogDec:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
-    },
+                                Sonraki yıl, 2009 Eurovision Şarkı Yarışması’nda Düm Tek Tek parçası ve eşsiz dansı ile ülkemizi temsil eden güzel sanatçı dördüncülüğü kaparak ülkemize döndü.</p>
+                        </li>
+                    </ul>
+                </div>,
+            comment: 20,
+            seen: 31220,
+            date: "19 may 2023",
+        },
+        {
+            id: 3,
+            blogImgs: [
+                'https://blog.biletix.com/wp-content/uploads/2023/03/GettyImages-79917259-e1661877201992-scaled-e1679060791696-738x415.webp',
+            ],
+            blogMainDec: 'Müziğin efsanevi isimlerinden biri olan Michael Jackson, dönemini aşan eserleriyle pop müziğin kralı unvanını kazandı. Olağanüstü yetenekleri, yaratıcı müzik tarzı ve etkileyici dans hareketleri sayesinde dünya çapında büyük bir hayran kitlesi edindi. Gelin birlikte bir devin doğuşuna şahitlik edelim.',
+            blogMainTitle: "Michael Jackson: Pop Müziğin Kralı",
+            blogDetailContent:
+                <div className='detail-content'>
+                    <ul>
+                        <li>
+                            <p className="title"> Michael Jackson: Pop Müziğin Kralı</p>
+                            <p className='simple-content'>
+                                Müziğin efsanevi isimlerinden biri olan Michael Jackson, dönemini aşan eserleriyle pop müziğin kralı unvanını kazandı. Olağanüstü yetenekleri, yaratıcı müzik tarzı ve etkileyici dans hareketleri sayesinde dünya çapında büyük bir hayran kitlesi edindi. Gelin birlikte bir devin doğuşuna şahitlik edelim.
+                            </p>
+                        </li>
+                        <li>
+                            <p className="title">
+                                Michael Jackson’ın Müzikal Başlangıcı ve Jackson 5
+                            </p>
+                            <p className='simple-content'>
+                                20. yüzyılın en ikonik sanatçısı: Michael Jackson. Jackson 1958 yılında Gary, Indiana’da doğdu. Müzikle olan ilişkisi henüz 6 yaşındayken kardeşleriyle birlikte kurdukları Jackson 5 adlı grupla başladı. Grup, 1960’ların sonlarında büyük bir başarıya ulaşarak R&B ve pop müziğin önemli isimlerinden biri haline geldi. Jackson 5’ın ardından solo kariyerine devam eden sanatçı, dünya çapında birçok hit şarkıya imza attı.
+                            </p>
+                        </li>
+                        <li>
+                            <p className="title"> Solo Kariyeri ve Müzikal Başarılar</p>
+                            <p className='simple-content'> 2008 yılında, ikinci stüdyo albümü Hadise’yi yayımladı. Bu albüm İngilizce ve Türkçe şarkılardan oluşuyor. Albümde yer alan ve hemen hemen herkesin ezbere bildiği Deli Oğlan şarkısı, Türkiye müzik piyasasını sallamış bir hit. Serdar Ortaç’ın aynı yıl içinde çıkan Nefes albümündeki Düşman şarkısına da eşlik eden Açıkgöz, başarıdan başarıya koşmaya devam etti!
+                                1971 yılında solo müzik çalışmalarına başlayan Michael Jackson’ın müziği, özellikle 1980’lerde yayınlanan albümleriyle büyük bir etki yarattı. Öyle ki “Thriller” albümü tüm zamanların en çok satan ve müzik tarihinin en önemli albümlerinden biri olarak kabul ediliyor. Albümdeki şarkılar, danslar ve prodüksiyon çalışmaları Michael’ın sadece bir müzisyen değil aynı zamanda bir pop kültür ikonu haline gelmesini sağladı.
+                            </p>
+                        </li>
+                        <li>
+                            <p className="title"> Off The Wall (1979)</p>
+                            <p className='simple-content'>
+                                Michael Jackson’ın müziği; pop, soul, R&B, funk ve rock gibi birçok farklı müzik tarzını bir araya getirdi. İlk büyük solo albümü olan Off The Wall, disko ve R&B türlerindeki şarkılardan oluşuyordu. Albümdeki Don’t Stop ‘Til You Get Enough ve Rock with You gibi hit şarkılar, Jackson’ın müzik dünyasındaki konumunu pekiştirdi.
+                            </p>
+                        </li>
+                    </ul>
+                </div>,
+            comment: 20,
+            seen: 31220,
+            date: "19 Sentyabr 2023",
+        },
+    ],
+    blogAside: [
+        {
+            id: 4,
+            blogImgs: 'https://hips.hearstapps.com/hmg-prod/images/d1pklzbuyaab0la-1552597012.jpg?crop=1xw:0.5064697265625xh;center,top&resize=1200:*',
+            blogTitle: "Marvel",
+            comment: 20,
+            seen: 31220,
+            date: "19 may 2023",
+            blogDetailContent:
+                <div className='detail-content'>
+                    <ul>
+                        <li>
+                            <p className="title"> Basliq  </p>
+                            <p className='simple-content'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore quisquam odio est quas ipsa totam temporibus libero perferendis quia.
+                            </p>
+                        </li>
+                        <li>
+                            <p className="title">
+                                Basliq 2
+                            </p>
+                            <p className='simple-content'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione error cum nulla aspernatur nam. Debitis provident ipsa doloremque laudantium architecto earum eum dignissimos veniam. Tempore et aliquam aspernatur dolores nulla totam dicta quo nostrum laborum? Consequuntur recusandae, commodi reprehenderit optio nam laborum. Perferendis quisquam inventore quam fugiat iste quos id.
+                            </p>
+                        </li>
+                    </ul>
+                </div>,
+        },
+        {
+            id: 5,
+            blogImgs: 'https://www.akustikpanel.com.tr/images/akustik-sinema-salonu-akustik-tasarim.jpg',
+            blogTitle: "Sinema solanu",
+            comment: 20,
+            seen: 31220,
+            date: "19 may 2023",
+            blogDec:
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae nulla, molestiae dolores obcaecati autem sunt, quas excepturi, reiciendis",
+            blogDetailContent:
+                <div className='detail-content'>
+                    <ul>
+                        <li>
+                            <p className="title"> Basliq  </p>
+                            <p className='simple-content'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias inventore quisquam odio est quas ipsa totam temporibus libero perferendis quia.
+                            </p>
+                        </li>
+                        <li>
+                            <p className="title">
+                                Basliq 2
+                            </p>
+                            <p className='simple-content'>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione error cum nulla aspernatur nam. Debitis provident ipsa doloremque laudantium architecto earum eum dignissimos veniam. Tempore et aliquam aspernatur dolores nulla totam dicta quo nostrum laborum? Consequuntur recusandae, commodi reprehenderit optio nam laborum. Perferendis quisquam inventore quam fugiat iste quos id.
+                            </p>
+                        </li>
+                    </ul>
+                </div>,
+        },
+    ]
+};
 
-];
