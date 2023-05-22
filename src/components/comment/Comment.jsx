@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AiOutlineUser } from 'react-icons/ai';
 import { AiOutlineComment } from 'react-icons/ai';
 
-const Comment = ({ comment, onLike, onUnlike, onDelete, onEdit, likedComments }) => {
+const Comment = ({ comment, onLike, onUnlike, onDelete, likedComments }) => {
     const isLiked = likedComments && likedComments.includes(comment.id);
     const [likes, setLikes] = useState(comment.likes);
     const [liked, setLiked] = useState(isLiked);
@@ -23,22 +23,6 @@ const Comment = ({ comment, onLike, onUnlike, onDelete, onEdit, likedComments })
 
     const handleDelete = () => {
         onDelete(comment.id);
-    };
-
-    const handleEdit = () => {
-        setIsEditing(true);
-    };
-
-    const handleSaveEdit = () => {
-        if (editedText.trim() !== '') {
-            onEdit(comment.id, editedText);
-            setIsEditing(false);
-        }
-    };
-
-    const handleCancelEdit = () => {
-        setIsEditing(false);
-        setEditedText(comment.text);
     };
 
     const handleChange = (event) => {
@@ -81,19 +65,24 @@ const Comment = ({ comment, onLike, onUnlike, onDelete, onEdit, likedComments })
 const CommentList = ({ comments, onLike, onUnlike, onDelete, onEdit }) => {
     return (
         <div className="comment-list">
-            {comments.map((comment, index) => (
-                <Comment
-                    key={index}
-                    comment={comment}
-                    onLike={onLike}
-                    onUnlike={onUnlike}
-                    onDelete={onDelete}
-                    onEdit={onEdit}
-                />
-            ))}
+            {comments.length === 0 ? (
+                <p className='empty'> Yazılmış şərh yoxdur </p>
+            ) : (
+                comments.map((comment, index) => (
+                    <Comment
+                        key={index}
+                        comment={comment}
+                        onLike={onLike}
+                        onUnlike={onUnlike}
+                        onDelete={onDelete}
+                        onEdit={onEdit}
+                    />
+                ))
+            )}
         </div>
     );
 };
+
 
 const CommentForm = ({ onComment }) => {
     const [text, setText] = useState('');

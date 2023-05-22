@@ -2928,6 +2928,13 @@ $animation-duration:1s;
     height: fit-content;
     overflow: auto;
 
+    .empty {
+      color: $color-6;
+      padding-top: 10px;
+      font-size: 18px;
+      padding-left: 5px;
+    }
+
     .comment-edit {
       width: 100%;
       display: flex;
@@ -3007,7 +3014,7 @@ $animation-duration:1s;
       border: 1px solid $color-11;
       width: 100%;
       resize: none;
-      height: 130px;
+      height: 150px;
       border-radius: 10px;
       color: $color-1;
       font-size: 18px;
@@ -4335,10 +4342,11 @@ $animation-duration:1s;
           min-width: 15px;
         }
 
-        .p-paginator-next.p-paginator-element.p-link{
+        .p-paginator-next.p-paginator-element.p-link {
           background: transparent !important;
         }
-        .p-paginator-prev.p-paginator-element.p-link{
+
+        .p-paginator-prev.p-paginator-element.p-link {
           background: transparent !important;
         }
 
@@ -5058,7 +5066,7 @@ $animation-duration:1s;
           width: 100%;
           border-radius: 10px;
           margin-bottom: 20px;
-          height: 350px;
+          height: fit-content;
         }
       }
 

@@ -34,7 +34,9 @@ const MovieList = () => {
                             </div>
                         </div>
 
-                        <Advert advert='https://pixner.net/boleto/demo/assets/images/sidebar/banner/banner02.jpg' />
+                        <Advert advert='https://img.freepik.com/premium-psd/kids-school-admission-social-media-post-web-banner-flyer-facebook-cover-photo-design-template_617385-51.jpg?w=2000' />
+                        <br />
+                        <Advert advert='https://d1csarkz8obe9u.cloudfront.net/posterpreviews/business-banner-advertising-design-template-feed57129a83da45662ea9649d127fa0_screen.jpg?ts=1597366582' />
 
                     </Col>
                     <Col lg={9}>

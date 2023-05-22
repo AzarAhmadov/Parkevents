@@ -2520,6 +2520,12 @@ body.active {
   height: fit-content;
   overflow: auto;
 }
+.app .comment-list .empty {
+  color: rgba(245, 245, 245, 0.8274509804);
+  padding-top: 10px;
+  font-size: 18px;
+  padding-left: 5px;
+}
 .app .comment-list .comment-edit {
   width: 100%;
   display: flex;
@@ -2588,7 +2594,7 @@ body.active {
   border: 1px solid rgba(255, 255, 255, 0.119);
   width: 100%;
   resize: none;
-  height: 130px;
+  height: 150px;
   border-radius: 10px;
   color: #fff;
   font-size: 18px;
@@ -4054,7 +4060,8 @@ body.active {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
-    height: 350px;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   #detail .container .row .col-lg-3 {
     margin-top: 50px;
