@@ -3483,23 +3483,21 @@ $animation-duration:1s;
 
       a {
         border-radius: 50%;
-        background: $color-5;
-        display: grid;
-        place-items: center;
+        background: $gradient;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
         width: 33px;
         height: 35px;
         transition: 300ms all;
 
         &:hover {
-          background: $gradient;
-
-          svg {
-            fill: $color-1;
-          }
+          background: $color-5;
         }
 
         svg {
-          fill: $color-3;
+          fill: $color-1;
         }
       }
 

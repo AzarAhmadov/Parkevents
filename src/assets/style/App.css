@@ -2987,21 +2987,20 @@ body.active {
 }
 .share ul li a {
   border-radius: 50%;
-  background: #31d7a9;
-  display: grid;
-  place-items: center;
+  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
   width: 33px;
   height: 35px;
   transition: 300ms all;
 }
 .share ul li a:hover {
-  background: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
-}
-.share ul li a:hover svg {
-  fill: #fff;
+  background: #31d7a9;
 }
 .share ul li a svg {
-  fill: #0a1e5e;
+  fill: #fff;
 }
 .share ul li span {
   color: #fff;
