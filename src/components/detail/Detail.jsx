@@ -240,36 +240,31 @@ const Detail = () => {
                             )}
                             <div className="tabs-area">
                                 <TabView>
-                                    <TabPanel header="Açıqlama 1">
-                                        <h5> Title 1 </h5>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </p>
+                                    <TabPanel header="Məkan yeri">
+                                        <h5 className='loc-name'> Bakı Musiqi Akademiyası nəzdində Opera Studiyasının Konsert salonu </h5>
+                                        <div className="det">
+                                            <p className='loc-simple'>
+                                                Şəmsi Bədəlbəyli 98, Bakı, Azərbaycan
+                                            </p>
+                                            <p className='number'>
+                                                <span>
+                                                    Telefon :
+                                                </span>
+                                                (+994 12)493 37 81
+                                            </p>
+                                        </div>
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.5890868134775!2d49.949516815319996!3d40.395798914836334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030630e150b9241%3A0xde46dce80b8fd0f4!2sKhalglar%20Dostlughu!5e0!3m2!1sen!2saz!4v1677100869444!5m2!1sen!2saz" width="100%"></iframe>
                                     </TabPanel>
-                                    <TabPanel header="Açıqlama 2">
-                                        <h5> Title 2 </h5>
+                                    <TabPanel header="Tədbir haqqında">
                                         <p>
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
-                                            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-                                            enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-                                            ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
-                                        </p>
-                                    </TabPanel>
-                                    <TabPanel header="Açıqlama 3">
-                                        <h5> Title 3 </h5>
-                                        <p>
-                                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti
-                                            quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in
-                                            culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                                            Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+                                            Mənim sehrli aləminə xoş gəlmisiniz.Mən sizə möcüzələrlə dolu sehrli aləm bəxş edəcəyəm. Möcüzələr nəinki səhnədə hətta birbaşa tamaşaçıların iştirakı ilə  yaranacaq. Dünyanın məşhur sehrbazlarının nümayiş etdiyi ülluziya nömrələri mənim nümayişim altında sizləri heyran edəcək. Özünüzə və yaxınlarınıza möcüzələrlə dolu bir gün bəxş edin. Həmcinin sizlər üçün xüsusi dəvət olunmuş orijinal janr artistləri sizləri heyran edecek. Sizi yaddaşlardan silinməyən bütün ailə üçün nəzərdə tutulan şouda gözləyirəm.
+                                            Rusiya ülluziyacılar birliyinin üzvü. (РАЙ)
+                                            Dünya sehrbazlar birliyinin üzvü. (The İnternational brotherhood of magician)
+                                            Orijinal janr Artisti Anar Əliyev
                                         </p>
                                     </TabPanel>
                                 </TabView>
                             </div>
-
                             <Col xs={12}>
                                 <Comment />
                             </Col>

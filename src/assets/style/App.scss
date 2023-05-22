@@ -852,7 +852,7 @@ body {
 .banner-video {
   width: 100%;
   object-fit: cover;
-  height: 495px;
+  height: 500px;
 }
 
 #detail {
@@ -1171,6 +1171,34 @@ body {
 
     .tabs-area {
       padding-top: 40px;
+
+      .loc-name {
+        font-size: 22px;
+        margin-bottom: 7px;
+      }
+
+      .loc-simple {
+        margin-bottom: 7px;
+        font-size: 22px;
+      }
+
+      .number {
+        margin-top: 5px;
+        color: $color-1;
+        margin-bottom: 20px;
+        font-weight: 300;
+
+        span {
+          font-weight: 400;
+          font-size: 22px;
+          color: $color-1;
+          margin-right: 7px;
+        }
+      }
+
+      iframe {
+        height: 300px;
+      }
     }
   }
 }
@@ -4072,8 +4100,16 @@ $animation-duration:1s;
 
 @media only screen and (max-width:578px) {
 
+  .p-tabview {
+    .p-tabview-nav {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   #question {
     margin-bottom: 10px;
+
     .container {
       padding: 0 22px;
 
@@ -4599,7 +4635,7 @@ $animation-duration:1s;
 
   .ticket-sets {
     padding-top: 30px;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
 
     .set-title {
       font-size: 26px;
@@ -5016,6 +5052,34 @@ $animation-duration:1s;
 
     .dec-container {
       margin-top: -150px;
+
+      .tabs-area {
+        padding-top: 40px;
+
+        .p-tabview-panels p {
+          font-size: 17px;
+        }
+
+        .loc-name {
+          font-size: 18px;
+          margin-bottom: 10px;
+        }
+
+        .loc-simple {
+          margin-bottom: 10px;
+          font-size: 19px;
+        }
+
+        .number {
+          span {
+            font-size: 19px;
+          }
+        }
+
+        iframe {
+          height: 250px;
+        }
+      }
 
       .dec-img {
         height: 230px;
