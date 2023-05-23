@@ -16,7 +16,7 @@ const Profiles = () => {
     const [value, setValue] = useState(options);
 
     const showSuccess = () => {
-        toast.current.show({ severity: 'success', summary: 'Uğurlu', detail: 'Dəyişiklər yadda saxlanıldı', life: 3000 });
+        toast.current.show({ severity: 'success', summary: 'Uğurlu', detail: 'Dəyişikliklər yadda saxlanıldı', life: 3000 });
     }
 
     const toast = useRef(null);
