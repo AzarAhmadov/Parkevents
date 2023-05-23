@@ -4202,6 +4202,20 @@ $animation-duration:1s;
     transform: translateY(-100px);
   }
 
+  .content {
+    &:hover {
+
+      .movies-name,
+      .price {
+        padding-top: 0px;
+      }
+
+      img {
+        transform: scale(1);
+      }
+    }
+  }
+
 }
 
 @media only screen and (max-width:768px) {
