@@ -3512,6 +3512,13 @@ body.active {
     margin-top: 60px;
     transform: translateY(-100px);
   }
+  .content:hover .movies-name,
+  .content:hover .price {
+    padding-top: 0px;
+  }
+  .content:hover img {
+    transform: scale(1);
+  }
 }
 @media only screen and (max-width: 768px) {
   .tabs-content .tabs-contents {
