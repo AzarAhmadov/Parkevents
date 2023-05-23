@@ -270,7 +270,6 @@ body {
               a {
                 color: $color-5;
                 transform: translateX(5px);
-                display: block;
               }
             }
 
@@ -301,8 +300,8 @@ body {
             width: max-content;
             justify-content: flex-start;
             align-items: flex-start;
-            padding: 0;
             padding: 10px 0;
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 
             li {
               margin-bottom: 0px;
@@ -316,14 +315,21 @@ body {
             .out {
               border-top: 1px solid rgba(16, 53, 201, 0.26);
               width: 100%;
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
               padding-top: 10px;
 
-              svg {
-                fill: $color-5;
-                font-size: 30px;
+              a {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+
+                svg {
+                  position: absolute;
+                  top: 1px;
+                  left: 150px;
+                  fill: $color-5;
+                  font-size: 30px;
+                }
               }
             }
           }
@@ -337,10 +343,12 @@ body {
             align-items: center;
 
             svg {
-              position: relative;
-              top: 15px;
-              font-size: 30px;
+              font-size: 35px;
               fill: $color-1;
+              position: absolute;
+              left: 50%;
+              top: -15px;
+              transform: translate(-50%);
             }
           }
 
@@ -5037,7 +5045,8 @@ $animation-duration:1s;
 
               a {
                 svg {
-                  transform: translate(25.2%, -50%);
+                  top: -13.5px;
+                  font-size: 32px;
                 }
               }
             }

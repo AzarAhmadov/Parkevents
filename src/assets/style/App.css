@@ -230,7 +230,6 @@ body.active {
 #header nav ul li ul li:hover a {
   color: #31d7a9;
   transform: translateX(5px);
-  display: block;
 }
 #header nav ul li ul li a {
   transition: 300ms all;
@@ -256,8 +255,8 @@ body.active {
   width: max-content;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0;
   padding: 10px 0;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 #header nav ul li.user .login-drop li {
   margin-bottom: 0px;
@@ -269,12 +268,18 @@ body.active {
 #header nav ul li.user .login-drop .out {
   border-top: 1px solid rgba(16, 53, 201, 0.26);
   width: 100%;
+  padding-top: 10px;
+}
+#header nav ul li.user .login-drop .out a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
+  position: relative;
 }
-#header nav ul li.user .login-drop .out svg {
+#header nav ul li.user .login-drop .out a svg {
+  position: absolute;
+  top: 1px;
+  left: 150px;
   fill: #31d7a9;
   font-size: 30px;
 }
@@ -287,10 +292,12 @@ body.active {
   align-items: center;
 }
 #header nav ul li.user a svg {
-  position: relative;
-  top: 15px;
-  font-size: 30px;
+  font-size: 35px;
   fill: #fff;
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  transform: translate(-50%);
 }
 #header nav ul li a {
   color: #fff;
@@ -4068,7 +4075,8 @@ body.active {
     height: 45px;
   }
   #header .container nav ul li.user a svg {
-    transform: translate(25.2%, -50%);
+    top: -13.5px;
+    font-size: 32px;
   }
   #header .container .logo {
     font-size: 22px;
