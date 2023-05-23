@@ -3750,6 +3750,69 @@ $animation-duration:1s;
   }
 }
 
+@media only screen and (min-width:1200px) {
+  .content {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+    .date {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      background-image: -webkit-linear-gradient(45deg, #f54646 0%, #f53da1 100%);
+      padding: 10px;
+      border-radius: 0 0 30px 30px;
+      width: max-content;
+      text-align: center;
+      color: $color-1;
+      font-size: 16px;
+    }
+
+    &:hover {
+
+      .movies-name,
+      .price {
+        color: $color-5;
+        padding-top: 35px;
+      }
+
+      img {
+        transform: scale(1.1);
+        height: 340px;
+      }
+    }
+
+    img {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+      transition: 300ms all;
+    }
+
+    .movies-name {
+      padding: 20px;
+      background: $color-3;
+      color: $color-1;
+      font-size: 20px;
+      transition: 300ms all;
+
+      span {
+        padding-bottom: 15px;
+        display: block;
+      }
+
+      .price {
+        border-top: 1px solid $color-11;
+        padding-top: 15px;
+        color: $color-1;
+      }
+    }
+  }
+}
+
 // Responsive
 @media only screen and (max-width:1400px) {
   .container {
