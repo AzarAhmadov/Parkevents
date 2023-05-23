@@ -4207,11 +4207,12 @@ $animation-duration:1s;
 
       .movies-name,
       .price {
-        padding-top: 0px;
+        padding-top: 0;
       }
 
       img {
-        transform: scale(1);
+        transform: none;
+        height: 260px;
       }
     }
   }

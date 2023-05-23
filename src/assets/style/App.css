@@ -3514,10 +3514,11 @@ body.active {
   }
   .content:hover .movies-name,
   .content:hover .price {
-    padding-top: 0px;
+    padding-top: 0;
   }
   .content:hover img {
-    transform: scale(1);
+    transform: none;
+    height: 260px;
   }
 }
 @media only screen and (max-width: 768px) {
