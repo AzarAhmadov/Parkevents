@@ -43,7 +43,7 @@ const Footer = () => {
                         <ul className='d-flex'>
                             <li>
                                 <Link to='/blog'>
-                                    Bloglar
+                                    Bloqlar
                                 </Link>
                             </li>
                             <li>
