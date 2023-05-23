@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { SiApple } from 'react-icons/si';
 import { FaGooglePlay } from 'react-icons/fa';
+import appsImg from '../../../public/appsImg.png'
 
 
 const GetDownload = () => {
@@ -18,7 +19,7 @@ const GetDownload = () => {
                         </span>
                     </div>
                     <Col xs={5}>
-                        <img className='img-fluid' src="../../../public/appsImg.png" alt="appImg" />
+                        <img className='img-fluid' src={appsImg} alt="appImg" />
                     </Col>
                     <Col xs={7}>
                         <div className="app-title">
