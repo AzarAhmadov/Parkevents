@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Col, Container, Form, Row } from 'react-bootstrap';
 import { AiOutlineUser } from 'react-icons/ai';
 import { AiOutlineShopping } from 'react-icons/ai';
@@ -10,7 +10,10 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setActiveProfile } from '../../app/features/ProfileLinks/ProfileLinks';
 
 const Profiles = () => {
-    ;
+    
+    useEffect(()=>{
+        window.scrollTo(0,0)
+    },[])
 
     const options = ['Kişi', 'Qadın'];
     const [value, setValue] = useState(options);

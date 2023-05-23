@@ -261,7 +261,7 @@ body.active {
 }
 #header nav ul li.user .login-drop li {
   margin-bottom: 0px;
-  padding: 8px 20px;
+  width: 100%;
 }
 #header nav ul li.user .login-drop li:first-child {
   padding-top: 0;
@@ -279,15 +279,18 @@ body.active {
   font-size: 30px;
 }
 #header nav ul li.user a {
+  padding: 2px 20px;
+  width: 100%;
+  display: flex;
   position: relative;
+  justify-content: space-between;
+  align-items: center;
 }
 #header nav ul li.user a svg {
+  position: relative;
+  top: 15px;
   font-size: 30px;
   fill: #fff;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(33.2%, -50%);
 }
 #header nav ul li a {
   color: #fff;

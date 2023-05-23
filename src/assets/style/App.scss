@@ -306,7 +306,7 @@ body {
 
             li {
               margin-bottom: 0px;
-              padding: 8px 20px;
+              width: 100%;
 
               &:first-child {
                 padding-top: 0;
@@ -329,15 +329,18 @@ body {
           }
 
           a {
+            padding: 2px 20px;
+            width: 100%;
+            display: flex;
             position: relative;
+            justify-content: space-between;
+            align-items: center;
 
             svg {
+              position: relative;
+              top: 15px;
               font-size: 30px;
               fill: $color-1;
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(33.2%, -50%);
             }
           }
 

@@ -172,8 +172,8 @@ const Header = () => {
                                             <li className='out'>
                                                 <Link to='/register'>
                                                     Çıxış
+                                                    <BiLogInCircle />
                                                 </Link>
-                                                <BiLogInCircle />
                                             </li>
                                             <div className="arrow"></div>
                                         </ul>
