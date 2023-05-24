@@ -7,6 +7,7 @@ import { Autoplay, Navigation } from 'swiper';
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 import { Link } from 'react-router-dom';
 import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
+import { Container } from 'react-bootstrap';
 
 
 const Story = () => {
@@ -34,41 +35,43 @@ const Story = () => {
         <>
             <div className='story-back'>
                 <div className="story-area">
-                    <Swiper
-                        slidesPerView={9}
-                        spaceBetween={10}
-                        pagination={{
-                            clickable: true,
-                        }}
-                        className="storySwiper"
-                        breakpoints={{
-                            240: {
-                                slidesPerView: 4,
-                                spaceBetween: 0,
-                            },
-                            768: {
-                                slidesPerView: 6,
-                                spaceBetween: 0,
-                            },
-                            1000: {
-                                slidesPerView: 9,
-                                spaceBetween: 40,
-                            },
-                            1500: {
-                                slidesPerView: 11,
-                            },
-                        }}
-                    >
-                        {story.map((el, idx) => (
-                            <SwiperSlide key={idx}>
-                                <div onClick={() => handleClick(el)} className="story">
-                                    <p>{el.title}</p>
-                                    <div className="bottom">{el.title}</div>
-                                </div>
-                            </SwiperSlide>
-                        ))}
-                    </Swiper>
-                </div>
+                    <Container>
+                        <Swiper
+                            slidesPerView={9}
+                            spaceBetween={10}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            className="storySwiper"
+                            breakpoints={{
+                                240: {
+                                    slidesPerView: 4,
+                                    spaceBetween: 0,
+                                },
+                                768: {
+                                    slidesPerView: 6,
+                                    spaceBetween: 0,
+                                },
+                                1000: {
+                                    slidesPerView: 8,
+                                    spaceBetween: 40,
+                                },
+                                1500: {
+                                    slidesPerView: 11,
+                                },
+                            }}
+                        >
+                            {story.map((el, idx) => (
+                                <SwiperSlide key={idx}>
+                                    <div onClick={() => handleClick(el)} className="story">
+                                        <p>{el.title}</p>
+                                        <div className="bottom">{el.title}</div>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </Container>                
+                    </div>
             </div>
 
             {showStory && (

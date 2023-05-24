@@ -1942,6 +1942,9 @@ body.active {
   max-width: 90%;
   margin: 0 auto;
 }
+.story-back .story-area .container {
+  padding: 0;
+}
 .story-back .story-area .storySwiper {
   padding-top: 15px;
   padding-bottom: 45px;

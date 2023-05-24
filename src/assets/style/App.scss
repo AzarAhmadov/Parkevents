@@ -2259,6 +2259,10 @@ $animation-duration:1s;
     max-width: 90%;
     margin: 0 auto;
 
+    .container {
+      padding: 0;
+    }
+
 
     .storySwiper {
       padding-top: 15px;
