@@ -9,7 +9,7 @@ import SearchCategory from '../searchCategory/SearchCategory';
 import Login from '../login&register/Login';
 import Register from '../login&register/Register';
 import Reset from '../login&register/Reset';
-import { TicketPlan } from '../ticketPlan/TicketPlan';
+import TicketPlan from '../ticketPlan/TicketPlan';
 import TicketSet from '../ticketPlan/TicketSet';
 import TicketPay from '../ticketPlan/TicketPay';
 import Download from '../download/Download';

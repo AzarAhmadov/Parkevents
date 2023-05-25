@@ -1,4 +1,5 @@
 import React from 'react'
+import { memo } from 'react';
 
 const TicketBanner = ({ src, title, dec }) => {
     return (
@@ -16,4 +17,4 @@ const TicketBanner = ({ src, title, dec }) => {
     )
 }
 
-export default TicketBanner
+export default memo(TicketBanner)

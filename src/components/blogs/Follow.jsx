@@ -3,6 +3,7 @@ import { GrFacebookOption } from 'react-icons/gr';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { AiOutlineInstagram } from 'react-icons/ai';
 import { FaTiktok } from 'react-icons/fa';
+import { memo } from 'react';
 
 const Follow = () => {
     return (
@@ -18,4 +19,4 @@ const Follow = () => {
     )
 }
 
-export default Follow
+export default memo(Follow)

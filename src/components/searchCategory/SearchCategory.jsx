@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap'
 import SearchFilter from '../home/SearchFilter'
 import { movieList } from '../data/Data'
 import { useNavigate, useParams } from 'react-router-dom'
+import { memo } from 'react';
 
 const SearchCategory = () => {
     const navigate = useNavigate();
@@ -61,4 +62,4 @@ const SearchCategory = () => {
     );
 }
 
-export default SearchCategory;
+export default memo(SearchCategory)

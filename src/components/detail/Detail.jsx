@@ -22,6 +22,7 @@ import MoviesTop from '../home/MoviesTop';
 import { useDispatch } from 'react-redux';
 import { setMovieInfo } from '../../app/features/movieDetail/MovieDetail';
 import Comment from '../comment/Comment';
+import { memo } from 'react';
 
 const getMovieById = (id) => {
     const categories = Object.values(movieList);
@@ -280,4 +281,4 @@ const Detail = () => {
     )
 }
 
-export default Detail
+export default memo(Detail)

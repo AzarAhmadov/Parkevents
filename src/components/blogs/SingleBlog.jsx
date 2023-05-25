@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import { Navigation, EffectFade } from "swiper";
 import 'swiper/css/effect-fade';
 import { MdDateRange } from 'react-icons/md';
+import { memo } from 'react';
 
 const SingleBlog = () => {
 
@@ -64,4 +65,4 @@ const SingleBlog = () => {
     )
 }
 
-export default SingleBlog
+export default memo(SingleBlog)

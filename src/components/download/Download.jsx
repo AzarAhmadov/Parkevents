@@ -3,6 +3,7 @@ import GlobalBanner from '../globalBanner/GlobalBanner'
 import GetDownload from './GetDownload'
 import Cards from './Cards'
 import { useEffect } from 'react'
+import { memo } from 'react';
 
 const Download = () => {
 
@@ -19,4 +20,4 @@ const Download = () => {
     )
 }
 
-export default Download
+export default memo(Download)

@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiOutlineSearch } from 'react-icons/ai';
+import { memo } from 'react';
 
 const BlogSearch = () => {
     return (
@@ -17,4 +18,4 @@ const BlogSearch = () => {
     )
 }
 
-export default BlogSearch
+export default memo(BlogSearch)

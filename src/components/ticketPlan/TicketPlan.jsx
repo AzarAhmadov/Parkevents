@@ -2,8 +2,9 @@ import React, { useEffect } from 'react'
 import TicketFilter from './TicketFilter'
 import TicketTable from './TicketTable'
 import { useSelector } from 'react-redux';
+import { memo } from 'react';
 
-export const TicketPlan = () => {
+const TicketPlan = () => {
 
     useEffect(() => {
         { window.scrollTo(0, 0) }
@@ -34,3 +35,4 @@ export const TicketPlan = () => {
         </main>
     )
 }
+export default memo(TicketPlan)

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { IoIosArrowForward } from 'react-icons/io';
+import { memo } from 'react';
 
 const GlobalBanner = ({ title, linkTo, linkName, linkName2, linkTo2 }) => {
     return (
@@ -24,4 +25,4 @@ const GlobalBanner = ({ title, linkTo, linkName, linkName2, linkTo2 }) => {
     )
 }
 
-export default GlobalBanner
+export default memo(GlobalBanner)

@@ -10,6 +10,7 @@ import { HiOutlineTicket } from 'react-icons/hi';
 import Container from 'react-bootstrap/esm/Container';
 import { useDispatch } from 'react-redux';
 import { setActiveProfile } from '../../app/features/ProfileLinks/ProfileLinks';
+import { memo } from 'react';
 
 const Header = () => {
     const [active, setActive] = useState(false);
@@ -233,4 +234,4 @@ const Header = () => {
     )
 }
 
-export default Header
+export default memo(Header)

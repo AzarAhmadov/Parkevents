@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AiOutlineUser } from 'react-icons/ai';
 import { AiOutlineComment } from 'react-icons/ai';
+import { memo } from 'react';
 
 const Comment = ({ comment, onLike, onUnlike, onDelete, likedComments }) => {
     const isLiked = likedComments && likedComments.includes(comment.id);
@@ -82,7 +83,6 @@ const CommentList = ({ comments, onLike, onUnlike, onDelete, onEdit }) => {
         </div>
     );
 };
-
 
 const CommentForm = ({ onComment }) => {
     const [text, setText] = useState('');
@@ -199,4 +199,4 @@ const GetComment = () => {
     );
 };
 
-export default GetComment;
+export default memo(GetComment);

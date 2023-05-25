@@ -10,6 +10,7 @@ import { Navigation } from "swiper";
 import 'swiper/css/effect-fade';
 import Follow from './Follow';
 import BlogSearch from './BlogSearch';
+import { memo } from 'react';
 
 const SingleBlog = () => {
     return (
@@ -53,4 +54,4 @@ const SingleBlog = () => {
     );
 };
 
-export default SingleBlog;
+export default memo(SingleBlog);

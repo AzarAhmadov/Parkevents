@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { RiMagicLine } from 'react-icons/ri';
+import { memo } from 'react';
 
 const Cards = () => {
     return (
@@ -74,4 +75,4 @@ const Cards = () => {
     )
 }
 
-export default Cards
+export default memo(Cards)

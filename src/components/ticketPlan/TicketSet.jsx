@@ -9,6 +9,7 @@ import { useSelector } from 'react-redux'
 import { Toast } from 'primereact/toast';
 import TicketBannerImg from '../../../public/ticketBanner.jpeg';
 import CinemaImg from '../../../public/cinemaScreen.png'
+import { memo } from 'react';
 
 const TicketSet = () => {
 
@@ -159,4 +160,4 @@ const TicketSet = () => {
         </main>
     )
 }
-export default TicketSet
+export default memo(TicketSet)

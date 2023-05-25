@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import { SiApple } from 'react-icons/si';
 import { FaGooglePlay } from 'react-icons/fa';
 import appsImg from '../../../public/appsImg.png'
-
+import { memo } from 'react';
 
 const GetDownload = () => {
     return (
@@ -45,4 +45,4 @@ const GetDownload = () => {
     )
 }
 
-export default GetDownload
+export default memo(GetDownload)

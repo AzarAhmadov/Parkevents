@@ -3,6 +3,7 @@ import Hero from './Hero'
 import Search from './Search'
 import MovieList from './MovieList'
 import Story from './Story'
+import { memo } from 'react';
 
 const Home = () => {
     return (
@@ -15,4 +16,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default memo(Home)
