@@ -59,6 +59,13 @@ $gradient: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
+    background: rgba(0, 0, 0, 0.465);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
 
     svg {
       fill: $color-1;
@@ -72,10 +79,6 @@ $gradient: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
     position: absolute;
     content: "";
     cursor: pointer;
-  }
-
-  video {
-    position: absolute;
   }
 }
 
@@ -800,11 +803,6 @@ body {
   height: 15px;
 }
 
-.banner-video {
-  width: 100%;
-  object-fit: cover;
-  height: 500px;
-}
 
 #detail {
   position: relative;
@@ -817,6 +815,7 @@ body {
     width: 100%;
     height: 500px;
     z-index: 1;
+
 
     &::after {
       width: 100%;
@@ -2306,8 +2305,9 @@ $animation-duration:1s;
 
           p {
             font-weight: 600;
-            font-size: 14px;
+            font-size: 13px;
             text-align: center;
+            padding: 4px;
           }
         }
       }

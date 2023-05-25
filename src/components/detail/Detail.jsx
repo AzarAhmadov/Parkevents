@@ -61,18 +61,8 @@ const Detail = () => {
     const scrollRef = useRef(null);
 
     const mediaRender = () => {
-        if (movie && movie.bannerVideo) {
-            return (
-                <video muted className='banner-video' controls={false} autoPlay>
-                    <source src={movie.bannerVideo} type="video/mp4" />
-                </video>
-            );
-        } else if (movie && movie.banner) {
-            return <img src={movie.banner} alt="" />;
-        } else {
-            return null;
-        }
-    }
+        return <img src={movie.banner} alt="" />;
+    };
 
     const dispatch = useDispatch();
 
@@ -86,6 +76,7 @@ const Detail = () => {
         scrollRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }, []);
 
+    console.log(movie)
     return (
         <main>
             <section id='detail'>
@@ -195,9 +186,14 @@ const Detail = () => {
                                         )}
                                         {event.video && (
                                             <div className='video-container' onClick={() => handleSlideClick(index)}>
-                                                <video className='dec-img'>
-                                                    <source src={event.video} type="video/mp4" />
-                                                </video>
+                                                <iframe
+                                                    src={event.video}
+                                                    className="dec-img"
+                                                    title="Banner Video"
+                                                    frameBorder="0"
+                                                    allow="autoplay; encrypted-media"
+                                                    allowFullScreen
+                                                />
                                                 <div className="play-icon">
                                                     <AiOutlinePlayCircle />
                                                 </div>
@@ -222,14 +218,18 @@ const Detail = () => {
                                                     <img
                                                         className='dec-img'
                                                         src={event.img}
-                                                        alt=""
                                                         onClick={() => handleSlideClick(index)}
                                                     />
                                                 )}
                                                 {event.video && (
-                                                    <video className='dec-img' controls>
-                                                        <source src={event.video} type="video/mp4" />
-                                                    </video>
+                                                    <iframe
+                                                        src={event.video}
+                                                        className='dec-img'
+                                                        title="Banner Video"
+                                                        frameBorder="0"
+                                                        allow="autoplay; encrypted-media"
+                                                        allowFullScreen
+                                                    />
                                                 )}
                                             </SwiperSlide>
                                         ))}
@@ -258,10 +258,7 @@ const Detail = () => {
                                     </TabPanel>
                                     <TabPanel header="Tədbir haqqında">
                                         <p>
-                                            Mənim sehrli aləminə xoş gəlmisiniz.Mən sizə möcüzələrlə dolu sehrli aləm bəxş edəcəyəm. Möcüzələr nəinki səhnədə hətta birbaşa tamaşaçıların iştirakı ilə  yaranacaq. Dünyanın məşhur sehrbazlarının nümayiş etdiyi ülluziya nömrələri mənim nümayişim altında sizləri heyran edəcək. Özünüzə və yaxınlarınıza möcüzələrlə dolu bir gün bəxş edin. Həmcinin sizlər üçün xüsusi dəvət olunmuş orijinal janr artistləri sizləri heyran edecek. Sizi yaddaşlardan silinməyən bütün ailə üçün nəzərdə tutulan şouda gözləyirəm.
-                                            Rusiya ülluziyacılar birliyinin üzvü. (РАЙ)
-                                            Dünya sehrbazlar birliyinin üzvü. (The İnternational brotherhood of magician)
-                                            Orijinal janr Artisti Anar Əliyev
+                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse sint nam assumenda! Consequuntur molestiae velit fugiat nemo tempora sunt numquam iste ea eos obcaecati perferendis incidunt corrupti id, non nobis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolor laborum suscipit aliquid. Blanditiis, iste eaque. Iste fugit culpa ab.
                                         </p>
                                     </TabPanel>
                                 </TabView>

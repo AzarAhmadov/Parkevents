@@ -1,4 +1,3 @@
-import videoSlide1 from '../../assets/video/video-slide.mp4'
 import { MdOutlineChair } from 'react-icons/md';
 
 export const movieList = {
@@ -12,51 +11,60 @@ export const movieList = {
             date: <div>26<br />Okt</div>,
             eventsContent: [
                 {
-                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                    video: "https://www.youtube.com/embed/qjGlR7847uA"
                 },
                 {
-                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                    img: "https://sm.ign.com/ign_tr/news/g/guardians-/guardians-of-the-galaxy-vol-2-character-posters-released_ahtd.jpg",
                 },
                 {
-                    video: videoSlide1
+                    img: "https://www.10wallpaper.com/wallpaper/3840x2160/2107/Guardians_of_the_Galaxy_Marvel_2021_Game_5K_Poster_3840x2160.jpg"
+                },
+                {
+                    img: "https://e1.pxfuel.com/desktop-wallpaper/462/180/desktop-wallpaper-guardians-of-the-galaxy-movie-poster-the-guardians-of-the-galaxy.jpg"
+                },
+                {
+                    img: "https://tr.web.img3.acsta.net/newsv7/18/05/07/10/15/5815665.jpg"
                 }
             ]
         },
         {
             id: 15,
-            movieImg: "https://cdn.wallpapersafari.com/53/79/ajwtby.jpg",
+            movieImg: "https://wallpapercave.com/wp/wp2101248.jpg",
             movieName: "Brave",
-            bannerVideo: videoSlide1,
+            banner: "https://c4.wallpaperflare.com/wallpaper/174/623/700/brave-redhead-disney-wallpaper-preview.jpg",
             price: '400 ₼-dan',
-            date: <div>14<br />Sen</div>,
+            date: <div>16<br />Okt</div>,
             eventsContent: [
                 {
-                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                    video: "https://www.youtube.com/embed/TEHWDA_6e3M"
                 },
                 {
-                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                    img: "https://c4.wallpaperflare.com/wallpaper/19/46/360/pixar-disney-brave-brave-heart-wallpaper-preview.jpg",
                 },
                 {
-                    video: videoSlide1
-                }
+                    img: "https://c4.wallpaperflare.com/wallpaper/434/665/257/forest-night-horse-princess-wallpaper-preview.jpg"
+                },
             ]
         },
         {
             id: 16,
             movieImg: "https://a-static.besthdwallpaper.com/super-mario-bros-computer-animation-movie-poster-wallpaper-2880x1620-107794_52.jpg",
             movieName: "Mario",
-            banner: "https://a-static.besthdwallpaper.com/super-mario-bros-computer-animation-movie-poster-wallpaper-2880x1620-107794_52.jpg",
+            banner: "https://wallpapercave.com/wp/wp12122866.jpg",
             price: '400 ₼-dan',
             date: <div>1<br />Okt</div>,
             eventsContent: [
                 {
-                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                    video: "https://www.youtube.com/embed/TnGl01FkMMo"
                 },
                 {
-                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                    img: "https://images.alphacoders.com/130/1302496.jpg",
                 },
                 {
-                    video: videoSlide1
+                    img: "https://w0.peakpx.com/wallpaper/485/579/HD-wallpaper-the-super-mario-bros-2023-movie-poster.jpg"
+                },
+                {
+
                 }
             ]
         },
@@ -69,14 +77,14 @@ export const movieList = {
             date: <div>26<br />Okt</div>,
             eventsContent: [
                 {
-                    img: "https://images5.alphacoders.com/573/thumbbig-573475.webp",
+                    video: "https://www.youtube.com/embed/itnqEauWQZM"
                 },
                 {
-                    img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
+                    img: "https://i.ytimg.com/vi/i8bhMsaR6cs/maxresdefault.jpg",
                 },
                 {
-                    video: videoSlide1
-                }
+                    img: "https://cdn-uploads.gameblog.fr/img/news/419843_641831f0916f1.jpg"
+                },
             ]
         },
         {
@@ -87,6 +95,7 @@ export const movieList = {
             price: '400 ₼-dan',
             date: <div>26<br />Okt</div>,
             eventsContent: [
+                { video: 'https://www.youtube.com/embed/RBYbqO_FUA4' },
                 {
                     img: "https://wallpaper-house.com/data/out/10/wallpaper2you_374383.jpg",
                 },
@@ -109,6 +118,7 @@ export const movieList = {
             price: '400 ₼-dan',
             date: <div>26<br />Okt</div>,
             eventsContent: [
+                {video:"https://www.youtube.com/embed/bpXfcTF6iVk"},
                 {
                     img: "https://e1.pxfuel.com/desktop-wallpaper/298/985/desktop-wallpaper-prisoners-movie-prisoners.jpg",
                 },
@@ -134,7 +144,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -153,7 +163,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -172,7 +182,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -191,7 +201,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -210,7 +220,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         }
@@ -232,7 +242,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -251,7 +261,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -270,7 +280,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -289,7 +299,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         }
@@ -311,7 +321,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -330,7 +340,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
         },
@@ -349,7 +359,7 @@ export const movieList = {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
                 {
-                    video: videoSlide1
+
                 }
             ]
 
@@ -368,9 +378,6 @@ export const movieList = {
                 {
                     img: "https://images4.alphacoders.com/130/thumbbig-1301460.webp"
                 },
-                {
-                    video: videoSlide1
-                }
             ]
         },
     ]
@@ -724,65 +731,78 @@ export const ticketSetsPlan = [
 
 export const story = [
     {
-        title: "Mabel Matiz",
+        id: 1,
+        title: "WOOD",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/2db37cf6f9514343875372f7298c1c78.jpg"
+        img: "https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 2,
+        title: "THE LAST OF US",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/09e4f8bbaf4041e89d7b5ac9361b4305.jpg"
+        img: "https://i.ebayimg.com/images/g/ujkAAOSwYEhjyt9a/s-l1600.jpg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 3,
+        title: "JOKER",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/39eceb033c794fe7949fab8e8993ab5b.jpg"
+        img: "https://cdn.shopify.com/s/files/1/0037/8008/3782/products/joker_teaser_EB04849_B_41943af2-851a-4700-8c6d-bffc8c034aac-927486_1024x1024@2x.jpg?v=1611688077"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 4,
+        title: "JOHN WICK",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/fe2b378b195c4b53b2bff0b1bb3ae7fa.jpg"
+        img: "https://m.media-amazon.com/images/I/81F5PF9oHhL._AC_UF894,1000_QL80_.jpg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 5,
+        title: "STAR WARS",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+        img: "https://c4.wallpaperflare.com/wallpaper/153/860/948/movie-poster-star-wars-star-wars-the-rise-of-skywalker-2019-year-movies-hd-wallpaper-preview.jpg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 6,
+        title: "DORA",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/fe2b378b195c4b53b2bff0b1bb3ae7fa.jpg"
+        img: "https://cdn.shopify.com/s/files/1/0969/9128/products/Dora_The_Explorer_And_The_Lost_City_Of_Gold_-_Hollywood_English_Movie_Poster_1_66c87e56-24a2-4135-b709-a6b98a7f7bce_large.jpg?v=1577693664"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 7,
+        title: "BLACK WIDOW",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+        img: "https://www.vintagemovieposters.co.uk/wp-content/uploads/2022/09/IMG_8076-scaled.jpeg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 8,
+        title: "AVATAR",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+        img: "https://www.themoviedb.org/t/p/original/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 9,
+        title: "THE GIVER",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+        img: "https://media.glamour.com/photos/56957ec78fa134644ec24e88/master/w_1600%2Cc_limit/entertainment-2014-06-the-giver-movie-poster-main.jpg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 10,
+        title: "THE WOMAN KING",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+        img: "https://www.witf.io/wp-content/uploads/2022/09/TheWomanKing_DigitalArtCompleted-809x1080.jpg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 11,
+        title: "BLISS",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+        img: "https://images.summitmedia-digital.com/spotph/images/2017/12/14/MoviePosters2017_5.jpg"
     },
     {
-        title: "Bu gunki yenilikler",
+        id: 12,
+        title: "ANOTHER EARTH",
         linkName: "Keçid",
-        img: "https://resources-biletino.s3-external-3.amazonaws.com/content/stories/ea5c32a2d09146329c7aa27777d92aad.jpg"
+        img: "https://www.indiewire.com/wp-content/uploads/2017/09/another-earth-2011.jpg?w=674"
     },
+
 ]
 
 export const blogData = {
