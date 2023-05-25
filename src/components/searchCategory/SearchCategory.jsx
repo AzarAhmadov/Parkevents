@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container } from 'react-bootstrap'
 import SearchFilter from '../home/SearchFilter'
 import { movieList } from '../data/Data'
