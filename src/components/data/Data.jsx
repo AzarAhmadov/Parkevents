@@ -63,9 +63,6 @@ export const movieList = {
                 {
                     img: "https://w0.peakpx.com/wallpaper/485/579/HD-wallpaper-the-super-mario-bros-2023-movie-poster.jpg"
                 },
-                {
-
-                }
             ]
         },
         {
@@ -118,7 +115,7 @@ export const movieList = {
             price: '400 ₼-dan',
             date: <div>26<br />Okt</div>,
             eventsContent: [
-                {video:"https://www.youtube.com/embed/bpXfcTF6iVk"},
+                { video: "https://www.youtube.com/embed/bpXfcTF6iVk" },
                 {
                     img: "https://e1.pxfuel.com/desktop-wallpaper/298/985/desktop-wallpaper-prisoners-movie-prisoners.jpg",
                 },
