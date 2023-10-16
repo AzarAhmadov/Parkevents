@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Link } from 'react-router-dom';
 
 const MoviesTop = ({ link, title, linkName }) => {
@@ -11,4 +11,4 @@ const MoviesTop = ({ link, title, linkName }) => {
     );
 };
 
-export default MoviesTop;
+export default memo(MoviesTop);

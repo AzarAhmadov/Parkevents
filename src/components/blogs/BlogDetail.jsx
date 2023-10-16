@@ -14,7 +14,6 @@ import 'swiper/css/effect-fade';
 import { FaFacebookF } from 'react-icons/fa';
 import { AiFillInstagram } from 'react-icons/ai';
 import { BsTwitter } from 'react-icons/bs';
-import { memo } from 'react';
 
 const BlogDetail = () => {
     const { id } = useParams();
@@ -122,4 +121,4 @@ const BlogDetail = () => {
     );
 };
 
-export default memo(BlogDetail);
+export default BlogDetail;

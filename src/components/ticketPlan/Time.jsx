@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { memo } from 'react';
 
 const Time = () => {
   const [minutes, setMinutes] = useState(5);
@@ -28,4 +27,4 @@ const Time = () => {
   );
 };
 
-export default memo(Time)
+export default Time

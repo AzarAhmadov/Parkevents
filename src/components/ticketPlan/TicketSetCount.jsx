@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import Time from './Time';
 import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedCount } from '../../app/features/CountSeat/CountSeat';
-import { memo } from 'react';
 
 const TicketSetCount = () => {
 
@@ -43,4 +42,4 @@ const TicketSetCount = () => {
     )
 }
 
-export default memo(TicketSetCount)
+export default TicketSetCount

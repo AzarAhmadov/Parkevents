@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import TicketFilter from './TicketFilter'
 import TicketTable from './TicketTable'
 import { useSelector } from 'react-redux';
-import { memo } from 'react';
 
 const TicketPlan = () => {
 
@@ -35,4 +34,4 @@ const TicketPlan = () => {
         </main>
     )
 }
-export default memo(TicketPlan)
+export default TicketPlan

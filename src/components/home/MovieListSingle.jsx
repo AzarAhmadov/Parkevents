@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay, } from "swiper";
 import "swiper/css";
@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import { useNavigate } from 'react-router-dom';
 
 const MovieListSingle = ({ movies, slidesPerView }) => {
-    
+
     const navigate = useNavigate();
     const handleMovieClick = (movie) => {
         navigate(`/detail/${movie.id}`);
@@ -69,4 +69,4 @@ const MovieListSingle = ({ movies, slidesPerView }) => {
     );
 };
 
-export default MovieListSingle;
+export default memo(MovieListSingle);

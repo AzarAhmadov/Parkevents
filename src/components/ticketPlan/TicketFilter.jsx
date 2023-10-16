@@ -4,7 +4,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { MdDateRange } from 'react-icons/md';
 import { MdPlace } from 'react-icons/md';
 import { MdOutlineLanguage } from 'react-icons/md';
-import { memo } from 'react';
 
 const TicketFilter = () => {
 
@@ -92,4 +91,4 @@ const TicketFilter = () => {
     )
 }
 
-export default memo(TicketFilter)
+export default TicketFilter

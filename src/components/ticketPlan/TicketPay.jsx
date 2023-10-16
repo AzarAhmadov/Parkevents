@@ -5,7 +5,6 @@ import { TabView, TabPanel } from 'primereact/tabview';
 import { MdKeyboardDoubleArrowLeft } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import Time from './Time';
-import { memo } from 'react';
 
 const TicketPay = () => {
     
@@ -190,4 +189,4 @@ const TicketPay = () => {
     )
 }
 
-export default memo(TicketPay)
+export default TicketPay

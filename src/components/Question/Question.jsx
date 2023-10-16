@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import GlobalBanner from '../globalBanner/GlobalBanner'
 import { Accordion, AccordionTab } from 'primereact/accordion';
 import { Container, Row } from 'react-bootstrap';
-import { memo } from 'react';
 
 const Question = () => {
     useEffect(() => {
@@ -51,4 +50,4 @@ const Question = () => {
     )
 }
 
-export default memo(Question)
+export default Question

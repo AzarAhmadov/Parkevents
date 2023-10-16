@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, memo } from 'react';
 import noUiSlider from 'nouislider';
 import 'nouislider/dist/nouislider.css';
 import Form from 'react-bootstrap/Form';
@@ -111,4 +111,4 @@ const SearchBottom = ({ searchClass }) => {
     );
 };
 
-export default SearchBottom;
+export default memo(SearchBottom);

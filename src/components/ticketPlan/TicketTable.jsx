@@ -5,7 +5,6 @@ import Advert from '../home/Advert';
 import { ticketPlaneTableCrud } from '../data/Data';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
-import { memo } from 'react';
 
 const TicketTable = () => {
 
@@ -69,4 +68,4 @@ const TicketTable = () => {
     );
 };
 
-export default memo(TicketTable)
+export default TicketTable

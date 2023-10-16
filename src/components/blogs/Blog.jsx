@@ -4,7 +4,6 @@ import { Col, Container, Row } from 'react-bootstrap'
 import SingleBlog from './SingleBlog';
 import BlogAside from '../blogs/BlogAside';
 import { Paginator } from 'primereact/paginator';
-import { memo } from 'react';
 
 const Blog = () => {
 
@@ -42,4 +41,4 @@ const Blog = () => {
     )
 }
 
-export default memo(Blog)
+export default Blog
