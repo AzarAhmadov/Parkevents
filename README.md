@@ -7,7 +7,7 @@ Live demo : https://parkevents.vercel.app/
 ## Features
 1. Search and Filter: Event search filter by date, location or category
 
-2. ability to buy tickets : Once you choose how many people will sit, you can buy enough tickets to sit as you choose.
+2. Ability to buy tickets : Once you choose how many people will sit, you can buy enough tickets to sit as you choose.
 
 3. State Management Using Redux Toolkit: Redux Toolkit is employed for efficient state management, ensuring a consistent and predictable application state.
 
