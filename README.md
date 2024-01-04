@@ -27,7 +27,7 @@ Park events utilizes the following technologies:
 - Framer motion
 
 ## Contributing
-If you'd like to contribute to this project, please open an issue or create a pull request. We appreciate feedback and contributions from the community.
+Open to your ideas! Share feedback, report issues, or send pull requests to enhance this project
 
 ## Deployment
 Park events is deployed on Vercel, a popular platform for hosting web applications.
